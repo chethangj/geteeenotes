@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Diploma EEE Notes - getEEEnotes!</title>
+        <link rel="icon" href="img/fav.png" sizes="16x16">
+        <meta name="viewport" content="width-device-width, initial-scale=1.0">
+        <meta name="description" content="Get Electrical and Electronics Engineering Notes in Diploma Engineering as per the New Syllabus.">
+        <meta name="keywords" content="electrical and electronics, electrical, notes, diploma, diploma notes, electrical notes, EEE notes, EEE, E&E, Basic Management Skills, Power Electronics, Transmission and Distribution, Electrical Estimation, Switchgear and Protection, DC Machines and Alternators, Analog Electronics, Digital Electronics">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        
+        
+        <style>
+        
+            body{margin-left: 40px; margin-right: 40px; padding: 0; box-sizing: border-box}
+            #header{display: flex; align-items: center}
+            #logo{width: 20%}
+            #logo img{height: 50px}
+            #socialicons{width: 80%; text-align: right}
+            #socialicons li{display: inline-block; list-style-type: none; margin-left: 8px}
+            #socialicons img{height: 20px}
+            
+            #header-bar{background-color: rgb(36, 169, 226); text-align: center}
+            #header-bar p{font-size: 15px; color: #fff; margin: 0; padding: 5px; letter-spacing: 2px}
+            
+            #main{display: flex;}
+            #main-left{width: 70%; display: flex}
+            .fa-book{margin-right: 10px; color: rgb(36, 169, 226)}
+            .main-index{padding: 0; width: 50%}
+            #main-left li{margin-bottom: 20px}
+            #main-left a{text-decoration: none; font-size: 18px; color: rgb(0, 119, 204)}
+            #main-right{width: 30%}
+            
+            #footer{background-color: rgb(36, 169, 226); text-align: center}
+            #footer h3{letter-spacing: 2px; margin: 0; padding: 5px}
+            #footer p{font-size: 15px; margin: 0; padding: 5px}
+            
+            #loading{position: fixed; left: 0px; top: 0px; bottom: 0px; right: 0px; width: 100%; height: 100vh; background-color: #fff; z-index: 9999;}
+            
+            .loading{position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); height: 40px; display: flex; align-items: center;}
+            
+            .obj{width: 6px; height: 40px; background: rgb(36, 169, 226); margin: 0 3px; border-radius: 10px; animation: loading 0.8s infinite;}
+            
+            .obj:nth-child(2){animation-delay: 0.1s;}
+            .obj:nth-child(3){animation-delay: 0.2s;}
+            .obj:nth-child(4){animation-delay: 0.3s;}
+            .obj:nth-child(5){animation-delay: 0.4s;}
+            .obj:nth-child(6){animation-delay: 0.5s;}
+            .obj:nth-child(7){animation-delay: 0.6s;}
+            .obj:nth-child(8){animation-delay: 0.7s;}
+
+
+            @keyframes loading {
+            0%{
+            height: 0;
+            }
+            50%{
+            height: 40px;
+            }
+            100%{
+            height: 0;
+            }
+            }
+            
+            
+            
+            @media (max-width: 1024px){
+                #main{flex-direction: column}
+                #main-left{width: 100%}
+                #main-right{width: 100%}
+            }
+            
+            @media (max-width: 685px){
+                body{margin-left: 10px; margin-right: 10px}
+                #main-left{flex-direction: column}
+                .main-index{width: 100%}
+            }
+            
+            
+        
+        </style>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-174242618-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-174242618-2');
+</script>
+
+    </head>
+    
+    <body onload="myFunction()">
+       
+       <div id="loading">
+           <div class="loading">
+               <div class="obj"></div>
+               <div class="obj"></div>
+               <div class="obj"></div>
+               <div class="obj"></div>
+               <div class="obj"></div>
+               <div class="obj"></div>
+               <div class="obj"></div>
+               <div class="obj"></div>
+           </div>
+       </div>
+        
+        <div id="header">
+        <div id="logo">
+            <a href="index.html"><img src="img/logo1.png"></a>
+        </div>
+        <div id="socialicons">
+           <ul>
+               <li><a href="https://www.facebook.com/Geteeenotes-109734954168942/" target="_blank"><img src="img/facebook.png"></a></li>
+               <li><a href="https://www.instagram.com/geteeenotes5/" target="_blank"><img src="img/instagram.png"></a></li>
+               <li><a href="https://www.youtube.com/channel/UCgVMxyH-_CDSpZXi8fnl3MA/" target="_blank"><img src="img/youtube.png"></a></li>
+               <li><a href="https://t.me/getEEEnotes" target="_blank"><img src="img/telegram.png"></a></li>
+           </ul>            
+        </div>
+    </div>
+       
+       <div id="header-bar">
+       <p><b>Welcome to getEEEnotes!</b></p>
+       <p><b>MAKE DIPLOMA EEE EASIER</b></p>
+       
+    </div>
+       
+       <div>
+        <!--SPACE FOR GOOGLE ADSENSE-->
+        </div>
+        
+        <div id="main">
+        <div id="main-left">
+        <div class="main-index">
+            <ul style="padding-left: 0; list-style-type: none">
+                <li><a href="content/pe.html"><i class="fa fa-book" aria-hidden="true"></i>Power Electronics</a></li>
+                <li><a href="content/tdu.html"><i class="fa fa-book" aria-hidden="true"></i>Transmission and Distribution</a></li>
+                <li><a href="content/sgp.html"><i class="fa fa-book" aria-hidden="true"></i>Switchgear and Protection</a></li>
+                <li><a href="content/dcm.html"><i class="fa fa-book" aria-hidden="true"></i>DC Machines and Alternators</a></li>
+                <li><a href="content/epg.html"><i class="fa fa-book" aria-hidden="true"></i>Electrical Power Generation</a></li>
+                <li><a href="content/ae.html"><i class="fa fa-book" aria-hidden="true"></i>Analog Electronics</a></li>
+                <li><a href="content/de.html"><i class="fa fa-book" aria-hidden="true"></i>Digital Electronics</a></li>                
+                <li><a href="content/na.html"><i class="fa fa-book" aria-hidden="true"></i>Electrical Estimation</a></li>         
+                <li><a href="content/na.html"><i class="fa fa-book" aria-hidden="true"></i>Elements of Elc. Engg.</a></li>
+            </ul>
+        </div>
+        <div class="main-index">
+            <ul style="padding-left: 0; list-style-type: none">
+                <li><a href="content/bms.html"><i class="fa fa-book" aria-hidden="true"></i>Basic Management Skills</a></li>
+                <li><a href="content/na.html"><i class="fa fa-book" aria-hidden="true"></i>Industrial Drives Control</a></li>
+                <li><a href="content/na.html"><i class="fa fa-book" aria-hidden="true"></i>Mechatronics</a></li>
+                <li><a href="content/na.html"><i class="fa fa-book" aria-hidden="true"></i>Communication and Comp. Networks</a></li>
+                <li><a href="content/na.html"><i class="fa fa-book" aria-hidden="true"></i>Prof. Ethics and Indian Constitution</a></li>
+                <li><a href="content/na.html"><i class="fa fa-book" aria-hidden="true"></i>Transformers and AC Motors</a></li>     
+                <li><a href="content/na.html"><i class="fa fa-book" aria-hidden="true"></i>Electrical Circuits</a></li>
+                <li><a href="content/na.html"><i class="fa fa-book" aria-hidden="true"></i>Elc. Measurements & Measuring Instruments</a></li>
+                
+            </ul>
+        </div>
+    </div>
+       
+       <div id="main-right">
+        <div>
+            <!--SPACE FOR GOOGLE ADSENSE-->
+        </div>
+    </div>
+       </div>
+       <div>
+       <h3>Other Links</h3>
+       
+       <a href="content/estimationcalcy.html" style="font-size: 18px; text-decoration: none; color: rgb(0, 119, 204)"><i class="fa fa-calculator" aria-hidden="true" style="padding-right: 10px; color: rgb(36, 169, 226)"></i>Electrical Estimation Calcy</a>
+       </div>
+        <br>
+       <div>
+        <!--SPACE FOR GOOGLE ADSENSE-->
+        </div>
+       
+       <div id="footer">
+           <h3>Need to talk with us?</h3>
+           <p>geteeenotes123@outlook.com</p>
+       </div>
+       
+       
+      
+       
+       <script>
+           var preloader = document.getElementById('loading');
+           function myFunction(){
+               preloader.style.display = 'none';
+           }
+        </script>
+        
+    </body>
+</html>
