@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Digital Electronics - 1.Logic Families - getEEEnotes!</title>
+        <meta name="viewport" content="width-device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css" type="text/css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+        <link rel="icon" href="img/favicon.png" sizes="16x16">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+        
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-174242618-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-174242618-2');
+</script>
+
+    </head>
+    
+    <body>
+        
+        <div id="header">
+        <div id="logo">
+            <a href="https://geteeenotes.tk/"><img src="img/logo1.png"></a>
+        </div>
+        <div id="socialicons">
+           <ul>
+               <li><a href="https://www.facebook.com/Geteeenotes-109734954168942/" target="_blank"><img src="img/facebook.png"></a></li>
+               <li><a href="https://www.instagram.com/geteeenotes5/" target="_blank"><img src="img/instagram.png"></a></li>
+               <li><a href="https://www.youtube.com/channel/UCgVMxyH-_CDSpZXi8fnl3MA/" target="_blank"><img src="img/youtube.png"></a></li>
+               <li><a href="https://t.me/getEEEnotes" target="_blank"><img src="img/telegram.png"></a></li>
+           </ul>            
+        </div>
+    </div>
+       
+       <div id="header-bar">
+       <p><b>Welcome to getEEEnotes!</b></p>
+       <p><b>MAKE DIPLOMA EEE EASIER</b></p>
+       
+    </div>
+      
+      <div class="navigate" style="border-bottom: 1px solid black">
+          <p><a href="https://geteeenotes.tk/" style="color: rgb(85, 39, 144)">Home</a> <i class="fa fa-angle-double-right" aria-hidden="true"></i> <a href="de.html" style="color: rgb(85, 39, 144)">D E</a> <i class="fa fa-angle-double-right" aria-hidden="true"></i> <a href="deone.html" style="color: rgb(36, 169, 226)">1. Logic Families</a></p>
+      </div>
+       
+       <div>
+        <!--SPACE FOR GOOGLE ADSENSE-->
+        </div>
+        
+        <div id="main">
+        <div id="main-left" style="font-family: 'Open Sans', sans-serif; line-height: 25px">
+        
+        <h2>CHAPTER 01 : LOGIC FAMILIES</h2>
+        <h3>Logic system:</h3>
+               <p>There are two types in logic system.</p>
+               <ol>
+                   <li>Positive logic system</li>
+                   <li>Negetive logic system</li>
+               </ol>
+               <p><b>Positive logic system:</b> Higher voltage is represented by 1 and lower voltage is represented by 0.</p>
+               <p><b>Negative logic system:</b> Higher voltage is represented by 0 and lower voltage is represented by 1.</p>
+               <p><b>Example:</b></p>
+               <p>Assume we have 5V and 0V as logic level voltage and let us consider  +5V as high and 0V as low.</p>
+               <p>Now, Positive logic system :    High = 1 [i.e., 5V] , Low = 0 [i.e., 0V]</p>
+                 <p>Negative logic system :    High = 0 [i.e., 5V] , Low = 1 [i.e., 0V]</p>
+            <div style="text-align: center">
+            <img src="img/de/logic-system.png" alt="Logic Sytem" style="width: 100%; max-width: 400px;">
+        </div>
+                 <p>In practice different notes in digital circuits may differ slightly due to internal resistance and loading effects. Hence a range of voltage undefined logic level.</p>
+                 <h3>Supply Voltage and Operating Temperature:</h3>
+                <table>
+                <tr>
+                    <th>IC’s 74 Series</th>
+                    <th>IC’s 54 Series</th>
+                </tr>
+                <tr>
+                    <td>1. The range of operating voltage is between 4.575V to 5.25V.</td>
+                    <td>1. The range of operating voltage is between 4.52V to 5.5V.</td>
+                </tr>
+                <tr>
+                    <td>2. The temperature range will be 0<sup>0</sup>C to 75<sup>0</sup>C.</td>
+                    <td>2. The temperature range will be 55<sup>0</sup>C to 125<sup>0</sup>C.</td>
+                </tr>
+                <tr>
+                    <td>3. Low tolerance of voltage and temperature compare to 54 series.</td>
+                    <td>3. High tolerance of voltage and temperature compare to 74 series.</td>
+                </tr>
+                <tr>
+                    <td>4. Low cost and are used in electrical appliances, electrical equipment’s.</td>
+                    <td>4. High cost and are used in military space applications.</td>
+                </tr>
+            </table>
+                 <h3>Definitions</h3>
+                 <p><b>Threshold Voltage:</b></p>
+                 <p>It is defined as the voltage at the input of a gate which causes a change in the state of output from a logic level to other.</p>
+                 <p><b>Propagation Delay:</b></p>
+                 <p>It is the time takes for the output of a gate to change after the inputs have change. The propagation Delay time of a TTL gate is approximately 10 Nano Seconds.</p>
+                 <p><b>Power Dissipation:</b></p>
+                 <p>Power dissipation of logic gate is the power required by the gate to operate with 50% duty cycle at a specified frequency. It is expressed as</p>
+                 \[{P_D} = \frac{{{V_{CC}} \times {I_{CC}}}}{n}\]
+                 <p>Where</p>
+                 <p>V<sub>CC</sub> = Supply Voltage</p>
+                 <p>n = Number of Gates</p>
+                 <p>\({I_C} = \frac{{{I_{CH}} + {I_{CL}}}}{2}\)</p>
+                 <p>P<sub>D</sub> = Power Dissipation</p>
+                 <p>I<sub>CH</sub> = Current drawn when output level is high.</p>
+                 <p>I<sub>CL</sub> = Current drawn when output level is low.</p>
+                 <p><b>Noise Margin:</b></p>
+                 <p>It is circuit insensitivity or resistance to Noise. Noise margin is expressed in Volts.</p>
+                 <p><b>Fan In:</b></p>
+                 <p>The Fan In of a logic gate is defined as number of input that gate is designed to handle of operate.</p>
+                 <p><b>Fan Out:</b></p>
+                 <p>The Fan Out is defined as maximum number of loads that an output can reliably.</p>
+                 <h3>Characteristics of TTL:</h3>
+                 <ul>
+                     <li>The TTL is the most widely used bipolar digital IC family.</li>
+                     <li>The transistor used in TTL logic will be operating in saturated mode.</li>
+                     <li>The basic TTL logic circuit is the NAND gate.</li>
+                     <li>For standard TTL the input voltage levels are,</li>
+                     <p>0V to 0.8V = Logic 0</p>
+                     <p>2V to 5V = Logic 1</p>
+                     <p>0.8V to 2V = Intermediate (Undefined)</p>
+                 </ul>
+                 <h3>Advantages:</h3>
+                 <ul>
+                     <li>High speed operation.</li>
+                     <li>Low manufacturing cost.</li>
+                     <li>Single supply voltage (+5V) with permitted variation of ±0.25V.</li>
+                     <li>Commercial and military versions of TTL gates are available.</li>
+                     <li>Moderate packing density.</li>
+                 </ul>
+                 <h3>Disadvantages:</h3>
+                 <ul>
+                     <li>It has less Fan Out than CMOS.</li>
+                     <li>Power Dissipation is much higher than CMOS gate.</li>
+                     <li>Cost is higher than CMOS.</li>
+                 </ul>
+                 <h3>Characteristics of ECL:</h3>
+                 <ul>
+                     <li>It is also called current mode logic or current steering logic.</li>
+                     <li>The transistors are prevented from going into saturation when input changes from low to high.</li>
+                     <li>Logic levels are negative and very close to each other.</li>
+                     <p>-1.75 = logic 0<br>-0.9 = logic 1</p>
+                     <li>Voltage swing is limited.</li>
+                 </ul>
+                 <h3>Advantages:</h3>
+                 <ul>
+                     <li>ELC circuits produce the output and its complement.</li>
+                     <li>Parameters do not vary with temperature.</li>
+                     <li>Number of functions available is high.</li>
+                     <li>Fan Out is large.</li>
+                 </ul>
+                 <h3>Disadvantages:</h3>
+                 <ul>
+                     <li>High cost.</li>
+                     <li>It requires negative supply voltage and negative logic level which are not compatible with other logic families.</li>
+                     <li>Power consumption is more. Hence power dissipation per gate is large.</li>
+                 </ul>
+                 <h3>Characteristics of CMOS:</h3>
+                 <ul>
+                     <li>•	It uses complementary (p and n type) MOSFET’s in the same circuit.</li>
+                     <li>•	CMOS input should never be left disconnected.</li>
+                     <li>•	Logic levels are indicated as bellow</li>
+                     <p>0V = logic 0<br>3V to 15V = logic 1</p>
+                 </ul>
+                 <h3>Advantages:</h3>
+                 <ul>
+                     <li>It consumes less power.</li>
+                     <li>It can be operated at high voltages.</li>
+                     <li>Fan Out is more.</li>
+                     <li>Better noise margin.</li>
+                 </ul>
+                 <h3>Disadvantages:</h3>
+                 <ul>
+                     <li>Switching speed is low.</li>
+                     <li>Greater propagation delay.</li>
+                 </ul>
+                 <h3>Tri-State Logic:</h3>
+                 <p>Tri-State logic is a digital logic circuit which exhibits 3 states.</p>
+                 <ol>
+                     <li>Logic 1</li>
+                     <li>Logic 0</li>
+                     <li>High impedance state</li>
+                 </ol>
+                 <p>Types of Tri-State logic circuits:</p>
+                 <h3>1. Non Inverting Buffer with active high enable:</h3>
+                 <div style="text-align: center">
+                     <img src="img/de/Non_Inverting_Buffer_with_Active_High_Enable.png" alt="Non_Inverting_Buffer_with_Active_High_Enable" style="width: 100%; max-width: 400px;">
+                     <p><cite>(i) Symbol</cite></p>
+                 </div>
+                 <div style="text-align: center">
+                     <img src="img/de/Non_Inverting_Buffer_with_Active_High_Enable_Truth_Table.png" alt="Non_Inverting_Buffer_with_Active_High_Enable_Truth_Table" style="width: 100%; max-width: 300px;">
+                     <p><cite>(ii) Truth Table</cite></p>
+                 </div>
+                 <ul>
+                     <li>Logic symbol and truth table of Tri-State Non Inverting Buffer with active high enable is as shown above.</li>
+                     <li>There are three terminals, they are input enable input X and all output Y.</li>
+                     <li>The circuit behaves as Non Inverting Buffer when enable input is high and the output goes to high impedance state when enable is zero.</li>
+                 </ul>
+                 <h3>2. Non Inverting Buffer with active low enable:</h3>
+                 <div style="text-align: center">
+                     <img src="img/de/Non_Inverting_Buffer_with_Active_Low_Enable.png" alt="Non_Inverting_Buffer_with_Active_Low_Enable" style="width: 100%; max-width: 400px;">
+                     <p><cite>(i) Symbol</cite></p>
+                 </div>
+                 <div style="text-align: center">
+                     <img src="img/de/Non_Inverting_Buffer_with_Active_Low_Enable_Truth_Table.png" alt="Non_Inverting_Buffer_with_Active_Low_Enable_Truth_Table" style="width: 100%; max-width: 300px;">
+                     <p><cite>(ii) Truth Table</cite></p>
+                 </div>
+                 <ul>
+                     <li>Logic symbol and truth table of Tri-State Non Inverting Buffer with active low enable is as shown above.</li>
+                     <li>There are three terminals they are input enable and input X and an output Y.</li>
+                     <li>The circuit behaves as Non Inverting Buffer when enable input is low and the output goes to high impedance state when enable is one.</li>
+                 </ul>
+                 <h3>3. Inverting Buffer with active high enable:</h3>
+                 <div style="text-align: center">
+                     <img src="img/de/Inverting_Buffer_with_Active_High_Enable.png" alt="Inverting_Buffer_with_Active_High_Enable" style="width: 100%; max-width: 400px;">
+                     <p><cite>(i) Symbol</cite></p>
+                 </div>
+                 <div style="text-align: center">
+                     <img src="img/de/Inverting_Buffer_with_Active_High_Enable_Truth_Table.png" alt="Inverting_Buffer_with_Active_High_Enable_Truth_Table" style="width: 100%; max-width: 300px;">
+                     <p><cite>(ii) Truth Table</cite></p>
+                 </div>
+                 <ul>
+                     <li>Logic symbol and truth table of Tri-State Inverting Buffer with active high enable is as shown above.</li>
+                     <li>There are three terminals they are input X, input enable and output Y.</li>
+                     <li>The circuit behaves as inverting buffer when enable input is high and output goes to high impedance state when enable is zero.</li>
+                 </ul>
+                 <h3>4. Inverting Buffer with active low enable:</h3>
+                 <div style="text-align: center">
+                     <img src="img/de/Inverting_Buffer_with_Active_High_Enable.png" alt="Inverting_Buffer_with_Active_Low_Enable" style="width: 100%; max-width: 400px;">
+                     <p><cite>(i) Symbol</cite></p>
+                 </div>
+                 <div style="text-align: center">
+                     <img src="img/de/Inverting_Buffer_with_Active_Low_Enable_Truth_Table.png" alt="Inverting_Buffer_with_Active_Low_Enable_Truth_Table" style="width: 100%; max-width: 300px;">
+                     <p><cite>(ii) Truth Table</cite></p>
+                 </div>
+                 <ul>
+                     <li>Logic symbol and truth table of Tri-State Inverting Buffer with active low enable is as shown above.</li>
+                     <li>There are three terminals they are input X, input enable and output Y.</li>
+                     <li>The circuit behaves as inverting buffer when enable input is high and output goes to high impedance state when enable is one.</li>
+                 </ul>
+                 <h3>IC (Integrated Circuits):</h3>
+                 <p>An Integrated Circuit is an electronic circuit formed on a small piece of semiconductor material which performs the same functions as large circuit. It is also called as chip or microchip.</p>
+                 <h3>Advantages of IC’s over Discrete Circuits:</h3>
+                 <ul>
+                     <li>Size of the IC’s will be small.</li>
+                     <li>Cost of the IC's is low.</li>
+                     <li>Operating speed is high.</li>
+                     <li>IC’s reduces the number of external wiring connections.</li>
+                     <li>Reliability is more when compared to discrete circuits.</li>
+                     <li>Reduced power consumption makes the digital system more economical to operate.</li>
+                 </ul>       
+        
+    </div>
+       
+       <div id="main-right">
+        <div>
+            <!--SPACE FOR GOOGLE ADSENSE-->
+        </div>
+    </div>
+       </div>
+       
+       
+       <div>
+        <!--SPACE FOR GOOGLE ADSENSE-->
+        </div>
+       
+       <div id="footer">
+           <h3>Need to talk with us?</h3>
+           <p>geteeenotes123@outlook.com</p>
+       </div>
+       
+       <button id="topbtn"><i class="fa fa-arrow-up" aria-hidden="true"></i></button>
+       
+       <script>
+        
+        $(document).ready(function(){
+            
+            $(window).scroll(function(){
+               if($(this).scrollTop() > 40){
+                   $('#topbtn').fadeIn();
+               } else{
+                   $('#topbtn').fadeOut();
+               }
+            });
+           
+            $("#topbtn").click(function(){
+                $('html, body').animate({scrollTop : 0}, 800);
+            });
+        });
+        
+        </script>
+        
+    </body>
+</html>

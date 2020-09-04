@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Power Electronics - 2.SCR Control Circuits - getEEEnotes!</title>
+    <meta name="viewport" content="width-device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="icon" href="img/favicon.png" sizes="16x16">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-174242618-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-174242618-2');
+</script>
+
+</head>
+
+<body>
+
+    <div id="header">
+        <div id="logo">
+            <a href="https://geteeenotes.tk/"><img src="img/logo1.png"></a>
+        </div>
+        <div id="socialicons">
+            <ul>
+               <li><a href="https://www.facebook.com/Geteeenotes-109734954168942/" target="_blank"><img src="img/facebook.png"></a></li>
+               <li><a href="https://www.instagram.com/geteeenotes5/" target="_blank"><img src="img/instagram.png"></a></li>
+               <li><a href="https://www.youtube.com/channel/UCgVMxyH-_CDSpZXi8fnl3MA/" target="_blank"><img src="img/youtube.png"></a></li>
+               <li><a href="https://t.me/getEEEnotes" target="_blank"><img src="img/telegram.png"></a></li>
+           </ul>
+        </div>
+    </div>
+
+    <div id="header-bar">
+        <p><b>Welcome to getEEEnotes!</b></p>
+        <p><b>MAKE DIPLOMA EEE EASIER</b></p>
+
+    </div>
+
+    <div class="navigate" style="border-bottom: 1px solid black">
+        <p><a href="https://geteeenotes.tk/" style="color: rgb(85, 39, 144)">Home</a> <i class="fa fa-angle-double-right" aria-hidden="true"></i> <a href="pe.html" style="color: rgb(85, 39, 144)">P E</a> <i class="fa fa-angle-double-right" aria-hidden="true"></i> <a href="petwo.html" style="color: rgb(36, 169, 226)">2. SCR Control Circuits</a></p>
+    </div>
+
+    <div>
+        <!--SPACE FOR GOOGLE ADSENSE-->
+    </div>
+
+    <div id="main">
+        <div id="main-left" style="font-family: 'Open Sans', sans-serif; line-height: 25px">
+
+            <h2>CHAPTER 02 : SCR Control Circuits</h2>
+            <h3>Methods of turn ON the SCR:</h3>
+            <h4>1. High forward voltage triggering:</h4>
+            <p>A small positive voltage is applied to the gate to cathode of SCR. The forward voltage V<sub>F</sub> or anode to cathode voltage V<sub>AK</sub> exceeds the forward break over voltage (V<sub>BO</sub>) then the SCR is turned ON.</p>
+            \[{V_{AK}} > {V_{BO}}\]
+            <p>(At these voltages the leakage current is so high the internal regeneration is starts in the device.)</p>
+            <h4>2. dv/dt triggering or rate of change of voltage triggering:</h4>
+            <p>The thyristor has an internal capacitor when it is in forward biased state. The rate of change of voltage is applied across the SCR becomes large because leakage current flows through the device increases which is due to use of internal capacitor. This results in SCR to be turned ON.</p>
+            <h4>3. Exceeding the internal device temperature or thermal triggering:</h4>
+            <p>Thyristor is turned ON due to increased temperature. At high temperature there are more electron hole pairs across the junctions. This increases the leakage current then thyristor is turned ON.</p>
+            <h4>4. Focusing the light beam on the junction or photon triggering:</h4>
+            <p>Thyristor can be turned ON by light. When light falls on gate to cathode junction of the thyristor, light induces the electron hole pairs at the junction. It helps to increases the leakage current. This results in turning ON of SCR.</p>
+            <h4>5. Gate triggering or gate drive:</h4>
+            <p>It is the most popular method of turn ON of SCR. In this method a small positive voltage is applied to the gate to cathode of SCR. A small current flow through the circuit the SCR is turned ON. Here gate current flows then anode to cathode current increases and regenerative action starts.</p>
+            <h3>General layout diagram of triggering circuit:</h3>
+            <div style="text-align: center">
+                <img src="img/pe/Firing_Ckt.png" alt="General layout diagram of triggering circuit" style="width: 100%; max-width: 700px;">
+                <p><cite>Fig: Main Blocks of Firing Circuit</cite></p>
+            </div>
+            <p>The triggering circuits are called as firing circuits.</p>
+            <ul>
+                <li>For gate of SCR is triggered, we required the following blocks in the firing circuit.</li>
+                <li>The firing circuit should reduce the triggering pulses for every thyristor at approximate instants.</li>
+                <li>A regulated power supply can be used to feed the power to the main blocks of firing circuit.</li>
+                <li>When SCR is turned ON gate triggering pulses are required which is generated by the control circuit. Then it is amplified and passed to the gate of SCR through isolation circuit.</li>
+                <li>The triggering pulses generate by control circuit have very small power. This power is increased by a pulse amplifier.</li>
+                <li>The firing circuit operates at low voltage levels (5 to 20V) and thyristor operates at high voltage levels (>250V). Hence there must be a electrical isolation between firing circuit and thyristor. This isolation is provided by pulse transformer or optocoupler.</li>
+            </ul>
+            <h3>Gate turn ON methods:</h3>
+            <ol type="i">
+                <li>R firing Circuit</li>
+                <li>RC half wave firing circuit</li>
+                <li>R full wave firing circuit</li>
+                <li>UJT triggering firing circuit</li>
+            </ol>
+            <h3>(i). R Firing Circuit:</h3>
+            <div style="text-align: center">
+                <img src="img/pe/R_Firing_Ckt.png" alt="R Firing Circuit" style="width: 100%; max-width: 600px;">
+                <p><cite>Fig (a): Circuit Diagram</cite></p>
+            </div>
+            <div style="text-align: center">
+                <img src="img/pe/R_Firing_Ckt_Waveform.png" alt="R Firing Circuit Waveform" style="width: 100%; max-width: 500px;">
+                <p><cite>Fig (b): Waveforms of R-firing Circuit</cite></p>
+            </div>
+            <ul>
+                <li>The resistance R<sub>min</sub> is used to limit the gate current connected between gate and anode.</li>
+                <li>The resistor R<sub>b</sub> is the stabilizing resistor the voltage across this will not exceed the minimum forward gate voltage otherwise the thyristor will be turn ON directly.</li>
+                <li>A variable resistance R is used to control the firing angle of SCR. This also used to trigger the thyristor (SCR). When R=0 the firing angle is minimum.</li>
+                <li>Once the SCR is turned ON it allows the current to flow and output voltage is obtained across the load in positive cycle as shown in wave form.</li>
+                <li>The value of resistance R is increased then triggering angle is also increases. The maximum triggering angle will be 90<sup>0</sup>.</li>
+            </ul>
+            <h3>(ii). RC Half Wave Firing Circuit:</h3>
+            <div style="text-align: center">
+                <img src="img/pe/RC_Half_Wave_Firing_Ckt.png" alt="RC Half Wave Firing Circuit" style="width: 100%; max-width: 600px;">
+                <p><cite>Fig (a): Circuit Diagram</cite></p>
+            </div>
+            <div style="text-align: center">
+                <img src="img/pe/RC_Half_Wave_Firing_Ckt_Waveform.png" alt="RC Half Wave Firing Circuit Waveform" style="width: 100%; max-width: 500px;">
+                <p><cite>Fig (b): Waveforms of RC Half Wave Firing Circuit</cite></p>
+            </div>
+            <ul>
+                <li>Figure shows the RC half wave firing circuit. It consist of thyristor T1, two diodes D1 and D2, capacitor C and variable resistance R. the wave form is shown above.</li>
+                <li>By using the variable resistor R we can control the firing angle of thyristor from 0 to 180<sup>0</sup>.</li>
+                <li>During the negative half cycle of supply voltage the capacitor charges through the diode D2.</li>
+                <li>During the positive half cycle of the supply voltage SCR is triggered at firing angle then the capacitor discharges through the resistor R.</li>
+                <li>When voltage across the capacitor (V<sub>C</sub>) reaches the value which is greater than minimum gate voltage (V<sub>g(min)</sub> i.e., V<sub>C</sub>= V<sub>g(min)</sub> the SCR is triggered and turns ON.</li>
+                <li>The diode D1 prevents the negative capacitor voltage which is appearing to the gate of the thyristor.</li>
+                <li>Triggering is controlled only in one half cycle of the supply voltage i.e., positive half cycle. Hence this circuit is called RC half wave firing circuit.</li>
+            </ul>
+            <h3>(iii). RC Full Wave Firing Circuit:</h3>
+            <div style="text-align: center">
+                <img src="img/pe/RC_Full_Wave_Firing_Ckt.png" alt="RC Full Wave Firing Circuit" style="width: 100%; max-width: 600px;">
+                <p><cite>Fig (a): Circuit Diagram</cite></p>
+            </div>
+            <div style="text-align: center">
+                <img src="img/pe/RC_Full_Wave_Firing_Ckt_Waveform.png" alt="RC Full Wave Firing Circuit Waveform" style="width: 100%; max-width: 500px;">
+                <p><cite>Fig (b): Waveforms of RC Full Wave Firing Circuit</cite></p>
+            </div>
+            <ul>
+                <li>Figure shows the RC full wave firing circuit. It consists of thyristor T1 and four diodes D1, D2, D3 and D4. D1, D2 conducts and D3, D4 is OFF when it is in positive half cycle of supply voltage.</li>
+                <li>During the negative half cycle of supply voltage D3, D4 conducts and D1, D2 are OFF.</li>
+                <li>The supply to the thyristor is given through the uncontrolled rectifier. Hence both half cycles are positive cycles to the thyristor.</li>
+                <li>For every half cycle at the beginning of a cycle the capacitor starts charging. When capacitor voltage (V<sub>C</sub>) reaches to the value which is greater than minimum gate voltage, the thyristor is turned ON. V<sub>C</sub>≥V<sub>g(min)</sub></li>
+                <li>Once the thyristor is turned ON the capacitor voltage clamped (reduces) to zero that is V<sub>C</sub>=0 till the next half cycle exists.</li>
+                <li>The firing angle of thyristor is controlled by a variable resistor R varied from 0 to 180<sup>0</sup>.</li>
+                <li>The triggering is controlled in both the half cycle hence it is called full wave RC firing circuit.</li>
+            </ul>
+            <h3>UJT Pulse Triggering Circuit:</h3>
+            <div style="text-align: center">
+                <img src="img/pe/UJT_Pulse_Triggering_Ckt.png" alt="UJT Pulse Triggering Circuit" style="width: 100%; max-width: 700px;">
+                <p><cite>Fig (a): UJT Pulse Triggering Circuit</cite></p>
+            </div>
+            <div style="text-align: center">
+                <img src="img/pe/UJT_Pulse_Triggering_Ckt_Waveform.png" alt="UJT Pulse Triggering Circuit Waveform" style="width: 100%; max-width: 500px;">
+                <p><cite>Fig (b): Waveforms of UJT Pulse Triggering Circuit</cite></p>
+            </div>
+            <ul>
+                <li>The AC supply voltage is rectified and it is given to the zener regulator. The zener diode (Z) clamps the rectified voltage to a constant voltage V<sub>Z</sub>. This voltage is applied to the UJT circuit acts as a supply voltage to UJT.</li>
+                <li>Here the pedestal control indicates the initial voltage level in the capacitor and it is adjusted by resistor R. the ramp control RC indicates the charging of the capacitor from pedestal level. The wave form is shown above.</li>
+                <li>The capacitor charges through resistor RC and discharges through emitter (E), base (B1) and primary of the pulse transformer.</li>
+                <li>When capacitor voltage (V<sub>C</sub>) is equal to the peak voltage of UJT (V<sub>P</sub>) UJT is turned ON and capacitor start discharges then pulse is generated.</li>
+                <li>The pulses are obtained from UJT are used to trigger the SCR.</li>
+                <li>The firing angle or delay angle of UJT is varied from 0 to 180<sup>0</sup>. Hence triggering pulses is generated in every half cycle.</li>
+                <li>When a capacitor discharge UJT is turned ON then UJT is turn OFF only when again the capacitor starts charging from pedestal level. (Initial voltage level of capacitor). This mode of working of UJT is called relaxation oscillator.</li>
+            </ul>
+            <h3>Digital Firing Scheme or Circuit:</h3>
+            <div style="text-align: center">
+                <img src="img/pe/Digital_Firing_Ckt.png" alt="Digital Firing Circuit" style="width: 100%; max-width: 700px;">
+                <p><cite>Fig (a): Digital Firing Scheme</cite></p>
+            </div>
+            <div style="text-align: center">
+                <img src="img/pe/Digital_Firing_Ckt_Waveform.png" alt="Digital Firing Circuit Waveform" style="width: 100%; max-width: 500px;">
+                <p><cite>Fig (b): Waveforms of Digital Firing Circuit</cite></p>
+            </div>
+            <ul>
+                <li>Digital firing circuit is most control circuit used to trigger or turn ON of a SCR circuit.</li>
+                <li>Digital firing circuits are preferred because the control is flexible, programmable and easy to configure.</li>
+                <li>The block diagram of digital firing circuit is as shown in above figure. It consists of oscillator, ZCD, n-bit counter, flip-flop, logic control circuit along with driver circuit.</li>
+                <li>ACD produces a output at each zero crossing of the input AC supply.</li>
+                <li>N-bit counter is preset to the decimal equivalent of control signal at each zero crossing of the supply voltage.</li>
+                <li>When ZCD produces the output then counter starts counting the number of oscillations produced from the oscillator.</li>
+                <li>Here the counter used is down counter when the value of count reaches to the zero then over flow signal is go high.</li>
+                <li>When the flip flop gets input it starts producing the output again and feed to the logic control circuit. The logic control circuit produces a train of pulses which is applied to the gate of SCR through a driver circuit.</li>
+                <li>This process repeats for every half cycle of an input signal.</li>
+            </ul>
+            <h3>Commutation:</h3>
+            <p>SCR is turned ON by applying gate pulse. Once the SCR is turned ON the gate has no control over the conduction of SCR by removing the gate pulse also and SCR can’t be turned OFF. So external commutation circuit is required to turn OFF the SCR.</p>
+            <div style="text-align: center">
+                <img src="img/pe/Commutation_1.png" alt="Commutation" style="width: 100%; max-width: 200px;">
+                <p><cite>Fig (a): Gate Pulse is Used to Turn ON SCR</cite></p>
+            </div>
+            <div style="text-align: center">
+                <img src="img/pe/Commutation_2.png" alt="Commutation" style="width: 100%; max-width: 300px;">
+                <p><cite>Fig (b): External Commutation Circuit is Required to Turn OFF SCR</cite></p>
+            </div>
+            <p>The process or the method of turning OFF the thyristor is called commutation.</p>
+            <p>External commutation circuit uses the LC components to turn OFF the SCR. The L and C store the energy when SCR is turn ON and then this stored energy is used to turn OFF the thyristor.</p>
+            <p>Commutations are in two types.</p>
+            <ol>
+                <li>Natural commutation</li>
+                <li>Forced commutation</li>
+            </ol>
+            <h3>1. Natural Commutation:</h3>
+            <div style="text-align: center">
+                <img src="img/pe/Natural_Commutation.png" alt="Natural Commutation" style="width: 100%; max-width: 400px;">
+                <p><cite>Fig (a): Halfwave Rectifier Uses the Natural Commutation to Turn OFF</cite></p>
+            </div>
+            <div style="text-align: center">
+                <img src="img/pe/Natural_Commutation_Waveform.png" alt="Natural Commutation Waveform" style="width: 100%; max-width: 500px;">
+                <p><cite>Fig (b): Waveforms of Halfwave Controlled Rectifier for Natural Commutation</cite></p>
+            </div>
+            <ul>
+                <li>The natural commutation does not need any external components. It uses the supply voltage for turning OFF the SCR. Hence it is also called as line commutation. Figure shows the half wave circuit using the natural commutation.</li>
+                <li>The input supply voltage is applied, during positive half cycle of the supply voltage SCR is triggered at firing angle since SCR is forward biased. It starts conducting and load current IO starts flowing through the load resistance R. therefore load is resistive output current is,</li>
+                \[{I_O} = \frac{{{V_O}}}{R}\]
+                <li>Here the shape of the output current is same as the output voltage but amplitude decreases and output current is same as SCR current.</li>
+                <li>At π supply voltage become zero hence current through SCR becomes zero. Therefore SCR turn OFF.</li>
+                <li>When supply voltage is reversed or zero the voltage appears across the SCR becomes zero and SCR is in reverse biased. It does not conduct.</li>
+                <li>Natural commutation take place only when input supply voltage is AC and it does not uses any external components for turn OFF SCR.</li>
+            </ul>
+            <h3>2. Forced Commutation:</h3>
+            <div style="text-align: center">
+                <img src="img/pe/Commutation_2.png" alt="Forced Commutation" style="width: 100%; max-width: 300px;">
+            </div>
+            <ul>
+                <li>• Forced commutation is used when supply voltage is DC. A commutation circuit is connected across the SCR is as shown in above figure.</li>
+                <li>• The commutation circuit is normally uses LC circuit. The LC circuit stores the energy when SCR is turned ON. This energy can be used to turn OFF the SCR.</li>
+                <li>• The LC circuit imposes (forces) reverse bias across the SCR due to stored energy. Hence forward current (I<sub>AK</sub>) of SCR is dropped below the holding current and SCR is turned OFF.</li>
+                \[i.e.,\;{I_{AK}} < {I_H}\] </ul>
+                    <h3>Comparison of natural and forced commutation:</h3>
+                    <table style="width: 100%">
+                        <tr>
+                            <th style="width: 50%">Natural Commutation</th>
+                            <th style="width: 50%">Forced Commutation</th>
+                        </tr>
+                        <tr>
+                            <td>1. No external commutation components are require to turn OFF SCR.</td>
+                            <td>1. External commutation components (LC) are require to turn OFF SCR.</td>
+                        </tr>
+                        <tr>
+                            <td>2. It works as AC voltage at the input.</td>
+                            <td>2. It works as DC voltage at the input.</td>
+                        </tr>
+                        <tr>
+                            <td>3. It is used in controlled rectifiers, AC voltage controllers etc.</td>
+                            <td>3. It is used in choppers, inverters etc.</td>
+                        </tr>
+                        <tr>
+                            <td>4. No power loss takes place during the commutation.</td>
+                            <td>4. Power loss takes place during the commutation.</td>
+                        </tr>
+                        <tr>
+                            <td>5. SCR turns OFF due to negative supply voltage.</td>
+                            <td>5. SCR turns OFF due to voltage and current both.</td>
+                        </tr>
+                        <tr>
+                            <td>6. Cost of commutation circuit is nil.</td>
+                            <td>6. Cost of commutation circuit is significant.</td>
+                        </tr>
+                    </table>
+                    <h3>Methods of Forced Commutation:</h3>
+                    <p>Forced commutation circuits can be classified depending upon weather voltage or current is used for commutation.</p>
+                    <p>Sometimes an additional SCR is used for commutating the main SCR. Such techniques are auxiliary commutation method. Based on these classifications the main commutation techniques are,</p>
+                    <ol type="i">
+                        <li>Self-commutation by resonating load and LC circuit (Load commutation or class A).</li>
+                        <li>Auxiliary voltage commutation (Impulse commutation or class B).</li>
+                        <li>Auxiliary current commutation (Resonant pulse commutation).</li>
+                        <li>Complementary commutation (Class C).</li>
+                        <li>External pulse commutation (Class E).</li>
+                    </ol>
+                    <h3>(i). Load Commutation:</h3>
+                    <div style="text-align: center">
+                        <img src="img/pe/Load_Commutation.png" alt="Load Commutation" style="width: 100%; max-width: 400px;">
+                        <p><cite>Fig (a): Self Commutation Circuit</cite></p>
+                    </div>
+                    <div style="text-align: center">
+                        <img src="img/pe/Load_Commutation_Waveform.png" alt="Load Commutation Waveform" style="width: 100%; max-width: 500px;">
+                        <p><cite>Fig (b): Waveform</cite></p>
+                    </div>
+                    <ul>
+                        <li>Figure shows the circuit diagram of self-commutation it uses the inductance L and Capacitance C for commutation. The SCR is turned OFF due to the characteristics of LC circuit.</li>
+                        <li>When the supply voltage is applies, SCR T1 is triggered at time t=t0, the current starts flowing through T1, L and C because of use of inductance SCR current increases slowly and capacitor starts charging as shown in figure.</li>
+                        <li>At t=t1, current It becomes maximum and capacitor voltage will be equal to the supply voltage VS.</li>
+                        <li>Due to use of inductance it maintains the current I<sub>t</sub> flows in same direction. The inductance voltage V<sub>L</sub> acts as forward biases for T1.</li>
+                        <li>After time t1 the current I<sub>t</sub> goes on decreasing and capacitor charges above V<sub>S</sub>. Therefore at t=t2 the current I<sub>t</sub> becomes zero SCR current goes to zero and it is turn OFF.</li>
+                        <li>At t=t2 the capacitor voltage V<sub>C(t)</sub> > V<sub>S</sub>. it acts as reverse bias on SCR and it does not conduct. The voltage across SCR is as shown in figure.</li>
+                    </ul>
+                    <h3>Complementary Commutation (Class C):</h3>
+                    <div style="text-align: center">
+                        <img src="img/pe/Complementary_Commutation.png" alt="Complemetary Commutation" style="width: 100%; max-width: 400px;">
+                        <p><cite>Fig (a): Circuit</cite></p>
+                    </div>
+                    <div style="text-align: center">
+                        <img src="img/pe/Complementary_Commutation_Waveform.png" alt="Complementary Commutation Waveform" style="width: 100%; max-width: 500px;">
+                        <p><cite>Fig (b): Waveform</cite></p>
+                    </div>
+                    <ul>
+                        <li>Figure shows the circuit diagram of complementary commutation. It consists of two SCR T1 and T2. The current between two load R1 and R2, these SCR’s are turned OFF each other hence it is called complementary commutation.</li>
+                        <li>Let assume the capacitor charges to the negative voltage V<sub>C(t)</sub>=-V<sub>S</sub> and SCR T2T1 in conducting the equivalent circuit for this operation is as shown and current through capacitor is zero.</li>
+                        <li>At t=t0 SCR is triggered and negative voltage –V<sub>S</sub> is applied across SCR T1 the capacitor starts charges from –V<sub>S</sub> to 0 till time t. the T is turn OFF then capacitor starts charges +V<sub>S</sub> through SCR T1. This SCR T1 carries the load current at R1.</li>
+                        <li>At t=t2 the capacitor charge reaches to maximum positive voltage and current becomes zero.</li>
+                        <li>At t=t3 the SCR T2 is triggered and reverse voltage –V<sub>S</sub> applied across the SCR T1. The capacitor discharges from +V<sub>S</sub> to zero and then charges toward –V<sub>S</sub>.</li>
+                        <li>SCR’s are switched OFF due to impulse hence this is also called semiconductor impulse commutation.</li>
+                    </ul>
+
+
+        </div>
+
+        <div id="main-right">
+            <div>
+                <!--SPACE FOR GOOGLE ADSENSE-->
+            </div>
+        </div>
+    </div>
+
+
+    <div>
+        <!--SPACE FOR GOOGLE ADSENSE-->
+    </div>
+
+    <div id="footer">
+        <h3>Need to talk with us?</h3>
+        <p>geteeenotes123@outlook.com</p>
+    </div>
+
+    <button id="topbtn"><i class="fa fa-arrow-up" aria-hidden="true"></i></button>
+
+    <script>
+        $(document).ready(function() {
+
+            $(window).scroll(function() {
+                if ($(this).scrollTop() > 40) {
+                    $('#topbtn').fadeIn();
+                } else {
+                    $('#topbtn').fadeOut();
+                }
+            });
+
+            $("#topbtn").click(function() {
+                $('html, body').animate({
+                    scrollTop: 0
+                }, 800);
+            });
+        });
+    </script>
+
+</body>
+
+</html>

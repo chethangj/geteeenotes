@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Switchgear and Protection - 1.Fundamentals of Protection - getEEEnotes!</title>
+        <meta name="viewport" content="width-device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css" type="text/css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+        <link rel="icon" href="img/favicon.png" sizes="16x16">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+        
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-174242618-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-174242618-2');
+</script>
+
+    </head>
+    
+    <body>
+        
+        <div id="header">
+        <div id="logo">
+            <a href="https://geteeenotes.tk/"><img src="img/logo1.png"></a>
+        </div>
+        <div id="socialicons">
+           <ul>
+               <li><a href="https://www.facebook.com/Geteeenotes-109734954168942/" target="_blank"><img src="img/facebook.png"></a></li>
+               <li><a href="https://www.instagram.com/geteeenotes5/" target="_blank"><img src="img/instagram.png"></a></li>
+               <li><a href="https://www.youtube.com/channel/UCgVMxyH-_CDSpZXi8fnl3MA/" target="_blank"><img src="img/youtube.png"></a></li>
+               <li><a href="https://t.me/getEEEnotes" target="_blank"><img src="img/telegram.png"></a></li>
+           </ul>            
+        </div>
+    </div>
+       
+       <div id="header-bar">
+       <p><b>Welcome to getEEEnotes!</b></p>
+       <p><b>MAKE DIPLOMA EEE EASIER</b></p>
+       
+    </div>
+      
+      <div class="navigate" style="border-bottom: 1px solid black">
+          <p><a href="https://geteeenotes.tk/" style="color: rgb(85, 39, 144)">Home</a> <i class="fa fa-angle-double-right" aria-hidden="true"></i> <a href="sgp.html" style="color: rgb(85, 39, 144)">S G P</a> <i class="fa fa-angle-double-right" aria-hidden="true"></i> <a href="sgpone.html" style="color: rgb(36, 169, 226)">1. Fundamentals of Protection</a></p>
+      </div>
+       
+       <div>
+        <!--SPACE FOR GOOGLE ADSENSE-->
+        </div>
+        
+        <div id="main">
+        <div id="main-left" style="font-family: 'Open Sans', sans-serif; line-height: 25px">
+        
+        <h2>CHAPTER 01 : Fundamentals of Protection</h2>
+        <h3>Sources of fault power:</h3>
+               <p>We know that sources of fault power which can feed into short circuit are generators, synchronous motor and induction motor.</p>
+        <h3>1.	Generator has fault power:</h3>
+                <p>We know that the generators are driven by prime movers and when the short circuit occurs, the generator continue to run at normal speed and the excitation is also maintained thus the normal voltage is continued to be generated. Due to this generated voltage on enormous (high) amount of current is fed to the power system which is limited by the impedance of the generator.</p>
+        <h3>2.	Synchronous motor has fault power:</h3>
+                <p>Synchronous motors are similar to synchronous generator in construction they have DC excitation and draw AC power from the power system and convert it into mechanical power.</p>
+                <p>Due to the short circuit in the system, voltage is reduced to zero so supply of electrical power to the motor is stopped. Now motor starts working as a prime mover and as DC excitation is maintenance motor starts working as generator. The electric energy generated is fed to the fault point in the power system.</p>
+                <p>The magnitude of the short circuit current can supply to the fault point depend on output kw, reactance and voltage of the motor.</p>
+        <h3>3.	Induction motor has fault power:</h3>
+                <p>Induction motor starts working as a induction generator on the occurrence of short circuit on a system. The terminal voltage of motor drops to zero suddenly the flux cutting the rotor do not change instantaneously and initial energy of motor continues to drive the motor, thus it behaves as a generator until the flux decreases.</p>
+        <h3>Short Circuit:</h3>
+        <div style="text-align: center">
+            <img src="img/sgp/Short_Circuit.png" alt="SC" style="width: 100%; max-width: 200px;">
+            </div>
+            <p>When a short circuit occurs in the power system heavy current flows through the system this current is called short circuit current. This is shown in the above diagram where a single-phase generator of voltage V, initial impedance Z is applied to the load where single-phase generator of voltage V induced.</p>
+            <p>Under normal condition the current in the circuit is limited by load impedance. However, if the load terminal gets shorted due to any reasons then the circuit impedance is reduced to a very low value as internal impedance is also small.</p>
+            <p>Therefore, a large current flow through the circuit this current is called as short circuit current. Ehen a short circuit occur, the voltage at the fault point is reduced to zero and current is abnormally high which is flow through the circuit.</p>
+            
+            <h3>Types of faults in a Power System:</h3>
+            <p>In power system faults may occurs by sudden failure of any power system equipment, accidental damage, short circuit to overhead lines or insulation failure due to lightning surges.</p>
+            <p>Faults in 3 phase system is broadly classified into two types,</p>
+            <ol type="1">
+                <li>Symmetrical Faults</li>
+                <li>Unsymmetrical Faults</li>
+            </ol>
+            <h4>1.	Symmetrical Faults:</h4>
+            <p>Symmetrical faults currents are due to faults current with 120<sup>0</sup> displacement that is when all the three conductors of 3 phase are brought together simultaneously into a short circuit conductor such faults are called symmetrical faults.</p>
+            <h4>2.	Unsymmetrical Faults:</h4>
+            <p>Unequal line currents with unequal displacement are called unsymmetrical faults. These faults are of 3 types.</p>
+            <ol type="a">
+                <li>Single line to ground fault</li>
+                <li>Line to line fault</li>
+                <li>Double line to ground fault</li>
+            </ol>
+            <h3>Harmful effects of SC faults in a power system:</h3>
+            <ul>
+                <li>The heavy current due to short circuit which causes excessive heating and which results in fire explosion some times.</li>
+                <li>Short circuit forms as an arch and causes damage to the power system and also power system equipment.</li>
+                <li>Stability of the power system may be affected and there may be completely shutdown of power system.</li>
+                <li>Damages to other apparatus in the power system may be caused due to overheating and due to abnormal mechanical forces.</li>
+                <li>The low voltages created by the fault which cause harmful effect on the power system if the voltage remains low for even few seconds then the consumer motors may be shut down and it may not work in the power system.</li>
+                <li>Voltage reduction leads to protective coil failure.</li>
+                <li>Low voltage effects on industrial motor operation which increases production loss.</li>
+                <li>If an interconnected system develops a fault then there is a fall in voltage or frequency. Due to low voltage or frequency the load on such motors starts working as generators.</li>           
+            </ul>
+            
+            <h3>Importance of Calculation of Short Circuit Current:</h3>
+            <p>The calculation of short circuit current is important due to the following factors.</p>
+            <ul>
+                <li>Calculation of short circuit current is very useful to knowing the value of voltages and currents at different point of the system during fault.</li>
+                <li>	Calculation of short circuit current is useful for investigation the schemes of protective relay.</li>
+                <li>	It is useful for determination of rating of circuit breakers.</li>
+                <li>	It enables to select proper apparatus (protective devices). For example Bus bar, CT’s etc., so that it can with stand the forces that are caused due to short circuit.</li>
+            </ul>
+            
+            <h3>Symmetrical faults on 3 phase system:</h3>
+            <div style="text-align: center">
+            <img src="img/sgp/Symmetrical_Faults.png" alt="Symmetrical Faults" style="width: 100%; max-width: 500px;">
+            </div>
+            <p>In a 3 phase system the symmetrical faults on three phases are short circuited to each other and to earth also.</p>
+            <p>These faults are balanced and set to be symmetrical, in the sense that is the system remains balance even after the faults. The above figure shows the faults current IR, IY and IB with equal magnitude and with 1200 displacement among them. Because of balance nature of fault only one phase need to be consider in calculation. (Since condition of other phase will be similar).</p>
+            <p>A 3 phase short circuit occurs rarely but it is more sever type of faults which is involving largest current due to these reasons, the balance short circuit calculation are done to determine the large current in the power system and also to determine the rating of circuit breaker.</p>
+            
+            <h3>Percentage Reactance (%X):</h3>
+            <p>Percentage reactance is defined as the voltage drop across the given reactance and expressed in % at normal voltage when carrying the full load current.</p>
+            <p>Or</p>
+            <p>Percentage reactance is defined as it is percentage of phase voltage drop in the circuit when full load current is flowing through it.</p>
+            <div style="overflow-x: auto">
+                \[\% X = \frac{{IX}}{V} \times 100\]
+            </div>
+            <P>Where,</P>
+            <p>X = Reactance in ohms<br>V = Phase voltage in volts<br>I = Full load current in amps</p>
+            <p>Alternative percentage reactance can also be expressed as,</p>
+            <div style="overflow-x: auto">
+                \[X = \frac{{10\% \;X\;{{(KV)}^2}}}{{KVA}}\;Ohms\]
+            </div>
+            <div style="overflow-x: auto">
+                \[\% X = \frac{{X\;KVA}}{{10{{(KV)}^2}}}\;Ohms\]
+            </div>
+            <p>If “X” is the only reactance element in the circuit then the short circuit current is given by,</p>
+            <div style="overflow-x: auto">
+                \[{I_{SC}} = I\left( {\frac{{100}}{{\% X}}} \right)Amps\]
+            </div>
+            <h3>Base KVA:</h3>
+            <p>Generally the various elements are used in the power system having different KVA rating; therefore it is necessary to find the percentage reactance of all the elements to a common KVA rating. This common KVA rating is known as base KVA.</p>
+            <div style="overflow-x: auto">
+                \[\% Reactance\;of\;Base\;KVA = \frac{{Base\;KVA}}{{Rated\;KVA}}\left( {\% Reactance\;of\;rated\;KVA} \right)\]
+            </div>
+            
+            <h3>Short Circuit KVA:</h3>
+            <p>The product of normal system voltage and short circuit current at the point of fault which is expressed in KVA it is known as short circuit KVA.</p>
+            <p>We know that short circuit current is given by,</p>
+            <div style="overflow-x: auto">
+                \[{I_{SC}} = \frac{{I\left( {100} \right)}}{{\% X}} \gg  \gg \left( 1 \right)\]
+            </div>
+            <p>Where,</p>
+            <p>I = Full load current in amps.<br>V = Normal phase voltage in volts.<br>%X = Percentage reactance of the system on base KVA upto the fault point.</p>
+            <p>Short circuit KVA for a three phase circuit is given by,</p>
+            <div style="overflow-x: auto">
+                \[SC\;KVA\;for\;3P\;Ckt = \frac{{3V{I_{SC}}}}{{1000}}\]
+            </div>
+            <p>But from eqn (1),</p>
+            <div style="overflow-x: auto">
+                \[SC\;KVA\;for\;3P\;Ckt = \frac{{3V}}{{1000}}I\left( {\frac{{100}}{{\% X}}} \right)\]
+            </div>
+            <div style="overflow-x: auto">
+                \[SC\;KVA\;for\;3P\;Ckt = \frac{{3VI}}{{\left( {\% X} \right)10}}\]
+            </div>
+            <div style="overflow-x: auto">
+                \[KVA = Base\;KVA\left( {\frac{{100}}{{\% X}}} \right)\]
+            </div>
+            <h3>Reactors:</h3>
+            <p>Under fault condition, the system may raise the current to a dangerous high value. This short circuit current mainly depends upon the generator capacity, the voltage at the fault point and total reactance between the generator and fault point. Hence the circuit breakers should have enough breaking current capacity that is more than the fault current.</p>
+            <p>Thus to limit short circuit current to a value which the circuit breaker can handle additional reactances in the circuit is caller reactor. The main purpose of reactors is to limit the flow of high short circuit current. Hence it is also called as current limiting reactors.</p>
+            <p>Reactors are always connected in series with the circuit at suitable points to protect the plant.</p> 
+            <h3>Use of current limiting reactance and they are arrangement or applications of reactor for limiting SC current:</h3>
+            <ul>
+                <li>They are basically used to limit the SC current. Since, old insulations suffer from frequent faults. Current limiting reactors are essentially required to be installed.</li>
+                <li>During the operation of industrial plant, additional transformers are installed to improve the capacity of the electrical power supply. Due to the improvement of plants there is rise in faults levels. So current limiting reactors are used.</li>
+                <li>Adding generators to the common bus bars generating capacity is improved but connecting additional generators faults levels are increased. Hence current limiting reactors need to be installed.</li>
+                <li>If the receiving stations are extended by adding new incoming lines, the overall fault level increases and current limiting reactors are required.</li>
+                <li>Current limiting reactors are also used in SC test plants and Arc furnace plants.</li>
+            </ul>
+            
+            <h3>Steps for symmetrical fault calculation:</h3>
+            <ul>
+                <li>First draw the single line diagram of the complete network indicating each components rating, voltage, resistance and reactance.</li>
+                <li>Select the common base KVA or MVA and convert all percentage reactance’s to this base value.</li>
+                <li>From the single line diagram draw the single line reactance diagram. Drawing one phase and neutral indicate % reactance on the base KVA in the reactance diagram. The transformer is the system should be represented by a reactance in series.</li>
+                <li>Determine the total %X of the network up to the fault point.</li>
+                <li>Determine full load current corresponding to the selected base KVA and normal system voltage at the fault point.</li>
+                <div style="overflow-x: auto">
+                    \[FL\;Current\;\left( I \right) = \frac{{Base\;KVA\; \times 1000}}{{\sqrt 3 KV\; \times 1000}}\;Amps\]
+                </div>
+                <li>Then calculate SC current.</li>
+                <div style="overflow-x: auto">
+                    \[{I_{SC}} = I\left( {\frac{{100}}{{\% X}}} \right)Amps\]
+                </div>
+                <div style="overflow-x: auto">
+                    \[Short\;Circuit\;KVA = Base\;KVA\left( {\frac{{100}}{{\% X}}} \right)\]
+                </div>
+            </ul>
+            
+            <h3>Surge Voltage (or) Transient Voltage:</h3>
+            <p>A sudden rise in voltage for a very short duration in the power system is known as surge voltage or transient voltage.</p>
+            <p>Transients or surges are of temporary in nature and exits for a very short duration of a time (a few 100 micro sec) but they cause over voltages on the power system. They originate from switching and from other causes but most of the transients are caused due to lightning striking a transformer line.</p>
+            <p>When lightning strikes a transmission line, the surge rushes along the line just as a flood of water rushes along a narrow valley. In most of the cases such surges may cause damage to the line insulators (near the point where lightning has stroke) to flash over and may also cause damage to the nearby transformers, generators and other equipment’s connected to the line. The equipment connected to the line get damaged, only if the equipment is not suitably protected.</p>
+            <h3>Causes of over voltage:</h3>
+            <p>The over voltage on a power system is broadly grouped into two categories.</p>
+            <ol type="1">
+                <li>Internal causes of over voltage.</li>
+                <li>External causes of over voltage.</li>
+            </ol>
+            <h3>1) Internal causes of over voltage:</h3>
+            <p>The internal causes of over voltage are generally due to the oscillations setup by the sudden changes in the circuit conditions. This circuit change may be abnormal switching operation such as opening of a circuit breaker or breakdown of insulation between line and earth.</p>
+            <p>This effect can be compensated by providing proper insulation. Following are the internal causes of over voltages.</p>
+            <ul>
+                <li>Switching operation</li>
+                <li>Failure of insulation</li>
+                <li>Arching ground</li>
+                <li>Resonance in the circuit</li>
+            </ul>
+            <h4>Switching operation or switching surges:</h4>
+            <p>The over voltages produce on the power system due to switching are known as switching surges. Some of them are as follows.</p>
+            <ul>
+                <li>Travelling waves produced during switching operation of unloaded load produces over voltages on the line.</li>
+                <li>When loaded line is suddenly operated then over voltages will be produced on the line.</li>
+                <li>Current chapping produces high voltages across the contacts of air circuit breaker.</li>
+            </ul>
+            <h4>Insulation failure:</h4>
+            <p>The most common form of insulation failure is when there is grounding of the conductor. Failure takes place when there is no insulation between the line and the earth. So the part of the conductor that is grounded to the earth allows the flow of current to the earth and causes over voltages.</p>
+            <h4>Arching grounding or arching earth:</h4>
+            <p>The phenomena of intermittent (irregular) arch takes place in line to ground of 3 phase system with consequent production of transient known as arching ground or arching earth. Due to the transient produce, arching grounds are increases and may cause serious damage to the equipment in the power system by causing break down of insulation.</p>
+            <p>Arching ground can be prevented by earthing the neutral.</p>
+            <h4>Resonance of the circuit:</h4>
+            <p>In the AC circuits during resonance inductive reactance of the circuit will be equal to the capacitive reactance; the circuit is set to be under resonance. If the impedance of the is equal to the resistance of the circuit at unity power factor then the circuit is set to be under resonance.</p>
+            <p>The resonance of an AC circuit produces over voltages in the power system.</p>
+            <h3>External causes of over voltages:</h3>
+            <p>The main cause of over voltage is atmospheric lightning. Due to lightning, voltage of the system will be raised several times more than rated voltage which may hit the power system and damage insulators, lines, towers, substations, generators and etc.</p>
+            <h3>Lightning:</h3>
+            <p>An electric discharge between the two clouds or between the clouds and earth or between the charge center of the same could is known as lightning.</p>
+            <p>Benjamin Franklin performs an experiment by flying a kite during a thunder could at 1745. Franklin proved that the lightning stoke is due to discharge of electricity.</p>
+            <h3>Mechanism of Lightning:</h3>
+            <p>When charge clouds passes afford the earth surface it induces charges on the earth below. The polarity of the induced charge is equal and output to that could charge. The air between cloud and earth is act as a dielectric medium similar as the charged capacitor.</p>
+            <p>If the charge acquire by the cloud increases the potential difference between the cloud and earth increases and due to this gradient in the air increases. When potential gradient is sufficient to breakdown the air medium, the lightning stokes starts.</p>
+            <div style="text-align: center">
+            <img src="img/sgp/Mechanism_of_Lighting.png" alt="Mechanism of Lighting" style="width: 100%; max-width: 500px;">
+            </div>
+            <p>When surrounding air ionized, a streamer starts from cloud towards the earth, which cannot be detected by naked eye only spot travelling is detected. This streamer is known as pilot streamer.</p>
+            <p>Once ionization produces begins a path is not created instantaneously infect there are usually many separate paths of ionized air streaming from the cloud to the earth these paths are called stepped leader.</p>
+            <p>The stepped leader propagates towards the earth in different stages which do not result in a straight line to the earth.</p>
+            <h3>Lightning Arrestors:</h3>
+            <p>Lightning arrestors is a protective device which can conduct high voltage surges on power system and then to the ground. It is also called as surge diverter.</p>
+            <p>The grounding wire and earthing screen can protect electrical equipment’s against direct lightning strokes but these are unable to protect the equipment’s against travelling waves. The lightning arrestor provides protection against indirect lightning stoke that is travelling waves.</p>
+            <h3>Types if lightning arrestors:</h3>
+            <p>Following are the different types of lightning arrestors.</p>
+            <ol type="a">
+                <li>Rod gap lighting arrestor</li>
+                <li>Harm gap lightning arrestor</li>
+                <li>Led acid lighting arrestor</li>
+                <li>Expulsion type lightning arrestor</li>
+                <li>Impulse protective gap with electrolyte  lightning arrestor</li>
+                <li>Wall tap lightning arrestor</li>
+            </ol>
+            <h3>Surge Absorbers:</h3>
+            <p>The surge absorber absorbs the surge energy. It is a protective device which reduces the steepness of the wave front of a surge.</p>
+            <p>In the power system travelling wave setup on the transmission line by the surge they may reach the apparatus terminals and may damage the apparatus. The magnitude of damage depends upon the amplitude and steepness of wave front of the surge. If the wave front is steeper than the damage will be more. To protect the equipment’s against the damage it is necessary to reduce the steepness of the wave front.</p>
+            <p>Surge absorber reduces the steepness of the wave front of the surge.</p>
+            <h3>Types of surge absorbers:</h3>
+            <h3>1. Connecting a capacitor between line and earth:</h3>
+            <div style="text-align: center">
+            <img src="img/sgp/Surge_Absorber_01.png" alt="Connecting a capicitor between line and earth diagram" style="width: 100%; max-width: 400px;">
+            </div>
+            <p>A capacitor connected between the line and earth act as a surge absorber which is used for the protection of transformer winding. In a capacitor, capacitive reactance is inversely proportional to the supply frequency (X<sub>C</sub> = 1/f). That is capacitive reactance will be low to high frequency and high at low frequency. If the surges are at high frequencies then the capacitive act as a short circuit and surge passes to the earth.</p>
+            <p>During low power frequency the capacitive reactance will be high and the capacitor act as a open circuit. Hence no current flows to the ground.</p>
+            <h3>2. Connecting a resistance and reactance in parallel:</h3>
+            <div style="text-align: center">
+            <img src="img/sgp/Surge_Absorber_02.png" alt="Connecting a resistance and reactance in parallel Diagram" style="width: 100%; max-width: 400px;">
+            </div>
+            <p>In this method resistance and choke is connected in parallel and this parallel combination is connected in series with the line. The inductive reactance of the choke is directly proportional to the supply frequency (XL = f). Therefore the reactance will be high at the high surge frequency and hence surge is forced to flow through the resistance. In the resistance the surge is designated.</p>
+            <h3>3. Ferranti Absorber:</h3>
+            <p>The most modern type of the surge absorber is known as Ferranti absorber. It consisting of an air cored inductance connected in series with each line conductor. It is magnetically coupled but electrically isolated from a metallic shield or steal tank which is called as dissipater which contains an air cored coil.</p>
+            <p>The coil may be in the form of cylindrical, Ferranti absorber is enclosed in a boiler plate tank and provide with porcelain grounded terminals.</p>
+    </div>
+       
+       <div id="main-right">
+        <div>
+            <!--SPACE FOR GOOGLE ADSENSE-->
+        </div>
+    </div>
+       </div>
+       
+       
+       <div>
+        <!--SPACE FOR GOOGLE ADSENSE-->
+        </div>
+       
+       <div id="footer">
+           <h3>Need to talk with us?</h3>
+           <p>geteeenotes123@outlook.com</p>
+       </div>
+       
+       <button id="topbtn"><i class="fa fa-arrow-up" aria-hidden="true"></i></button>
+       
+       <script>
+        
+        $(document).ready(function(){
+            
+            $(window).scroll(function(){
+               if($(this).scrollTop() > 40){
+                   $('#topbtn').fadeIn();
+               } else{
+                   $('#topbtn').fadeOut();
+               }
+            });
+           
+            $("#topbtn").click(function(){
+                $('html, body').animate({scrollTop : 0}, 800);
+            });
+        });
+        
+        </script>
+        
+    </body>
+</html>

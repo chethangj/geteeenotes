@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Analog Electronics - 2.Transistors and MOSFET's - getEEEnotes!</title>
+        <meta name="viewport" content="width-device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css" type="text/css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+        <link rel="icon" href="img/favicon.png" sizes="16x16">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+        
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-174242618-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-174242618-2');
+</script>
+
+    </head>
+    
+    <body>
+        
+        <div id="header">
+        <div id="logo">
+            <a href="https://geteeenotes.tk/"><img src="img/logo1.png"></a>
+        </div>
+        <div id="socialicons">
+           <ul>
+               <li><a href="https://www.facebook.com/Geteeenotes-109734954168942/" target="_blank"><img src="img/facebook.png"></a></li>
+               <li><a href="https://www.instagram.com/geteeenotes5/" target="_blank"><img src="img/instagram.png"></a></li>
+               <li><a href="https://www.youtube.com/channel/UCgVMxyH-_CDSpZXi8fnl3MA/" target="_blank"><img src="img/youtube.png"></a></li>
+               <li><a href="https://t.me/getEEEnotes" target="_blank"><img src="img/telegram.png"></a></li>
+           </ul>            
+        </div>
+    </div>
+       
+       <div id="header-bar">
+       <p><b>Welcome to getEEEnotes!</b></p>
+       <p><b>MAKE DIPLOMA EEE EASIER</b></p>
+       
+    </div>
+      
+      <div class="navigate" style="border-bottom: 1px solid black">
+          <p><a href="https://geteeenotes.tk/" style="color: rgb(85, 39, 144)">Home</a> <i class="fa fa-angle-double-right" aria-hidden="true"></i> <a href="ae.html" style="color: rgb(85, 39, 144)">A E</a> <i class="fa fa-angle-double-right" aria-hidden="true"></i> <a href="aetwo.html" style="color: rgb(36, 169, 226)">2. Transistors and MOSFET's</a></p>
+      </div>
+       
+       <div>
+        <!--SPACE FOR GOOGLE ADSENSE-->
+        </div>
+        
+        <div id="main">
+        <div id="main-left" style="font-family: 'Open Sans', sans-serif; line-height: 25px">
+        
+        <h2>CHAPTER 02 : Transistors and MOSFET's</h2>
+            <h3>Transistor:</h3>
+            <p>Transistor is three terminal device that is base emitter and collector that can be operated in three configurations common base, common emitter and common collector. This generally used for current or voltage amplification.</p>
+            <p>Types are,</p>
+            <ol>
+                <li>Unipolar Junction Transistor</li>
+                <li>Bipolar Junction Transistor</li>
+            </ol>
+            <p>1) In unipolar junction transistor current conduction is only due to the one type of charge carriers that is majority carriers.</p>
+            <p>2) The current conduction in bipolar transistor because of both type of charge carriers that is electrons and holes hence this is called bipolar junction transistor.</p>
+            <h4>Types of bipolar junction transistor:</h4>
+            <ol>
+                <li>NPN</li>
+                <li>PNP</li>
+            </ol>
+            <h3>Formation of NPN and PNP Transistor:</h3>
+            <p>A transistor is formed by sandwiching single P region between two N region this is called NPN transistor.</p>
+            <p>A transistor is formed by sandwiching single N region between two P region this is called PNP transistor.</p>
+            <div style="text-align: center">
+            <img src="img/ae/NPN_and_PNP.png" alt="NPN and PNP" style="width: 100%; max-width: 600px;">
+            </div>
+            <p>The middle region of earth transistor type is called base of the transistor. It is lightly doped the remaining two region are called emitter and collector. The emitter region is heavily doped and collector region is moderately doped.</p>
+            <h4>Symbols and Terminals:</h4>
+            <div style="text-align: center">
+            <img src="img/ae/BJT_PNP_NPN.png" alt="NPN and PNP" style="width: 100%; max-width: 400px;">
+            </div>
+            <h4>Junction in Transistor:</h4>
+            <ul>
+                <li>Transistor has two PN junctions.</li>
+                <li>One junction between emitter and base and is called emitter junction base.</li>
+                <li>The outer junction between base and collector is called collector junction.</li>
+            </ul>
+            <h3>Unbiased Transistor:</h3>
+            <div style="text-align: center">
+            <img src="img/ae/Unbiased_Transistor.png" alt="Unbiased Transistor" style="width: 100%; max-width: 500px;">
+            </div>
+            <ul>
+                <li>Unbiased transistor is a transistor with no external voltage is applied and there will be no current flowing from any treads other transistor.</li>
+                <li>Since transistor is like two PN junction diode connected back to back. There are depletion region at both the junction emitter junction and collector junction a s shown in the figure.</li>
+                <li>During diffusion process, depletion region penetrates more deeply into lightly doped side in order to include an equal number of impurities added in each side of the junction.</li>
+                <li>Depletion region and emitter junction penetrate less in the heavily doped emitter and extends more in base region.</li>
+                <li>Similarly width of the depletion layer of the collector region is less than heavily doped region.</li>
+            </ul>
+            <h3>The Working Principle of NPN:</h3>
+            <div style="text-align: center">
+            <img src="img/ae/Working_Principle_NPN.png" alt="The Working Principle of NPN" style="width: 100%; max-width: 700px;">
+            </div>
+            <ul>
+                <li>Base to emitter region is forward biased DC voltage source V<sub>EE</sub> thus the depletion region is small the collector to base region is reverse bias increasing depletion region at collector to base junction.</li>
+                <li>Forward bias emitter base junction causes the elections in N type emitter to flow towards base. This constitutes I<sub>E</sub>. As these electrons flow through the P type base. They tend to combine with holes in P region.</li>
+                <li>Due to very light doping very few of the electrons inject into the base.</li>
+                <li>From the emitter recombine with holes to constitute base current I<sub>B</sub>.</li>
+                <li>Remaining large number of electrons cross the base region and move through the collector region.</li>
+            </ul>
+            <div style="text-align: center">
+            <img src="img/ae/Working_Principle_NPN2.png" alt="The Working Principle of NPN" style="width: 100%; max-width: 700px;">
+            </div>
+            <p>Electrons to flow across emitter to base junction to the positive terminal of the DC source.</p>
+            <ul>
+                <li>This constitute collector current IC. Thus the electrons flow constitutes dominant current in the NPN transistor.</li>
+                <li>Since the most of the electrons from emitter flow in the collector in very few combines with holes in the base thus common collector current is larger than the base current.</li>
+            </ul>
+            <h3>Working Principle of PNP Transistor:</h3>
+            <div style="text-align: center">
+            <img src="img/ae/Working_Principle_PNP.png" alt="The Working Principle of PNP" style="width: 100%; max-width: 700px;">
+            </div>
+            <ul>
+                <li>Base to emitter region is forward biased DC voltage source V<sub>EE</sub> thus the depletion region is small the collector to base region is reverse bias to increasing depletion region at collector to base junction.</li>
+                <li>Forward emitter base junction causes the holes in P type emitter to flow forward base. This constitutes I<sub>E</sub>. As these holes flow through the N type base they tend to combine with electrons in N region.</li>
+                <li>Due to very light doping very few of the holes inject into base.</li>
+                <li>From the emitter recombine with electrons to constitutes base current I<sub>B</sub>.</li>
+            </ul>
+            <div style="text-align: center">
+            <img src="img/ae/Working_Principle_PNP2.png" alt="The Working Principle of PNP" style="width: 100%; max-width: 700px;">
+            </div>
+            <ul>
+                <li>Remaining large number of holes cross the base region and move through the collector region holes to flow across emitter to base junction to the negative terminal of the DC source.</li>
+                <li>This constitute collector current IC. Thus the holes flow dominant current in the PNP transistor.</li>
+                <li>Since the most of the holes from emitter flow in the collector in very few combine with electrons in the base thus common collector current is large than the base current.</li>
+            </ul>
+            <h3>Transistor Configuration:</h3>
+            <ol>
+                <li>Common Base Configuration</li>
+                <li>Common Emitter Configuration</li>
+                <li>Common Collector Configuration</li>
+            </ol>
+            <h3>Common Base Configuration:</h3>
+            <div style="text-align: center">
+            <img src="img/ae/CB_Conf_NPN.png" alt="CB Configuration" style="width: 100%; max-width: 600px;">
+            </div>
+            <div style="text-align: center">
+            <img src="img/ae/CB_Conf_PNP.png" alt="CB Configuration" style="width: 100%; max-width: 600px;">
+            </div>
+            <p>In this configuration input is applied between emitter and base and output is taken from collector to base. Here base of the transistor is common to both input and output circuits and hence the name common base configuration.</p>
+            <h3>Common Emitter Configuration:</h3>
+            <div style="text-align: center">
+            <img src="img/ae/CE_Conf_NPN.png" alt="CE Configuration" style="width: 100%; max-width: 600px;">
+            </div>
+            <div style="text-align: center">
+            <img src="img/ae/CE_Conf_PNP.png" alt="CE Configuration" style="width: 100%; max-width: 600px;">
+            </div>
+            <p>In this configuration input is applied between base and emitter and output is taken from collector to emitter. Here emitter of the transistor is common to both input and output circuits and hence the name common emitter configuration.</p>
+            <h3>Common Collector Configuration:</h3>
+            <div style="text-align: center">
+            <img src="img/ae/CC_Conf_NPN.png" alt="CC Configuration" style="width: 100%; max-width: 600px;">
+            </div>
+            <div style="text-align: center">
+            <img src="img/ae/CC_Conf_PNP.png" alt="CC Configuration" style="width: 100%; max-width: 600px;">
+            </div>
+            <p>In this configuration input is applied between base and collector and output is taken from collector to emitter. Here collector of the transistor is common to both input and output circuits and hence the name common collector configuration.</p>
+            <h3>Biasing Conditions:</h3>
+            <p>The transistor works one of the three regions.</p>
+            <ol>
+                <li>Active region</li>
+                <li>Cutoff region</li>
+                <li>Saturation region</li>
+            </ol>
+            <table style="width: 100%">
+                <tr>
+                    <th>Region</th>
+                    <th>Emitter Base Junction</th>
+                    <th>Collector Base Junction</th>
+                </tr>
+                <tr>
+                    <td>Active region</td>
+                    <td>Forward bias</td>
+                    <td>Reverse bias</td>
+                </tr>
+                <tr>
+                    <td>Cutoff region</td>
+                    <td>Reverse bias</td>
+                    <td>Reverse bias</td>
+                </tr>
+                <tr>
+                    <td>Saturation region</td>
+                    <td>Forward bias</td>
+                    <td>Forward bias</td>
+                </tr>
+            </table>
+            <h3>Transistor Current:</h3>
+            <div style="text-align: center">
+            <img src="img/ae/Transistor_Current.png" alt="Transistor Current" style="width: 100%; max-width: 400px;">
+            </div>
+            <p>By applying this say that emitter current is sum of emitter current to collector current. Since the base current is so small the collector current approximately equal to emitter current.</p>
+            <h3>Alpha (α):</h3>
+            <p>Alpha is defined as the DC collector current divided by the DC emitter current.</p>
+            \[{\rm{\alpha }} = \frac{{{I_C}}}{{{I_E}}}\]
+            <p>Since collector current is almost equal to the emitter current the alpha value is slightly less than one.</p>
+            <h3>Beta (β):</h3>
+            <p>Beta of the transistor is defines as the ration of collector current to the base current.</p>
+            \[{\rm{\beta }} = \frac{{{I_C}}}{{{I_B}}}\]
+            <p>The beta is also known as current gain because a small current base among largest control collector current.</p>
+            <h3>Common Emitter Output Characteristics:</h3>
+            <div style="text-align: center">
+            <img src="img/ae/CE_Conf_NPN.png" alt="CE OP Char" style="width: 100%; max-width: 600px;">
+            </div>
+            <p>This is the forward bias emitter diode so we would expect to see the usual diode graph of current v/s voltage.</p>
+            \[{V_{BB}} - {I_B}{R_B} - {V_{BE}} = 0\]
+            \[\frac{{{V_{BB}} - {V_{BE}} - {I_B}}}{{{R_B}}}\]
+            <p>The collector curve we can vary V<sub>BB</sub> and V<sub>CC</sub> as shown in figure. To produce diff transistor V and I by measuring I<sub>C</sub> and V<sub>CE</sub> for intends suppose we change V<sub>BB</sub> as needed to get I<sub>B</sub>=10 μA. This fixed value of base current. We can now vary V<sub>CC</sub> and measure I<sub>C</sub> and V<sub>CE</sub> plotting the data gives the graph as shown below. </p>
+            <div style="text-align: center">
+            <img src="img/ae/CE_Output_Char_Waveform.png" alt="CE OP Char" style="width: 100%; max-width: 500px;">
+            </div>
+            <ul>
+                <li>To determine the output characteristics the base current is kept constant at a suitable value b adjusting V<sub>BE</sub> voltage.</li>
+                <li>The magnitude of collector emitter voltage (V<sub>CE</sub>) is increasing suitable equal step from zero and the collector current I<sub>C</sub> is noted for each setting (V<sub>CE</sub>).</li>
+                <li>Now curve V<sub>CE</sub> are plotted for different constant value of I<sub>B</sub>. V<sub>CE</sub> v/s I<sub>C</sub> are plotted for diff constant value V<sub>BB</sub>.</li>
+            </ul>
+            <h3>Different Regions of Transistor:</h3>
+            <p>The output characteristics have three regions namely,</p>
+            <ol>
+                <li>Active region</li>
+                <li>Saturation region</li>
+                <li>Cutoff region</li>
+            </ol>
+            <ul>
+                <li>Saturation region is shown by a line OA and it is called saturation line. This region both junctions are forward bias and increases in a base current doesn’t cause a corresponding large change in I<sub>C</sub>.</li>
+                <li>The ration of V<sub>CE</sub> to I<sub>C</sub> in this region is called saturation resistance.</li>
+                <li>The region below the curve I<sub>B</sub>=o called cutoff region and this both the junctions are reverse bias. In this region the operating point enters the cutoff region the transistor said to be OFF. Hence the collector becomes almost zero and the V<sub>CE</sub>=V<sub>CC</sub>.</li>
+                <li>The central region the curves are uniform spacing and slope is called active region. In this region the emitter base junction is forward bias where the collector emitter junction is reverse bias. If a transistor should be used as a linear amplifier it should be operated in active region.</li>
+            </ul>
+            <h3>Relationship between Alpha and Beta:</h3>
+            \[{\rm{\beta }} = \frac{{{I_C}}}{{{I_B}}}\]
+            \[{\rm{\alpha }} = \frac{{{I_C}}}{{{I_E}}}\]
+            \[{I_E} = {I_B} + {I_C}\]
+            \[{I_B} = {I_E} - {I_C}\]
+            \[{\rm{\beta }} = \frac{{{I_C}}}{{{I_B}}} = \;\frac{{{I_C} \div {I_{e - }}}}{{{I_E} - {I_C} \div {I_{e - }}}}\]
+            \[ = \frac{{\frac{{{I_c}}}{{{I_E}}}}}{{1 - \frac{{{I_C}}}{{{I_E}}}}}\]
+            \[ = \frac{\alpha }{{1 - \alpha }}\]
+            <p>We know that</p>
+            \[{\rm{\alpha }} = \frac{{{I_C}}}{{{I_E}}}\]
+            \[{I_E} = {I_B} + {I_C}\]
+            \[{\rm{\alpha }} = \frac{{{I_C}}}{{{I_B} + {I_C}}}\]
+            <p>Dividing Nr and Dr by I<sub>B</sub></p>
+            \[\alpha  = \frac{{\frac{{{I_C}}}{{{I_B}}}}}{{\frac{{{I_B}}}{{{I_B}}} + \frac{{{I_C}}}{{{I_B}}}}}\]
+            \[\alpha  = \frac{\beta }{{1 + \beta }}\]
+            <h3>Ratings:</h3>
+            <h4>Power Dissipation:</h4>
+            <ul>
+                <li>A transistor conducts current flows between collector and emitter.</li>
+                <li>It drops voltage between those two points at any given time. The power dissipation by a transistor is equal to the product of collector current and collector emitter voltage.</li>
+                <li>Just like resistors, transistors are rated of how many watts each can safety dissipate without sustaining damage. This rating is called maximum allowable power dissipation.</li>
+            </ul>
+            <h4>Reverse Breakdown Voltages:</h4>
+            <p>Transistors are rated for maximum allowable reverse breakdown voltage across their PN junction. This includes voltage rating for the emitter base junction V<sub>EBO</sub> with collector open, collector base junction V<sub>CBO</sub> with emitter open and also from collector to emitter V<sub>CEO</sub> with base open.</p>
+            <h4>Collector Current:</h4>
+            <p>I<sub>Cmax</sub> is maximum allowable collector current rating this means that transistor can handle up to I<sub>Cmax</sub> of direct current provided that the power rating is not exceeded.</p>
+            <h3>Transistor as a Switch:</h3>
+            <div style="text-align: center">
+            <img src="img/ae/BJT_As_a_Switch.png" alt="BJT As a Switch" style="width: 100%; max-width: 300px;">
+            </div>
+            <ul>
+                <li>The transistor operates in regions namely active region, saturation region and cutoff region.</li>
+                <li>When transistor is made to operate in active region then it acts as an amplifier.</li>
+                <li>When it is made to operate in cutoff region and saturation region it acts as a switch. For power electronic applications transistor is mainly used as a switch. The saturation state occurs when both EB and CB junctions are forward biased. The cutoff state occurs when both the junctions are reversing biased. A transistor can be used as a electronic switch which can turn ON and turn OFF the current.</li>
+                <li>When input base voltage (V<sub>BE</sub>) is positive the transistor saturates the collector current I<sub>C</sub> will flows through the collector resistance R<sub>C</sub>. This condition similar to a closed switch (ON) and the LED will glow.</li>
+                <li>When input base voltage is negative the transistor operates in cutoff region and no collector current (I<sub>C</sub>) flows through the collector resistance R<sub>C</sub>. This condition is similar to that of open switch (OFF) and the LED does not glow.</li>
+            </ul>
+            <h3>Applications of Transistor:</h3>
+            <ul>
+                <li>In general BJT (bipolar junction transistor) can be used as a switch, amplifier and used in oscillator.</li>
+                <li>Used in multi vibrators.</li>
+                <li>Used in voltage regulators.</li>
+                <li>Used in digital circuits.</li>
+                <li>Used in amplifier circuit.</li>
+            </ul>
+            <h3>Transistor Biasing:</h3>
+            <p>Need the definition of biasing in order to operate transistor in desire (cutoff, active, saturation) region we have to apply external DC voltage of correct polarity and magnitude to the two junction of the transistor.</p>
+            <h3>DC Operating Point:</h3>
+            <p>When we bias a transistor, we establish a certain current and voltage condition for the transistor. These conditions are known ad operating condition or quiescent point.</p>
+            <h3>Factors Ability of Q-Point:</h3>
+            <p>The operating point must be stable for proper operation of the transistor.</p>
+            <h3>The types of Bias Method:</h3>
+            <ol>
+                <li>Fixed base bias method.</li>
+                <li>Collector base bias method.</li>
+                <li>Emitter base bias method.</li>
+                <li>Voltage divider bias method.</li>
+            </ol>
+            <h3>Voltage Divider Bias Method:</h3>
+            <div style="text-align: center">
+            <img src="img/ae/Vtg_Divider_Bias.png" alt="Voltage Divider Bias Method" style="width: 100%; max-width: 500px;">
+            </div>
+            <ul>
+                <li>The self-bias method is also called as emitter bias potential divider circuit. The current in emitter resistor for causes a voltage drop which is in the direction to reverse bias the emitter junction.</li>
+                <li>For transistor to remain the active region, base to emitter junction as to be forward bias.</li>
+                <li>The required base bias is obtained from the power supply through the potential divider network of the resistance R1 and R2.</li>
+            </ul>
+            <p>Apply thevenin’s theorem to the equivalent circuit is</p>
+            <div style="text-align: center">
+            <img src="img/ae/Vtg_Divider_Bias2.png" alt="Voltage Divider Bias Method" style="width: 100%; max-width: 400px;">
+            </div>
+            \[{R_B} = \frac{{{R_1}{R_2}}}{{{R_1} + {R_2}}}\]
+            \[{V_T} = \frac{{{V_{CC}}{R_2}}}{{{R_1} + {R_2}}} \gg  \gg Apply\;KVL\]
+            \[{V_T} = {I_B}{R_B} + {V_{BE}} + {I_E}{R_E}\]
+            <h3>Thermal Run Away:</h3>
+            <ul>
+                <li>When there is an increase in temperature of transistor this increases the collector current which increases the current gain and hence I<sub>CO</sub> (leakage current) also increases. </li>
+                <li>In particular I<sub>CO</sub> changes greatly it doubles for every 10<sup>0</sup>C raises in temperature.</li>
+                <li>I<sub>C</sub> causes CB junction temperature to rise which in term increases I<sub>CO</sub> as a result I<sub>C</sub> will increase still further it will further rise the temperature at the CB junction.</li>
+                <li>The process will become leading to thermal run away.</li>
+            </ul>
+            <h3>Q-Point:</h3>
+            <ul>
+                <li>In order to produce free electrons output in amplifier circuit supply voltages and resistances in the circuit must be suitably choose.</li>
+                <li>These voltages and resistances establish a set of DC voltages (V<sub>CEQ</sub> – I<sub>CQ</sub>) to operate the transistor in the active region.</li>
+                <li>The process of giving proper supply voltage and resistance is called Q point.</li>
+            </ul>
+            <h3>Heat Sink:</h3>
+            <p>Heat sink is a mechanical device which is connected to the case of the transistor that provides a large surface area to dissipate developed heat. The heat sink carries the heat to the surrounding.</p>
+            <h3>FET (Field Effect Transistor):</h3>
+            <ul>
+                <li>Field effect transistor is another semiconductor device like a BJT which can be used as a amplifier or switch.</li>
+                <li>Like BJT, FET is also has a three terminals.</li>
+                <li>The three terminals of FET are named as, Drain, Source and Gate.</li>
+            </ul>
+            <h3>Unipolar Device:</h3>
+            <p>We know that in BJT current is carried by both electrons and holes hence the name BJT. However in FET current is carried by only one type of charge carriers either electrons or holes. Hence FET is called unipolar device.</p>
+            <div style="text-align: center">
+            <img src="img/ae/Types_of_FET.png" alt="Types of FET" style="width: 100%; max-width: 600px;">
+            </div>
+            <h3>Construction of N type Enhancement MOSFET:</h3>
+            <div style="text-align: center">
+            <img src="img/ae/MOSFET_Strucrure_1.png" alt="Construction of N type Enhancement MOSFET" style="width: 100%; max-width: 400px;">
+            </div>
+            <ul>
+                <li>Two heavily doped n regions are defused into a lightly doped P type substrate (thin layer).</li>
+                <li>Source and drain are taken out through the metallic contacts to N doped regions as shown in the figure.</li>
+                <li>The silicon oxide layer is present to isolate the gate metallic platform from the region between drain and source.</li>
+                <li>A very thin layer of aluminum is deposited on the silicon oxide layer and a gate terminal taken out from that.</li>
+            </ul>
+            <h3>Symbols for D-MOSFET:</h3>
+            <div style="text-align: center">
+            <img src="img/ae/DMOSFET_Symbol.png" alt="Symbols for D-MOSFET" style="width: 100%; max-width: 600px;">
+            </div>
+            <h3>E-MOSFET:</h3>
+            <div style="text-align: center">
+            <img src="img/ae/EMOSFET_Symbol.png" alt="Symbols for EMOSFET" style="width: 100%; max-width: 600px;">
+            </div>
+            <h4>Operation of E-MOSFET</h4>
+            <div style="text-align: center">
+            <img src="img/ae/Operation_EMOSFET.png" alt="Operation of E-MOSFET" style="width: 100%; max-width: 400px;">
+            </div>
+            <p><b>Working</b></p>
+            <ul>
+                <li>An applying of drain to source voltage V<sub>DS</sub> and keeping gate to source voltage zero. By directly connecting gate terminal to the source terminal. Practically zero current flows (i.e. I<sub>D</sub>=0)</li>
+                <li>If we increase the value of V<sub>GS</sub> there is a measurable current flow between drain and source. This value of V<sub>GS</sub> is called threshold voltage. Thus we can say that in an enhancement type N channel MOSFET a positive gate voltage above the threshold value induces a channel and hence drain current by creating a thin layer of negative charges in the substrate region adjacent to the SiO<sub>2</sub> layer.</li>
+                <li>The conductivity of the channel is enhanced by increase in the gate to source voltage. Thus pulling more electrons to channel.</li>
+                <li>For any voltage bellow than the threshold voltage there is no channel hence no drain current (i.e. I<sub>D</sub>=0).</li>
+                <li>Since the channel does not exits V<sub>GS</sub>=0 volts and enhanced by the applying of positive gate voltage. This type of MOSFET is called N type enhancement MOSFET.</li>
+            </ul>
+            <h3>Transfer Characteristics:</h3>
+            <div style="text-align: center">
+            <img src="img/ae/MOSFET_Transfer_Char.png" alt="Transfer Characteristics of MOSFET" style="width: 100%; max-width: 400px;">
+            </div>
+            <ul>
+                <li>For an N channel MOSFET it is positive voltage applied to V<sub>GS</sub> when we apply gate voltage zero. There will be no drain current.</li>
+                <li>When we applied positive voltage less than the V<sub>t</sub> voltage, still the channel is not formed. So I<sub>D</sub>=0.</li>
+                <li>When V<sub>GS</sub> is equal to threshold voltage (V<sub>GS</sub>=V<sub>t</sub>), there is a formation of small channel consisting of negative charged ions which helps in conduction. Hence a very small current start flowing from source t drain.</li>
+                <li>When V<sub>GS</sub> is greater than V<sub>t</sub> (V<sub>GS</sub>>V<sub>t</sub>), there is a formation of wider channel (increase in the width of channel), electrons present as the minority charge carriers start accumulating in P substrate start moving to the region between the source and drain.</li>
+                <li>Hence there is a large flow of current (current starts increasing rapidly).</li>
+            </ul>
+            <h3>Drain Characteristics:</h3>
+            <div style="text-align: center">
+            <img src="img/ae/Drain_Char.png" alt="Drain Characteristics of MOSFET" style="width: 100%; max-width: 400px;">
+            </div>
+            <p>When V<sub>GS</sub> increases behind V<sub>t</sub> the density of electrons in an induced channel increases, increases in the drain current. However at the some point of V<sub>DS</sub>, for constant V<sub>GS</sub> that drain current reaches a saturation level.</p>
+            <h3>MOSFET as a Switch:</h3>
+            <div style="text-align: center">
+            <img src="img/ae/MOSFET_As_Switch.png" alt="MOSFET As a Switch" style="width: 100%; max-width: 300px;">
+            </div>
+            <p>Like transistor MOSFET can also be used as a switch for E-MMOSFET no channel exits while gate is at the same potential as a source. Therefore MOSFET requires no external voltage to switch OFF that is they can be operated, single polarity supply. For the N channel MOSFET positive input voltage greater than the threshold voltage is necessary to switch ON.</p>
+            <h3>Applications of MOSFET:</h3>
+            <ul>
+                <li>E-MOSFET is used as a switch.</li>
+                <li>And they are used in digital circuits.</li>
+                <li>Used to fabricate digital gate for N-MOS since there acquire less space.</li>
+                <li>They are used in VLSI circuits.</li>
+                <li>There are used as an amplifier.</li>
+                <li>Used in regulated DC power supply.</li>
+                <li>Used in all DC circuits.</li>
+            </ul>
+            <h3>Differentiate BJT and MOSFET:</h3>
+            <table style="width: 100%">
+                <tr>
+                    <th>Parameter</th>
+                    <th>BJT</th>
+                    <th>MOSFET</th>
+                </tr>
+                <tr>
+                    <td>Control element</td>
+                    <td>Current control device. Input current I<sub>B</sub> control the I<sub>C</sub>.</td>
+                    <td>Voltage control device. V+ controls I+.</td>
+                </tr>
+                <tr>
+                    <td>Device type</td>
+                    <td>Bipolar</td>
+                    <td>Unipolar</td>
+                </tr>
+                <tr>
+                    <td>Input Impedance</td>
+                    <td>Lower input impedance</td>
+                    <td>High input impedance</td>
+                </tr>
+                <tr>
+                    <td>Terminals</td>
+                    <td>Collector, emitter and base</td>
+                    <td>Source, gate and drain</td>
+                </tr>
+                <tr>
+                    <td>Noise</td>
+                    <td>Comparatively more noise</td>
+                    <td>Noise level is very small</td>
+                </tr>
+                <tr>
+                    <td>Fabrication</td>
+                    <td>Complex</td>
+                    <td>Simple</td>
+                </tr>
+            </table>
+            <br>
+            
+        </div>
+       
+       <div id="main-right">
+        <div>
+            <!--SPACE FOR GOOGLE ADSENSE-->
+        </div>
+    </div>
+       </div>
+       
+       
+       <div>
+        <!--SPACE FOR GOOGLE ADSENSE-->
+        </div>
+       
+       <div id="footer">
+           <h3>Need to talk with us?</h3>
+           <p>geteeenotes123@outlook.com</p>
+       </div>
+       
+       <button id="topbtn"><i class="fa fa-arrow-up" aria-hidden="true"></i></button>
+       
+       <script>
+        
+        $(document).ready(function(){
+            
+            $(window).scroll(function(){
+               if($(this).scrollTop() > 40){
+                   $('#topbtn').fadeIn();
+               } else{
+                   $('#topbtn').fadeOut();
+               }
+            });
+           
+            $("#topbtn").click(function(){
+                $('html, body').animate({scrollTop : 0}, 800);
+            });
+        });
+        
+        </script>
+        
+    </body>
+</html>

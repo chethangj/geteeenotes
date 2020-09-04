@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Digital Electronics - 4.Combinational Logic Circuits - getEEEnotes!</title>
+    <meta name="viewport" content="width-device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="icon" href="img/favicon.png" sizes="16x16">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-174242618-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-174242618-2');
+</script>
+
+</head>
+
+<body>
+
+    <div id="header">
+        <div id="logo">
+            <a href="https://www.geteeenotes.tk/"><img src="img/logo1.png"></a>
+        </div>
+        <div id="socialicons">
+            <ul>
+               <li><a href="https://www.facebook.com/Geteeenotes-109734954168942/" target="_blank"><img src="img/facebook.png"></a></li>
+               <li><a href="https://www.instagram.com/geteeenotes5/" target="_blank"><img src="img/instagram.png"></a></li>
+               <li><a href="https://www.youtube.com/channel/UCgVMxyH-_CDSpZXi8fnl3MA/" target="_blank"><img src="img/youtube.png"></a></li>
+               <li><a href="https://t.me/getEEEnotes" target="_blank"><img src="img/telegram.png"></a></li>
+           </ul>
+        </div>
+    </div>
+
+    <div id="header-bar">
+        <p><b>Welcome to getEEEnotes!</b></p>
+        <p><b>MAKE DIPLOMA EEE EASIER</b></p>
+
+    </div>
+
+    <div class="navigate" style="border-bottom: 1px solid black">
+        <p><a href="https://www.geteeenotes.tk/" style="color: rgb(85, 39, 144)">Home</a> <i class="fa fa-angle-double-right" aria-hidden="true"></i> <a href="de.html" style="color: rgb(85, 39, 144)">D E</a> <i class="fa fa-angle-double-right" aria-hidden="true"></i> <a href="defour.html" style="color: rgb(36, 169, 226)">4. Combinational Logic Circuits</a></p>
+    </div>
+
+    <div>
+        <!--SPACE FOR GOOGLE ADSENSE-->
+    </div>
+
+    <div id="main">
+        <div id="main-left" style="font-family: 'Open Sans', sans-serif; line-height: 25px">
+
+            <h2>CHAPTER 04 : COMBINATIONAL LOGIC CIRCUITS</h2>
+            <h3>Adders:</h3>
+            <p>It is combinational circuit which performs the additional binary bits.</p>
+            <p>There are two types.</p>
+            <ol>
+                <li>Half adder</li>
+                <li>Full adder</li>
+            </ol>
+            <h3>1. Half adder:</h3>
+            <p>It is a logical circuit which performs the operation of addition of two binary bits is called half adder.</p>
+            <p>It has two inputs and produces output has sum and carry denoted by S and C respectively.</p>
+            <h4>Logic diagram:</h4>
+            <div style="text-align: center">
+            <img src="img/de/Half_Adder_Logic_Diagram.png" style="width: 100%; max-width: 250px;">
+            </div>
+            <h4>Block Diagram:</h4>
+            <div style="text-align: center">
+            <img src="img/de/Half_Adder_Block_Diagram.png" style="width: 100%; max-width: 250px;">
+            </div>
+            <h4>Logical expression:</h4>
+            <div style="overflow-x: auto">
+                \[S = \bar AB + A\bar B\]
+                \[ = A \oplus B\]
+                \[C = AB\]
+            </div>
+            <h4>Truth table:</h4>
+            <div style="text-align: center">
+            <img src="img/de/Half_Adder_Table.png" style="width: 100%; max-width: 100px;">
+            </div>
+            <h3>2. Full Adder:</h3>
+            <p>It is logic circuit which performs the operation of addition of 3 binary bits is called full adder.</p>
+            <p>It has three inputs and produces output has sum and carry denoted by S and C respectively.</p>
+            <h4>Logic diagram:</h4>
+            <div style="text-align: center">
+            <img src="img/de/Full_Adder_Logic_Diagram.png" style="width: 100%; max-width: 400px;">
+            </div>
+            <h4>Block Diagram:</h4>
+            <div style="text-align: center">
+            <img src="img/de/Full_Adder_Block_Diagram.png" style="width: 100%; max-width: 250px;">
+            </div>
+            <h4>Logical expression:</h4>
+            <div style="overflow-x: auto">
+                \[S = \bar A\bar BC + \bar AB\bar C + A\bar B\bar C + ABC\]
+                \[ = \bar A\left( {\bar BC + B\bar C} \right) + A\left( {\bar B\bar C + BC} \right)\]
+                \[ = \bar A\left( {B \oplus C} \right) + A\left( {\overline {B \oplus C} } \right)\]
+                \[ = A \oplus B \oplus C\]
+                <br>
+                \[C = \bar ABC + A\bar BC + AB\bar C + ABC\]
+                \[ = C\left( {\bar AB + A\bar B} \right) + AB\left( {\bar C - C} \right)\]
+                \[ = C\left( {A \oplus B} \right) + AB\]
+            </div>
+            <h4>Truth table:</h4>
+            <div style="text-align: center">
+            <img src="img/de/Full_Adder_Table.png" style="width: 100%; max-width: 150px;">
+            </div>
+            <h3>Multiplexer:</h3>
+            <p>It is a combinational circuit or a data selector which transmits large number of information over a single line.</p>
+            <div style="text-align: center">
+            <img src="img/de/MUX.png" style="width: 100%; max-width: 200px;">
+            </div>
+            <h3>4:1 Multiplexer:</h3>
+            <div style="text-align: center">
+            <img src="img/de/4_1_MUX.png" style="width: 100%; max-width: 200px;">
+            </div>
+            <h4>Logic Diagram:</h4>
+            <div style="text-align: center">
+            <img src="img/de/4_1_MUX_Logic_Diagram.png" style="width: 100%; max-width: 400px;">
+            </div>
+            <h4>Truth Table:</h4>
+            <div style="text-align: center">
+            <img src="img/de/4_1_MUX_Table.png" style="width: 100%; max-width: 250px;">
+            </div>
+            <ul>
+                <li>It has four input lines and two data select lines because of with each of the four data inputs can be selected.</li>
+                <li>Two bit code on data select line will allow the data on the selected data inout to pass through the data output.</li>
+                <li>If S<sub>0</sub>=0, S<sub>1</sub>=0 then the input data will appear on the input line D<sub>0</sub>. Hence the output will be given by,</li>
+                <p>\[Y = \overline {{S_O}} \overline {{S_1}} {D_0}\]</p>
+                <li>If S<sub>0</sub>=0, S<sub>1</sub>=1 then the input data will appear on the input line D<sub>1</sub>. Hence the output will be given by,</li>
+                <p>\[Y = \overline {{S_O}} {S_1}{D_1}\]</p>
+                <li>If S<sub>0</sub>=1, S<sub>1</sub>=0 then the input data will appear on the input line D<sub>2</sub>. Hence the output will be given by,</li>
+                <p>\[Y = {S_O}\overline {{S_1}} {D_2}\]</p>
+                <li>If S<sub>0</sub>=1, S<sub>1</sub>=1 then the input data will appear on the input line D<sub>3</sub>. Hence the output will be given by,</li>
+                <p>\[Y = {S_O}{S_1}{D_3}\]</p>
+                <li>The final expression for the data output is given by,</li>
+                <div style="overflow-x: auto">
+                    \[Y = \overline {{S_O}} \overline {{S_1}} {D_0} + \overline {{S_O}} {S_1}{D_1} + {S_O}\overline {{S_1}} {D_2} + {S_O}{S_1}{D_3}\]
+                </div>
+            </ul>
+            <h4>Applications:</h4>
+            <ul>
+                <li>Data selection.</li>
+                <li>Data routing.</li>
+                <li>Operation sequencing.</li>
+                <li>Parallel series connection.</li>
+                <li>Waveform generation.</li>
+                <li>Logic function generation.</li>
+            </ul>
+            <h3>De-Multiplexer:</h3>
+            <div style="text-align: center">
+            <img src="img/de/De_MUX.png" style="width: 100%; max-width: 200px;">
+            </div>
+            <p>De-Mux is a logic circuit which has one input and many outputs. By using select line we can connect the input signal to one of the output lines.</p>
+            <h3>1:4 De-Multiplexer:</h3>
+            <div style="text-align: center">
+            <img src="img/de/1_4_De_MUX.png" style="width: 100%; max-width: 200px;">
+            </div>
+            <h4>Logic Diagram:</h4>
+            <div style="text-align: center">
+            <img src="img/de/1_4_De_MUX_Logic_Diagram.png" style="width: 100%; max-width: 350px;">
+            </div>
+            <h4>Truth Table:</h4>
+            <div style="text-align: center">
+            <img src="img/de/1_4_DeMUX_Table.png" style="width: 100%; max-width: 300px;">
+            </div>
+            <ul>
+                <li>The input data bit is taken as D. the two select lines enables only one output line at a time.</li>
+                <li>The data in the input line D will pass through the enabled gates at the output line.</li>
+                <li>When S<sub>0</sub>=0, S<sub>1</sub>=0 then the input data D will be transmitted through first output line. Hence the output will be given by,</li>
+                <p>\[{Y_0} = \overline {{S_O}} \overline {{S_1}} D\]</p>
+                <li>When S<sub>0</sub>=0, S<sub>1</sub>=1 then the input data D will be transmitted through second output line. Hence the output will be given by,</li>
+                <p>\[{Y_1} = \overline {{S_O}} {S_1}D\]</p>
+                <li>When S<sub>0</sub>=1, S<sub>1</sub>=0 then the input data D will be transmitted through third output line. Hence the output will be given by,</li>
+                <p>\[{Y_2} = {S_O}\overline {{S_1}} D\]</p>
+                <li>When S<sub>0</sub>=1, S<sub>1</sub>=1 then the input data D will be transmitted through fourth output line. Hence the output will be given by,</li>
+                <p>\[{Y_3} = {S_O}{S_1}D\]</p>
+            </ul>
+            <h4>Applications:</h4>
+            <ul>
+                <li>Data distribution.</li>
+                <li>Security monitoring system.</li>
+                <li>Synchronous data transmission system.</li>
+            </ul>
+            <h3>Encoder:</h3>
+            <p>It is a combinational circuit that converts some information into coded form.</p>
+            <h3>Decimal to BCD Encoder:</h3>
+            <div style="text-align: center">
+            <img src="img/de/Decimal_to_BCD_Encoder_a.png" style="width: 100%; max-width: 200px;">
+            <p><cite>Fig (a)</cite></p>
+            </div>
+            <div style="text-align: center">
+            <img src="img/de/Decimal_to_BCD_Encoder_b.png" style="width: 100%; max-width: 350px;">
+            <p><cite>Fig (b)</cite></p>
+            </div>
+            <h4>Truth Table:</h4>
+            <div style="text-align: center">
+            <img src="img/de/Decima_to_BCD_Encoder_Table.png" style="width: 100%; max-width: 500px;">
+            </div>
+            <ul>
+                <li>The IC 74147 is a decimal to BCD priority encoder with active low input for decimal digits 1 to 9 and active low BCD output.</li>
+                <li>74147 is a 10 line to 4 line encoder. There are 9 input lines as shown in figure (a) and (b). Each line corresponds to a decimal number. For decimal 0 no line is specified because a BCD 0 output is represented when none of the inputs are active.</li>
+                <li>When none of the input is activated BCD output is 1,1,1,1 which is active low. Similarly for decimal 1 D<sub>1</sub>=0 then the BCD output is 1,1,1,0 which is active low similarly the same logic will be applied for rest of the inputs.</li>
+            </ul>
+            <h4>Applications of Encoder:</h4>
+            <ul>
+                <li>Alpha numeric to asci code conversion.</li>
+                <li>Alpha numeric to teletype keyboards.</li>
+            </ul>
+            <h3>Priority Encoder:</h3>
+            <p>In priority encoder more than one input is set at a time. During such condition the input with highest value is encoded and ignores the other input.</p>
+            <p><b>Example:</b> If two and eight set at the same time then the preference is given for eight to encode and 2 will be ignored hence the name priority encoder.</p>
+            <h3>Decoder:</h3>
+            <p>It is a combinational circuit that converts coded data into reorganization form.</p>
+            <h3>BCD to Seven Segment Decoder:</h3>
+            <div style="text-align: center">
+            <img src="img/de/Seven_Segment_Display_a.png" style="width: 100%; max-width: 200px;">
+            <p><cite>Fig (a)</cite></p>
+            </div>
+            <div style="text-align: center">
+            <img src="img/de/Seven_Segment_Display_b.png" style="width: 100%; max-width: 250px;">
+            <p><cite>Fig (b)</cite></p>
+            </div>
+            <h4>Truth Table:</h4>
+            <div style="text-align: center">
+            <img src="img/de/Seven_Segment_Display_Table.png" style="width: 100%; max-width: 500px;">
+            </div>
+            <ul>
+                <li>It accepts four active high BCD inputs and provides 10 independent active low output.</li>
+                <li><span>\(\overline {{D_5}} \)</span> goes low when the input is equal to 0,1,0,1 for invalid input combination none of the output will be activated.</li>
+            </ul>
+            <h4>Applications of Decoder:</h4>
+            <p>These are used in memory system of computer which helps in activating the memory storage location specified by the address code.</p>
+            <h3>Seven Segment Display:</h3>
+            <div style="text-align: center">
+            <img src="img/de/Seven_Segment_Display.png" style="width: 100%; max-width: 100px;">
+            </div>
+            <p>LED display consisting of 7 LED’s arranged by seven segments as shown in figure is called seven segment displays.</p>
+            <p>There are two types.</p>
+            <ol type="a">
+                <li>Common anode type</li>
+                <li>Common cathode type</li>
+            </ol>
+            <h4>Working:</h4>
+            <p>To display 0 the LED’s a,b,c,d,e,f are forward biased. Similarly for the number 5 the segments a,f,g,c,d are forward biased hence seven segment display depends on the digits to be display. At that time particular set of LED’s are forward biased.</p>            
+        </div>
+
+        <div id="main-right">
+            <div>
+                <!--SPACE FOR GOOGLE ADSENSE-->
+            </div>
+        </div>
+    </div>
+
+
+    <div>
+        <!--SPACE FOR GOOGLE ADSENSE-->
+    </div>
+
+    <div id="footer">
+        <h3>Need to talk with us?</h3>
+        <p>geteeenotes123@outlook.com</p>
+    </div>
+
+    <button id="topbtn"><i class="fa fa-arrow-up" aria-hidden="true"></i></button>
+
+    <script>
+        $(document).ready(function() {
+
+            $(window).scroll(function() {
+                if ($(this).scrollTop() > 40) {
+                    $('#topbtn').fadeIn();
+                } else {
+                    $('#topbtn').fadeOut();
+                }
+            });
+
+            $("#topbtn").click(function() {
+                $('html, body').animate({
+                    scrollTop: 0
+                }, 800);
+            });
+        });
+    </script>
+
+</body>
+
+
+</html>

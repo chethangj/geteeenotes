@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Power Electronics - 3.Ratings, Protection & Mounting of Thyristors - getEEEnotes!</title>
+    <meta name="viewport" content="width-device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="icon" href="img/favicon.png" sizes="16x16">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-174242618-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-174242618-2');
+</script>
+
+</head>
+
+<body>
+
+    <div id="header">
+        <div id="logo">
+            <a href="https://geteeenotes.tk/"><img src="img/logo1.png"></a>
+        </div>
+        <div id="socialicons">
+            <ul>
+               <li><a href="https://www.facebook.com/Geteeenotes-109734954168942/" target="_blank"><img src="img/facebook.png"></a></li>
+               <li><a href="https://www.instagram.com/geteeenotes5/" target="_blank"><img src="img/instagram.png"></a></li>
+               <li><a href="https://www.youtube.com/channel/UCgVMxyH-_CDSpZXi8fnl3MA/" target="_blank"><img src="img/youtube.png"></a></li>
+               <li><a href="https://t.me/getEEEnotes" target="_blank"><img src="img/telegram.png"></a></li>
+           </ul>
+        </div>
+    </div>
+
+    <div id="header-bar">
+        <p><b>Welcome to getEEEnotes!</b></p>
+        <p><b>MAKE DIPLOMA EEE EASIER</b></p>
+
+    </div>
+
+    <div class="navigate" style="border-bottom: 1px solid black">
+        <p><a href="https://geteeenotes.tk/" style="color: rgb(85, 39, 144)">Home</a> <i class="fa fa-angle-double-right" aria-hidden="true"></i> <a href="pe.html" style="color: rgb(85, 39, 144)">P E</a> <i class="fa fa-angle-double-right" aria-hidden="true"></i> <a href="pethree.html" style="color: rgb(36, 169, 226)">3. Ratings, Protection & Mounting of Thyristors</a></p>
+    </div>
+
+    <div>
+        <!--SPACE FOR GOOGLE ADSENSE-->
+    </div>
+
+    <div id="main">
+        <div id="main-left" style="font-family: 'Open Sans', sans-serif; line-height: 25px">
+
+            <h2>CHAPTER 03 : Ratings, Protection & Mounting of Thyristors</h2>
+            <p>The specification of the device is specifies its current carrying capacity and voltage withstanding capacity also the switching duration specify the operation speed of the device. Maximum operating temperatures also specify the overall characteristics of the device.</p>
+            <p>The ratings of the device are classified in three categories.</p>
+            <ol>
+                <li>Continuous Rating</li>
+                <li>Repetitive Rating</li>
+                <li>Surge Rating</li>
+            </ol>
+            <h4>1) Continuous Rating:</h4>
+            <p>These ratings are expressed in terms of average or RMS Value.</p>
+            <h4>2) Repetitive Ratings:</h4>
+            <p>These ratings are maximum values of current and voltages that are applied repetitively to the device without damaging the device.</p>
+            <h4>3) Surge Ratings:</h4>
+            <p>These ratings are maximum values of current and voltage that the device can withstand only once during its operating life.</p>
+            <h3>SCR Voltage and Current Ratings:</h3>
+            <h3>SCR Current Rating:</h3>
+            <p>When switch is ON maximum current flows through the SCR that increases the junction temperature and damage the device. Hence the current should be not exceeds the rated value.</p>
+            <h4>a) Average Current Rating (I<sub>T</sub>):</h4>
+            <p>The average current rating is the maximum repetitive average current that can be flows through the SCR. The power loss depends on this current flow through it.</p>
+            <h4>b) RMS Current Rating (I<sub>TR</sub>):</h4>
+            <p>RMS current rating is the maximum repetitive RMS current that can flow through the SCR.</p>
+            <h4>c) Surge Current Rating (I<sub>TSM</sub>):</h4>
+            <p>The surge current rating is the peak amplitude of surge current that the SCR can withstand only limited number of times in its life cycle. The SCR damaged when surge current ratings and number of cycles are exceeds.</p>
+            <h4>d) i<sup>2</sup>t Rating:</h4>
+            <p>i<sup>2</sup>t rating is the measure of thermal energy that the device can absorbs for a short period of time.</p>
+            <h4>e) \(\frac{{{d_i}}}{{{d_t}}}\) Rating:</h4>
+            <p>This rating specifies the maximum allowable rate of change of current through the device.</p>
+            <h3>SCR Voltage Ratings:</h3>
+            <p>SCR blocks the forward and reverse voltages. The SCR voltage ratings mainly specify the maximum allowable voltages thus the device can withstand without damaging the device when the SCR is turn OFF state.</p>
+            <p>The various voltage ratings are,</p>
+            <h4>a) Peak Repetitive Forward Blocking Voltage (V<sub>DRM</sub>):</h4>
+            <p>This is the maximum voltage that the SCR can blocks in the forward direction.</p>
+            <h4>b) Peak Repetitive Reverse Blocking Voltage (V<sub>RRM</sub>) or Peak Inverse Voltage (PIV):</h4>
+            <p>This is the maximum voltage that the device can withstand repetitively in the reverse blocking state. If this ratings are exceeded the device gets damaged.</p>
+            <h4>c) Non-Repetitive Peak Inverse Voltage (V<sub>RSM</sub>):</h4>
+            <p>This is the maximum transient voltage that the device can safely withstand in the reverse direction.</p>
+            <h4>d) \(\frac{{{d_v}}}{{{d_t}}}\) Ratings:</h4>
+            <p>The maximum allowable rate of change of forward voltage that the device can withstand in forward direction is called \(\frac{{{d_v}}}{{{d_t}}}\) ratings.</p>
+            <h3>Reliability of SCR:</h3>
+            <p>Reliability of SCR is defined as the degree of safety to which the SCR works without any damage.</p>
+            <p>The following points are considered to improve the reliability of SCR.</p>
+            <ul>
+                <li>Design of proper protection circuit and ensuring the normal operation within permissible limits of ratings.</li>
+                <li>Derating the SCR appropriately to longs its life and improves its reliability. The SCR is normally derated by 25 to 50% of its actual ratings.</li>
+                <li>Properly designed and selected SCR’s normally ensure more than 95% reliability.</li>
+            </ul>
+            <h3>MTBF (Mean Time between Failures):</h3>
+            <ul>
+                <li>MTBF represents a statistical appropriation of how long a set of devices should last before failure.</li>
+                <li>MTBF does not predict when the device will fail rather it gives the number of hours between the two failures.</li>
+                <li>MTBF is specified in hors. This MTBF hors represents the working hours of the circuit.</li>
+            </ul>
+            <h3>Protection of SCR:</h3>
+            <p>Protection of SCR is in four types.</p>
+            <ol>
+                <li>Protection against the over voltage</li>
+                <li>Protection against the over current</li>
+                <li>Protection against the \(\frac{{{d_i}}}{{{d_t}}}\)</li>
+                <li>Protection against the \(\frac{{{d_v}}}{{{d_t}}}\)</li>
+            </ol>
+            <h4>1) Protection against the over voltage:</h4>
+            <div style="text-align: center">
+            <img src="img/pe/Protection_against_Over_Voltage.png" alt="Protection against the over voltage" style="width: 100%; max-width: 400px;">
+            </div>
+            <p>Over voltage of SCR occurs when SCR is turned OFF.</p>
+            <ul>
+                <li>When input voltage is greater than the voltage rating of SCR is turned as over voltage for an SCR. Thyristors are very sensitive to over voltage which are the main cause for thyristor failure.</li>
+                <li>Over voltage causes the unwanted turn ON of thyristor results in permanent damage of the device.</li>
+                <li>Protection against over voltage is provided by connecting a thyrector or VDR across SCR as shown in figure.</li>
+                <li>This thyrector resistance decreases with increase in voltage, whenever over voltage exits across the thyrector shunts the SCR by providing low resistance path and hence bypasses the SCR to protect.</li>
+            </ul>
+            <h4>2) Protection against over current:</h4>
+            <div style="text-align: center">
+            <img src="img/pe/Protection_against_Over_Current.png" alt="Protection against the over current" style="width: 100%; max-width: 400px;">
+            </div>
+            <p>Over current flows in thyristor circuit when SCR is in turn ON state.</p>
+            <ul>
+                <li>Over current flows in the thyristor circuit due to short circuit occurs because of short circuit load.</li>
+                <li>There is need for over current protection of SCR. It is archive through the use of circuit breaker and fuses in series with the thyristor. This fuse disconnects the circuit when over current occurs and thyristor is protected. This fuse should not be disconnects the circuit at normal load current.</li>
+            </ul>
+            <h4>3) Protection against the \(\frac{{{d_i}}}{{{d_t}}}\):</h4>
+            <div style="text-align: center">
+            <img src="img/pe/Protection_against_Over_di_by_dt.png" alt="Protection against the di/dt" style="width: 100%; max-width: 400px;">
+            </div>
+            <ul>
+                <li>When thyristor is in forward biased and it is turned ON by gate pulse. Therefore anode current flows and it increases rapidly.</li>
+                <li>A thyristor requires minimum time to spread the current conduction uniformly through the junction. Otherwise it increases the temperature.</li>
+                <li>If this temperature exceeds the permissible value then the thyristor get damaged.</li>
+                <li>The rapid variations of the thyristor current are di/dt.</li>
+                <li>To protect the thyristor from exceeds di/dt the snubber inductor is connected in series with thyristor which opposes the rapid current variation and protects the thyristor by smoothing the rapid current variation.
+                <p>\[{L_S} \ge \frac{{{V_S}}}{{\frac{{{d_i}}}{{{d_t}}}}}\]</p></li>
+            </ul>
+            <h4>4) Protection against \(\frac{{{d_v}}}{{{d_t}}}\):</h4>
+            <div style="text-align: center">
+            <img src="img/pe/Protection_against_Over_dv_by_dt.png" alt="Protection against the dv/dt" style="width: 100%; max-width: 400px;">
+            </div>
+            <ul>
+                <li>When current flows through the capacitor is directly proportional to the change of voltage applied across it.
+                <p>\[{I_C} \propto \frac{{{d_v}}}{{{d_t}}}\]</p></li>
+                <li>A large \(\frac{{{d_v}}}{{{d_t}}}\) can turn ON the SCR even in the absence of gate current called \(\frac{{{d_v}}}{{{d_t}}}\). This causes the short circuit. Therefore to limiting this \(\frac{{{d_v}}}{{{d_t}}}\) a special circuit is used known as snubber circuit.</li>
+                <li>Snubber circuit consists of series connection of R<sub>S</sub> and C<sub>S</sub> connected across the thyristor.</li>
+                <li>Most of the over current will flow through the snubber circuit will preventing the SCR from turn ON.</li>
+            </ul>
+            <h3>SCR Mounting Techniques:</h3>
+            <p>Mounting of an SCR with suitable heat sink.</p>
+            <ol>
+                <li>Lead Mounting</li>
+                <li>Stud Mounting</li>
+                <li>Bolt-down Mounting</li>
+                <li>Press fit Mounting or Pressure Mounting</li>
+                <li>Press Pack Mounting</li>
+            </ol>
+            <h4>1) Lead Mounting:</h4>
+            <div style="text-align: center">
+            <img src="img/pe/Lead_Mounting.png" alt="Lead Mounting" style="width: 100%; max-width: 300px;">
+            </div>
+            <p>Figure shows the lead mounted SCR. In this method SCR is mounted directly on their leads because these are used for low power rating less than 1 Amps rating and they do not requires the additional heat sinks or cooling to dissipate the SCR heat. Therefore heat is dissipating through natural cooling by radiation and convection.</p>
+            <h4>2) Stud Mounting:</h4>
+            <div style="text-align: center">
+            <img src="img/pe/Stud_Mounting.png" alt="Stud Mounting" style="width: 100%; max-width: 300px;">
+            </div>
+            <ul>
+                <li>Figure shows the stud mounting of SCR. Here SCCR is attached to the heat sink with the help of copper or aluminum treaded stud and nut.</li>
+                <li>This method of mounting is mainly used for medium current ratings of SCR.</li>
+            </ul>
+            <h4>3) Bolt-down Mounting:</h4>
+            <div style="text-align: center">
+            <img src="img/pe/Bolt_Down_Mounting.png" alt="Bolt-down Mounting" style="width: 100%; max-width: 200px;">
+            </div>
+            <ul>
+                <li>Figure shows the bolt-down mounting. Here the device contains one or more holes. Bolts are placed through these holes in order to attach the SCR to the heat sink.</li>
+                <li>This type of mounting is used in medium or small current rating of SCR.</li>
+            </ul>
+            <h4>4) Press fit Mounting or Pressure Mounting:</h4>
+            <div style="text-align: center">
+            <img src="img/pe/Press_Fit_Mounting.png" alt="Press fit Mounting" style="width: 100%; max-width: 300px;">
+            </div>
+            <ul>
+                <li>This is also called as pressure fit mounting. Here the SCR is inserted with pressure into a appropriate hole in the heat sink.</li>
+                <li>This type of mounting of SCR is used in the medium to large current rating of SCR.</li>
+            </ul>
+            <h4>5) Press Pack Mounting:</h4>
+            <ul>
+                <li>Figure shows the press pack mounting of SCR. Here the SCR is clamped between two sinks with pressure.</li>
+                <li>The heat sinks may be air, water or oil cooled. It is used for very high rated SCR.</li>
+            </ul>
+
+        </div>
+
+        <div id="main-right">
+            <div>
+                <!--SPACE FOR GOOGLE ADSENSE-->
+            </div>
+        </div>
+    </div>
+
+
+    <div>
+        <!--SPACE FOR GOOGLE ADSENSE-->
+    </div>
+
+    <div id="footer">
+        <h3>Need to talk with us?</h3>
+        <p>geteeenotes123@outlook.com</p>
+    </div>
+
+    <button id="topbtn"><i class="fa fa-arrow-up" aria-hidden="true"></i></button>
+
+    <script>
+        $(document).ready(function() {
+
+            $(window).scroll(function() {
+                if ($(this).scrollTop() > 40) {
+                    $('#topbtn').fadeIn();
+                } else {
+                    $('#topbtn').fadeOut();
+                }
+            });
+
+            $("#topbtn").click(function() {
+                $('html, body').animate({
+                    scrollTop: 0
+                }, 800);
+            });
+        });
+    </script>
+
+</body>
+
+</html>

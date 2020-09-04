@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Electrical Estimation Calcy - getEEEnotes!</title>
+        <meta name="viewport" content="width-device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="icon" href="img/favicon.png" sizes="16x16">
+        <style>
+        
+            body{margin-left: 40px; margin-right: 40px; padding: 0; box-sizing: border-box}
+            #header{display: flex; align-items: center}
+            #logo{width: 20%}
+            #logo img{height: 50px}
+            #socialicons{width: 80%; text-align: right}
+            #socialicons li{display: inline-block; list-style-type: none; margin-left: 8px}
+            #socialicons img{height: 20px}
+            
+            #header-bar{background-color: rgb(36, 169, 226); text-align: center}
+            #header-bar p{font-size: 15px; color: #fff; margin: 0; padding: 5px; letter-spacing: 2px}
+            .navigate a{text-decoration: none}
+            
+            #main{display: flex;}
+            #main-left{width: 70%}
+            .fa-book{margin-right: 10px; color: rgb(36, 169, 226)}
+            .main-index{padding: 0; width: 50%}
+            #main-left li{margin-bottom: 20px}
+            #main-left a{text-decoration: none; font-size: 18px; color: rgb(0, 119, 204)}
+            #main-right{width: 30%}
+            
+            #footer{background-color: rgb(36, 169, 226); text-align: center}
+            #footer h3{letter-spacing: 2px; margin: 0; padding: 5px}
+            #footer p{font-size: 15px; margin: 0; padding: 5px}
+            
+            
+            
+            
+            
+            @media (max-width: 1024px){
+                #main{flex-direction: column}
+                #main-left{width: 100%}
+                #main-right{width: 100%}
+            }
+            
+            @media (max-width: 685px){
+                body{margin-left: 10px; margin-right: 10px}
+                #main-left{flex-direction: column}
+                .main-index{width: 100%}
+            }
+            
+            
+        
+        </style>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-174242618-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-174242618-2');
+</script>
+
+    </head>
+    
+    <body>
+        
+        <div id="header">
+        <div id="logo">
+            <a href="https://geteeenotes.tk/"><img src="img/logo1.png"></a>
+        </div>
+        <div id="socialicons">
+           <ul>
+               <li><a href="https://www.facebook.com/Geteeenotes-109734954168942/" target="_blank"><img src="img/facebook.png"></a></li>
+               <li><a href="https://www.instagram.com/geteeenotes5/" target="_blank"><img src="img/instagram.png"></a></li>
+               <li><a href="https://www.youtube.com/channel/UCgVMxyH-_CDSpZXi8fnl3MA/" target="_blank"><img src="img/youtube.png"></a></li>
+               <li><a href="https://t.me/getEEEnotes" target="_blank"><img src="img/telegram.png"></a></li>
+           </ul>            
+        </div>
+    </div>
+       
+       <div id="header-bar">
+       <p><b>Welcome to getEEEnotes!</b></p>
+       <p><b>MAKE DIPLOMA EEE EASIER</b></p>
+       
+    </div>
+      <div class="navigate" style="border-bottom: 1px solid black">
+          <p><a href="https://geteeenotes.tk/" style="color: rgb(85, 39, 144)">Home</a> <i class="fa fa-angle-double-right" aria-hidden="true"></i> <a href="estimationcalcy.html" style="color: rgb(36, 169, 226)">Elc. Estimation Calcy</a></p>
+      </div>
+       
+       <div>
+        <!--SPACE FOR GOOGLE ADSENSE-->
+        </div>
+        
+        <div id="main">
+        <div id="main-left">
+            <div>
+            <p>Power in watts : <input type="number" id="power"></p>
+            <p>Voltage in Volts : <input type="number" id="volts"></p>
+            <p>No. of Conductors : <input type="number" id="nconductors"></p>
+            <p>Distance between Suplier pole & Consumer in meters : <input type="number" id="distance"></p>
+            <input type="button" name="" value="Calculate" onclick="calculate()">
+            </div>
+            
+            <div>
+                <p id="showI"></p>
+                <p id="showSI"></p>
+                <p id="showCableSize"></p>
+                <p id="showAlLength"></p>
+                <p id="showMsgLength"></p>
+                <p id="showReelInsulators"></p>
+                
+            </div>
+            
+            
+            
+        
+    </div>
+       
+       <div id="main-right">
+        <div>
+            <!--SPACE FOR GOOGLE ADSENSE-->
+        </div>
+    </div>
+       </div>
+       
+       <div>
+        <!--SPACE FOR GOOGLE ADSENSE-->
+        </div>
+       
+       <div id="footer">
+           <h3>Need to talk with us?</h3>
+           <p>geteeenotes123@outlook.com</p>
+       </div>
+       
+       
+       <script>
+        
+        const calculate = () =>{
+            let power = document.getElementById('power').value;
+            let volts = document.getElementById('volts').value;
+            let nconductors = document.getElementById('nconductors').value;
+            let distance = document.getElementById('distance').value;
+            let cablesize = "";
+            
+            let totalCurrent = power / volts;
+            
+            let safetyCurrent = (totalCurrent) * 2;
+                        
+            let alLength = (5 + parseFloat(distance) + 5) * nconductors;
+            
+            let msgLength = (parseFloat(distance) + 5);
+            
+            let reelInsulators = ((parseFloat(distance) + 3) / 0.75) * nconductors;
+            
+            if(safetyCurrent <= 10){
+                cablesize = '1.5';
+            }else if(safetyCurrent <= 15){
+                cablesize = '2.5';
+            }else if(safetyCurrent <= 20){
+                cablesize = '4';
+            }else if(safetyCurrent <= 27){
+                cablesize = '6';
+            }else if(safetyCurrent <= 34){
+                cablesize = '10';
+            }else if(safetyCurrent <= 43){
+                cablesize = '16';
+            }else if(safetyCurrent <= 59){
+                cablesize = '25';
+            }else if(safetyCurrent <= 69){
+                cablesize = '35';
+            }else if(safetyCurrent <= 91){
+                cablesize = '50';
+            }else if(safetyCurrent <= 134){
+                cablesize = '70';
+            }else{
+                cablesize = 'Not Determine';
+            }
+            
+            
+            
+            document.getElementById('showI').innerHTML = `Total Load Current is <b>${totalCurrent}</b> Amps.`
+            document.getElementById('showSI').innerHTML = `Total Safety Current is <b>${safetyCurrent}</b> Amps.`
+            document.getElementById('showAlLength').innerHTML = `Length of Alluminium cable required is <b>${alLength}</b> Meters.`
+            document.getElementById('showMsgLength').innerHTML = `Lenggth of Messenger wire required is <b>${msgLength}</b> Meters.`
+            document.getElementById('showReelInsulators').innerHTML = `No. of Reel Insulators required is <b>${reelInsulators}</b> No.s.`
+            document.getElementById('showCableSize').innerHTML = `Alluminium cable size required is <b>${cablesize}</b> sq.mm.`
+        }
+        
+        </script>
+       
+        
+    </body>
+</html>

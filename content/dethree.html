@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Digital Electronics - 3.Boolean Algebra And Logic Gates - getEEEnotes!</title>
+    <meta name="viewport" content="width-device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="icon" href="img/favicon.png" sizes="16x16">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-174242618-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-174242618-2');
+</script>
+
+</head>
+
+<body>
+
+    <div id="header">
+        <div id="logo">
+            <a href="https://www.geteeenotes.tk/"><img src="img/logo1.png"></a>
+        </div>
+        <div id="socialicons">
+            <ul>
+               <li><a href="https://www.facebook.com/Geteeenotes-109734954168942/" target="_blank"><img src="img/facebook.png"></a></li>
+               <li><a href="https://www.instagram.com/geteeenotes5/" target="_blank"><img src="img/instagram.png"></a></li>
+               <li><a href="https://www.youtube.com/channel/UCgVMxyH-_CDSpZXi8fnl3MA/" target="_blank"><img src="img/youtube.png"></a></li>
+               <li><a href="https://t.me/getEEEnotes" target="_blank"><img src="img/telegram.png"></a></li>
+           </ul>
+        </div>
+    </div>
+
+    <div id="header-bar">
+        <p><b>Welcome to getEEEnotes!</b></p>
+        <p><b>MAKE DIPLOMA EEE EASIER</b></p>
+
+    </div>
+
+    <div class="navigate" style="border-bottom: 1px solid black">
+        <p><a href="https://www.geteeenotes.tk/" style="color: rgb(85, 39, 144)">Home</a> <i class="fa fa-angle-double-right" aria-hidden="true"></i> <a href="de.html" style="color: rgb(85, 39, 144)">D E</a> <i class="fa fa-angle-double-right" aria-hidden="true"></i> <a href="dethree.html" style="color: rgb(36, 169, 226)">3. Boolean Algebra And Logic Gates</a></p>
+    </div>
+
+    <div>
+        <!--SPACE FOR GOOGLE ADSENSE-->
+    </div>
+
+    <div id="main">
+        <div id="main-left" style="font-family: 'Open Sans', sans-serif; line-height: 25px">
+
+            <h2>CHAPTER 03 : BOOLEAN ALGEBRA AND LOGIC GATES</h2>
+            <p>It is a mathematical tool used to describe the relation between logic circuit inputs and outputs.</p>
+            <h4>Variable:</h4>
+            <p>It is symbol used to represent the logical quantity.</p>
+            <h4>Constant:</h4>
+            <p>If an expression has all variables and a value then the value is called constant.</p>
+            <p>Example: Y=A+1<br>1 = Constant<br>A = Variable</p>
+            <h4>Compliment:</h4>
+            <p>It is represented by a bar over the letter (variable).</p>
+            <p>Example:</p>
+            <div style="overflow-x: auto">
+                \[Y = \bar A\]
+                <p style="text-align: center"></p>
+                \[A = 0,\;\bar A = 1\]
+                \[A = 1,\bar A = 0\]
+            </div>
+            <h4>Boolean function (expression):</h4>
+            <p>The expression constructed by connecting the Boolean constant and variable with Boolean operation is known as Boolean function.</p>
+            <h4>Literal:</h4>
+            <p>Each occurrence of variable in Boolean function either in complemented or un-complemented form is called literal.</p>
+            <p>\(A = 1\) <span>,</span> \(B = 1\) <span>,</span> \(\bar A = 0\) <span>,</span> \(\overline B  = 0\)</p>
+            <div style="text-align: center">
+            <img src="img/de/Literal_1.png" style="width: 100%; max-width: 100px;">
+            </div>
+            <div style="text-align: center">
+            <img src="img/de/Literal_2.png" style="width: 100%; max-width: 150px;">
+            </div>
+            <h3>Laws of Boolean algebra:</h3>
+            <ol>
+                <li>Commutative law</li>
+                <li>Associated law</li>
+                <li>Distribution law</li>
+            </ol>
+            <h4>1. Commutative Law:</h4>
+            <p>1) A+B = B+A</p>
+            <div style="text-align: center">
+            <img src="img/de/Commulative_Law_1.png" style="width: 100%; max-width: 100px;">
+            </div>
+            <div style="text-align: center">
+            <img src="img/de/Commulative_Law_2.png" style="width: 100%; max-width: 100px;">
+            </div>
+            <p>2) A.B = B.A</p>
+            <div style="text-align: center">
+            <img src="img/de/Commulative_Law_3.png" style="width: 100%; max-width: 100px;">
+            </div>
+            <div style="text-align: center">
+            <img src="img/de/Commulative_Law_4.png" style="width: 100%; max-width: 100px;">
+            </div>
+            <h4>2. Associated Law:</h4>
+            <p>1) (A+B)+C = A+(B+C)</p>
+            <div style="text-align: center">
+            <img src="img/de/Associated_Law_1.1.png" style="width: 100%; max-width: 200px;">
+            </div>
+            <div style="text-align: center">
+            <img src="img/de/Associated_Law_1.2.png" style="width: 100%; max-width: 200px;">
+            </div>
+            <h4>3. Distribution Law:</h4>
+            <p>A(B+C)=AB+AC</p>
+            <div style="text-align: center">
+            <img src="img/de/Distribution_Law_1.png" style="width: 100%; max-width: 200px;">
+            </div>
+            <div style="text-align: center">
+            <img src="img/de/Distribution_Law_2.png" style="width: 100%; max-width: 200px;">
+            </div>
+            <h3>Rules of Boolean algebra:</h3>
+            <p>1.</p>
+            <div style="overflow-x: auto">
+                \[0 + 0 = 0\]
+                \[0 + 1 = 1\]
+                \[0 + A = A\]
+                \[A + 0 = A\]
+            </div>
+            <p>2.</p>
+            <div style="overflow-x: auto">
+                \[1 + 0 = 1\]
+                \[1 + 1 = 1\]
+                \[1 + A = 1\]
+                \[A + 1 = 1\]
+            </div>
+            <p>3.</p>
+            <div style="overflow-x: auto">
+                \[0 + 0 = 0\]
+                \[1 + 1 = 1\]
+                \[A + 1 = A\]
+            </div>
+            <p>4.</p>
+            <div style="overflow-x: auto">
+                \[0 + 1 = 1\]
+                \[1 + 0 = 1\]
+                \[A + \bar A = 1\]
+                \[\bar A + A = 1\]
+            </div>
+            <p>5.</p>
+            <div style="overflow-x: auto">
+                \[0 \times 0 = 0\]
+                \[0 \times 1 = 0\]
+                \[0 \times A = 0\]
+            </div>
+            <p>6.</p>
+            <div style="overflow-x: auto">
+                \[1 \times 0 = 0\]
+                \[1 \times 1 = 1\]
+                \[1 \times A = A\]
+            </div>
+            <p>7.</p>
+            <div style="overflow-x: auto">
+                \[A.A = A\]
+                \[A.\bar A = 0\]
+            </div>
+            <p>8.</p>
+            <div style="overflow-x: auto">
+                \[\overline{\overline A}  = A\]
+            </div>
+            <p>9.</p>
+            <div style="overflow-x: auto">
+                \[A + AB = A\left( {1 + B} \right)\]
+                \[ = A.1\]
+                \[ = A\]
+            </div>
+            <p>10.</p>
+            <div style="overflow-x: auto">
+                \[A + \bar AB = A + B\]
+                \[A + \bar AB + AB\]
+                \[A + AB + \bar AB\]
+                \[A + B\left( {A + \bar A} \right)\]
+                \[ = A + B\]
+            </div>
+            <p>11.</p>
+            <div style="overflow-x: auto">
+                \[\left( {A + B} \right)\left( {A + C} \right) = A + BC\]
+                \[\left( {A + B} \right)\left( {A + C} \right) = A.A + AC + BA + BC\]
+                \[ = A + AC + BA + BC\]
+                \[ = A\left( {1 + C + B} \right) + BC\]
+                \[ = A + BC\]
+            </div>
+            <h3>Identities of Boolean addition:</h3>
+            <ol>
+                <li>\(A + 0 = A\)</li>
+                <li>\(A + 1 = A\left( 1 \right)\)</li>
+                <li>\(A + A = A\left( 1 \right)\)</li>
+                <li>\(A + \bar A = 1\)</li>
+                <li>\(0 + 1 = 1\)</li>
+            </ol>
+            <h3>Identities of Boolean multiplication:</h3>
+            <ol>
+                <li>\(A.0 = 0\)</li>
+                <li>\(A.1 = A\left( 1 \right)\)</li>
+                <li>\(A.\bar A = 0\)</li>
+                <li>\(A.A = A\left( 1 \right)\)</li>
+            </ol>
+            <h3>DeMorgan’s Theorem:</h3>
+            <div style="overflow-x: auto">
+                \[\overline {AB}  = \bar A + \bar B\]
+                \[\overline {A + B}  = \bar A.\bar B\]
+            </div>
+            <p><b>Statement 1:</b> The compliment of a product is equal to sum of the compliments.</p>
+            <p>\[\overline {AB}  = \bar A + \bar B\]</p>
+            <div style="text-align: center">
+            <img src="img/de/DeMorgans_1.png" style="width: 100%; max-width: 300px;">
+            </div>
+            <p><b>Statement 2:</b> The compliment of a sum is equal to the product of the compliments.</p>
+            <p>\[\overline {A + B}  = \bar A.\bar B\]</p>
+            <div style="text-align: center">
+            <img src="img/de/DeMorgans_2.png" style="width: 100%; max-width: 300px;">
+            </div>
+            <h3 style="text-align: center">Logic Gates:</h3>
+            <ul>
+                <li>Logic gate is a circuit with one or more inputs but only one output.</li>
+                <li>These are the fundamental building blocks of digital system.</li>
+                <li>NOT, AND, OR, gates are the basic gates.</li>
+                <li>The interconnections of gates perform verity of logical operation hence it is called logic design.</li>
+            </ul>
+            <h3>NOT GATE:</h3>
+            <p>NOT gate produces all output compliments to that of the input.</p>
+            <p>If input signal is 1, output will be 0.<br>If input signal is 0, output will be 1.</p>
+            <h4>Boolean expression:</h4>
+            <p>\[Y = \bar A\]</p>
+            <h4>Logical symbol:</h4>
+            <div style="text-align: center">
+            <img src="img/de/NOT.png" style="width: 100%; max-width: 200px;">
+            </div>
+            <h4>Truth table:</h4>
+            <div style="text-align: center">
+            <img src="img/de/NOT_Table.png" style="width: 100%; max-width: 150px;">
+            </div>
+            <h3>OR GATE:</h3>
+            <p>OR gate has two or more input signals with one output signal.</p>
+            <p>The output will be 1 if any of the input signals is 1.</p>
+            <h4>Boolean expression:</h4>
+            <p>\[Y = A + B\]</p>
+            <h4>Logical symbol:</h4>
+            <div style="text-align: center">
+            <img src="img/de/OR.png" style="width: 100%; max-width: 200px;">
+            </div>
+            <h4>Truth table:</h4>
+            <div style="text-align: center">
+            <img src="img/de/OR_Table.png" style="width: 100%; max-width: 150px;">
+            </div>
+            <h3>AND GATE:</h3>
+            <p>It has two or more input signals with one output signal.</p>
+            <p>The output will be 1 only if all the inputs are 1.</p>
+            <h4>Boolean expression:</h4>
+            <p>\[Y = A.B\]</p>
+            <h4>Logical symbol:</h4>
+            <div style="text-align: center">
+            <img src="img/de/AND.png" style="width: 100%; max-width: 200px;">
+            </div>
+            <h4>Truth table:</h4>
+            <div style="text-align: center">
+            <img src="img/de/AND_Table.png" style="width: 100%; max-width: 150px;">
+            </div>
+            <h3>NOR GATE:</h3>
+            <p>NOR gate is represented by an OR gate followed by NOT gate.</p>
+            <p>The output will be 1 only if all the inputs are 0.</p>
+            <h4>Boolean expression:</h4>
+            <p>\[Y = \overline {A + B} \]</p>
+            <h4>Logical symbol:</h4>
+            <div style="text-align: center">
+            <img src="img/de/NOR.png" style="width: 100%; max-width: 200px;">
+            </div>
+            <h4>Truth table:</h4>
+            <div style="text-align: center">
+            <img src="img/de/NOR_Table.png" style="width: 100%; max-width: 300px;">
+            </div>
+            <h3>NAND GATE:</h3>
+            <p>NAND gate id represented by an AND gate followed by NOT gate.</p>
+            <p>The output will be 1 if any of the input is 0.</p>
+            <h4>Boolean expression:</h4>
+            <p>\[Y = \overline {A.B} \]</p>
+            <h4>Logical symbol:</h4>
+            <div style="text-align: center">
+            <img src="img/de/NAND.png" style="width: 100%; max-width: 200px;">
+            </div>
+            <h4>Truth table:</h4>
+            <div style="text-align: center">
+            <img src="img/de/NAND_Table.png" style="width: 100%; max-width: 300px;">
+            </div>
+            <h3>EX-OR GATE (Exclusive OR gate):</h3>
+            <p>It produces output as 1 when number of 1’s at the input us odd or when inputs are not same.</p>
+            <h4>Boolean expression:</h4>
+            <p>\[Y = \bar AB + \bar BA\]</p>
+            <p style="text-align: center">Or</p>
+            <p>\[Y = \bar AB + A\bar B\]</p>
+            <h4>Logical symbol:</h4>
+            <div style="text-align: center">
+            <img src="img/de/EX_OR.png" style="width: 100%; max-width: 200px;">
+            </div>
+            <h4>Truth table:</h4>
+            <div style="text-align: center">
+            <img src="img/de/EX_OR_Table.png" style="width: 100%; max-width: 300px;">
+            </div>
+            <h3>Universal Gates:</h3>
+            <p>Any logic function be realized using only NOR gate and NAND gate hence these two gates are called universal gates.</p>
+            <h3>SOP (Sum of Product):</h3>
+            <ul>
+                <li>Product of two or more variables in boolean algebra is AND function and sum is the OR function.</li>
+                <li>Sum of product expression is two or more AND function ORed together.</li>
+                <li>The individual term in SOP is called min term.</li>
+            </ul>
+            <h3>POS (Product of Sum):</h3>
+            <ul>
+                <li>Product of sum expression is two or more OR functions ANDed together.</li>
+                <li>The individual term in POS is called max term.</li>
+            </ul>
+            <h3>Karnaugh Map (K-Map):</h3>
+            <p>It is a graphical tool used to simplify logic equations. A truth table can be converted to its logic circuit in a simple and orderly using K-Map.</p>
+            <h3>Rules for K-Map simplification:</h3>
+            <ul>
+                <li>Plot the K-Map and places 1’s in those all corresponding to the 1’s in the truth table or SOP expression. Place 0’s in the other cells.</li>
+                <li>Check the K-Map for adjacent 1’s and encircles those 1’s which are not adjacent to any other 1’s. These are called isolated 1’s.</li>
+                <li>Check for those 1’s which are an adjacent to only one other 1’s and encircles such pairs.</li>
+                <li>Check for pairs, quads and octets of adjacent is even if it contains some 1’s that have already been encircle. While doing this make show that these are minimum number of groups.</li>
+                <li>Combine any pairs necessary to include any 1’s that have not yet been proved.</li>
+                <li>From the simplified expression by summing product terms of all the groups.</li>
+            </ul>
+        </div>
+
+        <div id="main-right">
+            <div>
+                <!--SPACE FOR GOOGLE ADSENSE-->
+            </div>
+        </div>
+    </div>
+
+
+    <div>
+        <!--SPACE FOR GOOGLE ADSENSE-->
+    </div>
+
+    <div id="footer">
+        <h3>Need to talk with us?</h3>
+        <p>geteeenotes123@outlook.com</p>
+    </div>
+
+    <button id="topbtn"><i class="fa fa-arrow-up" aria-hidden="true"></i></button>
+
+    <script>
+        $(document).ready(function() {
+
+            $(window).scroll(function() {
+                if ($(this).scrollTop() > 40) {
+                    $('#topbtn').fadeIn();
+                } else {
+                    $('#topbtn').fadeOut();
+                }
+            });
+
+            $("#topbtn").click(function() {
+                $('html, body').animate({
+                    scrollTop: 0
+                }, 800);
+            });
+        });
+    </script>
+
+</body>
+
+
+</html>

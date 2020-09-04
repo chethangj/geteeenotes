@@ -1,0 +1,979 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Power Electronics - 4.Converters - getEEEnotes!</title>
+    <meta name="viewport" content="width-device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="icon" href="img/favicon.png" sizes="16x16">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-174242618-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-174242618-2');
+</script>
+
+</head>
+
+<body>
+
+    <div id="header">
+        <div id="logo">
+            <a href="https://geteeenotes.tk/"><img src="img/logo1.png"></a>
+        </div>
+        <div id="socialicons">
+            <ul>
+               <li><a href="https://www.facebook.com/Geteeenotes-109734954168942/" target="_blank"><img src="img/facebook.png"></a></li>
+               <li><a href="https://www.instagram.com/geteeenotes5/" target="_blank"><img src="img/instagram.png"></a></li>
+               <li><a href="https://www.youtube.com/channel/UCgVMxyH-_CDSpZXi8fnl3MA/" target="_blank"><img src="img/youtube.png"></a></li>
+               <li><a href="https://t.me/getEEEnotes" target="_blank"><img src="img/telegram.png"></a></li>
+           </ul>
+        </div>
+    </div>
+
+    <div id="header-bar">
+        <p><b>Welcome to getEEEnotes!</b></p>
+        <p><b>MAKE DIPLOMA EEE EASIER</b></p>
+
+    </div>
+
+    <div class="navigate" style="border-bottom: 1px solid black">
+        <p><a href="https://geteeenotes.tk/" style="color: rgb(85, 39, 144)">Home</a> <i class="fa fa-angle-double-right" aria-hidden="true"></i> <a href="pe.html" style="color: rgb(85, 39, 144)">P E</a> <i class="fa fa-angle-double-right" aria-hidden="true"></i> <a href="pefour.html" style="color: rgb(36, 169, 226)">4. Converters</a></p>
+    </div>
+
+    <div>
+        <!--SPACE FOR GOOGLE ADSENSE-->
+    </div>
+
+    <div id="main">
+        <div id="main-left" style="font-family: 'Open Sans', sans-serif; line-height: 25px">
+
+            <h2>CHAPTER 04 : CONVERTERS</h2>
+            <h3>Types of power electronic converters:</h3>
+            <p>Power electronic converter consists of three types.</p>
+            <h4>1. AC to DC converters (Rectifiers):</h4>
+            <div style="text-align: center">
+            <img src="img/pe/Rectifier.png" alt="Rectifiers" style="width: 100%; max-width: 400px;">
+            </div>
+            <ul>
+                <li>Input is single phase or three phase AC supply normally available from mains. Output is controlled DC voltage and DC current. Hence AC to DC converters includes diode rectifiers as well as controlled rectifiers. Controlled rectifiers uses the SCR, the firing angle of SCR is controlled to obtain variable DC output.</li>
+                <li>These converters are used in UPS, DC drivers and HVDC systems.</li>
+            </ul>
+            <h4>2. DC to AC converters (Inverters):</h4>
+            <div style="text-align: center">
+            <img src="img/pe/Inverter.png" alt="Inverters" style="width: 100%; max-width: 500px;">
+            </div>
+            <ul>
+                <li>DC to AC converters is normally called inverters. The input is fixed DC voltage which is obtained from battery and output is variable voltage, variable frequency AC voltage. The firing angle of an SCR in inverter is controlled to obtain an rms output voltage.</li>
+                <li>These converters are used in AC drivers and speed control of induction motor.</li>
+            </ul>
+            <h4>3. DC to DC converters (Choppers):</h4>
+            <div style="text-align: center">
+            <img src="img/pe/Chappers.png" alt="Choppers" style="width: 100%; max-width: 500px;">
+            </div>
+            <ul>
+                <li>DC to DC converters is also called as chopper. Input is fixed DC voltage obtained from battery and output is fixed or variable DC voltage.</li>
+                <li>The average value of output is varied by controlling ON time of chopper switches.</li>
+                <li>DC choppers are used in DC drivers, SMPS, battery chargers etc.</li>
+            </ul>
+            <h4>4. AC to AC converters (Cyclo converters);</h4>
+            <div style="text-align: center">
+            <img src="img/pe/Cyclo_Converter.png" alt="Cyclo converters" style="width: 100%; max-width: 500px;">
+            </div>
+            <ul>
+                <li>The input is fixed AC voltage and fixed frequency and output is variable AC voltage and variable frequency.</li>
+                <li>Note that in cyclo converters output frequency is higher or lower than the input frequency.</li>
+                <li>Cyclo converters are used in AC traction drives.</li>
+            </ul>
+            <h4>5. AC to AC converters (AC regulators):</h4>
+            <div style="text-align: center">
+            <img src="img/pe/AC_Regulator.png" alt="AC regulators" style="width: 100%; max-width: 500px;">
+            </div>
+            <ul>
+                <li>Input is fixed AC voltage, fixed frequency obtained from AC mains and output is variable AC voltage, fixed frequency which is suitable for load.</li>
+                <li>Note that in AC regulators output frequency is same as the input frequency. Therefore AC regulator does not change the frequency but cyclo converter can change the frequency.</li>
+                <li>AC regulators are used in speed control of large fans and pumps.</li>
+            </ul>
+            <h3>Advantages and disadvantages of power electronic converters:</h3>
+            <h4>Advantages:</h4>
+            <ul>
+                <li>Fast dynamic response due to static devices.</li>
+                <li>Compact in size and less weight of controllers due to use of electronic devices.</li>
+                <li>It increases the operating life and reduces the maintenance cost.</li>
+                <li>Operation highly flexible.</li>
+                <li>EMI (electromagnetic interference), acoustic noises are reduced.</li>
+                <li>Easy fault finding.</li>
+                <li>Quick assembly.</li>
+            </ul>
+            <h4>Disadvantages:</h4>
+            <ul>
+                <li>For very simple conversion power electronic converters may be costly. Therefore it is costly for low power applications.</li>
+                <li>It is not repairable.</li>
+                <li>It is not much suitable for high power applications.</li>
+                <li>Power electronic controllers generated the harmonics.</li>
+            </ul>
+            <h3>Smart or intelligent power modules:</h3>
+            <ul>
+                <li>The power electronic converters may require two, four or six devices sometimes additional feedback or freewheeling diodes are also required rather using this discrete components and devices. A combined module of all the devices is used. It is called power module.</li>
+                <li>Complete power converter is available in a single power module. This result in the power converters is very compact.</li>
+                <li>A smart power module includes power devices as well as peripheral circuit fabricated on single chip.</li>
+                <li>Smart power module also includes the interfacing of power devices with triggering and control circuit.</li>
+                <li>Smart power module also includes the drive circuit protection and diagnostic circuit, microcomputer control and power supply etc.</li>
+                <li>Smart power module is also includes the EMC unit to avoid the electromagnetic radiation.</li>
+            </ul>
+            <h3>Note definitions:</h3>
+            <h4>Firing angle (α):</h4>
+            <p>Firing angle is the angle or delay in radians or degree when SCR is triggered after positive half cycle of AC supply voltage.</p>
+            <p>Therefore α varies from 0 to π or 0 to 180<sup>0</sup>.</p>
+            <div style="text-align: center">
+            <img src="img/pe/Firing_Angle.png" alt="Firing angle" style="width: 100%; max-width: 150px;">
+            </div>
+            <h4>Conduction angle (β):</h4>
+            <p>Conduction angle is the period in radians or degree over which the SCR conducts.</p>
+            <h3>Controlled rectifiers:</h3>
+            <div style="text-align: center">
+            <img src="img/pe/Controlled_Rectifiers.png" alt="Controlled rectifiers" style="width: 100%; max-width: 400px;">
+            </div>
+            <ul>
+                <li>Here power transferred from source to load is controlled by controlling angle of the devices.</li>
+                <li>The firing angle or triggering angle of the device is controlled by control circuit.</li>
+                <li>Input is AC output is regulated or adjustable DC hence power transfer across the load is regulated.</li>
+            </ul>
+            <h3>Types of controlled rectifiers:</h3>
+            <ol>
+                <li>Single Phase Rectifiers
+                    <ol type="i">
+                        <li>Single Phase Semi Converter</li>
+                        <li>Single Phase Full Converter</li>
+                        <li>Single Phase Dual Converter</li>
+                    </ol>
+                </li>
+                <li>Three Phase Rectifiers
+                    <ol type="i">
+                        <li>Three Phase Semi Converter</li>
+                        <li>Three Phase Full Converter</li>
+                        <li>Three Phase Dual Converter</li>
+                    </ol>
+                </li>
+            </ol>
+            <h4>1. Semiconductors:</h4>
+            <div style="text-align: center">
+            <img src="img/pe/Semiconverter.png" alt="Semiconductors" style="width: 100%; max-width: 200px;">
+            </div>
+            <p>It is a single quadrant converter and it has only one polarity of output voltage and output current.</p>
+            <h4>2. Full converter:</h4>
+            <div style="text-align: center">
+            <img src="img/pe/Full_Converter.png" alt="Full converter" style="width: 100%; max-width: 200px;">
+            </div>
+            <p>It is a two quadrant converter and the polarity of output voltage is either positive or negative but output current only a positive polarity.</p>
+            <h4>3. Dual converter:</h4>
+            <div style="text-align: center">
+            <img src="img/pe/Dual_Converter.png" alt="Dual converter" style="width: 100%; max-width: 200px;">
+            </div>
+            <p>Dual converter operates in four quadrants therefore both the output voltage and output current can be either positive or negative.</p>
+            <p><b>Note:</b> AC voltage controller uses the either ON-OFF control or phase angle control to transfer the power from source to load.</p>
+            <h3>ON-OFF control:</h3>
+            <div style="text-align: center">
+            <img src="img/pe/ON_OFF_Control.png" alt="ON-OFF control" style="width: 100%; max-width: 400px;">
+            </div>
+            <p>In ON-OFF control SCR conducts fully for few cycles and fully OFF for some cycles. Therefore power is supplied from source to the load intermittently.</p>
+            <h3>Phase angle control:</h3>
+            <div style="text-align: center">
+            <img src="img/pe/Phase_Angle_Control.png" alt="Phase angle control" style="width: 100%; max-width: 400px;">
+            </div>
+            <p>In phase angle control SCR’s are triggered in each half cycle of the supply with some delay. This delay is such that it transfers the required power from source to the load.</p>
+            <h3>Principle of phase control with waveforms for resistive load:</h3>
+            <div style="text-align: center">
+            <img src="img/pe/Phase_Angle_Control_Circuit.png" alt="Phase Control Circuit" style="width: 100%; max-width: 300px;">
+            <p><cite>Fig (a): Single phase half controlled rectifier to explain phase angle control.</cite></p>
+            </div>
+            <div style="text-align: center">
+            <img src="img/pe/Phase_Angle_Control_Waveform.png" alt="Phase Control Circuit" style="width: 100%; max-width: 400px;">
+            <p><cite>Fig (b): Waveform of single phase half control rectifier to illustrate phase angle control.</cite></p>
+            </div>
+            <ul>
+                <li>Figure shows the circuit diagram and waveform of the single phase half wave controller employ phase angle control. It consists of SCR T<sub>1</sub> and load resistance R.</li>
+                <li>During the positive half cycle of the supply voltage SCR is triggered at triggering angle α since SCR is in forward biased and it conducts. Hence positive output voltage V<sub>O</sub> appears across the load resistance R.</li>
+                <li>During the negative half cycle of the supply voltage SCR is in reverse biased and it does not conducts and output voltage does not appears across the load.</li>
+                <li>The waveform is as shown in figure; SCR conducts from α to π in one complete cycle of the supply voltage. (i.e., from 0 to π).</li>
+                <li>At π supply voltage becomes zero and SCR current is also zero.</li>
+                <li>Here output voltage is controlled by firing angle or delay angle α. It is nothing but controlling the phase of the supply voltage. Hence it is called phase angle control or phase control.</li>
+            </ul>
+            <h3>Single phase semi converter (half bridge converter or single quadrant semi converter):</h3>
+            <div style="text-align: center">
+            <img src="img/pe/Single_Phase_Semi_Converter.png" alt="half bridge converter" style="width: 100%; max-width: 400px;">
+            <p><cite>Fig: Circuit diagram of single phase semiconductor with R-load.</cite></p>
+            </div>
+            <div style="text-align: center">
+            <img src="img/pe/Single_Quadrant_Operation.png" alt="half bridge converter" style="width: 100%; max-width: 200px;">
+            <p><cite>Fig: Quadrant of Operation</cite></p>
+            </div>
+            <div style="text-align: center">
+            <img src="img/pe/Single_Phase_Semi_Converter_Positive.png" alt="half bridge converter" style="width: 100%; max-width: 400px;">
+            <p><cite>Fig: Conduction of T<sub>1</sub>D<sub>1</sub> in +ve half cycle of the supply. Dotted line shows the path of current</cite></p>
+            </div>
+            <div style="text-align: center">
+            <img src="img/pe/Single_Phase_Semi_Converter_Negetive.png" alt="half bridge converter" style="width: 100%; max-width: 400px;">
+            <p><cite>Fig: Conduction of T<sub>2</sub>D<sub>2</sub> in -ve half cycle of the supply. Dotted line shows the path of current</cite></p>
+            </div>
+            <div style="text-align: center">
+            <img src="img/pe/Single_Phase_Semi_Converter_Waveform.png" alt="half bridge converter" style="width: 100%; max-width: 500px;">
+            <p><cite>Fig: Waveforms of semi converter with R-load.</cite></p>
+            </div>
+            <ul>
+                <li>Figure shows the circuit diagram and single quadrant operation of single phase semi converter. It consists of two SCR’s T<sub>1</sub> and T<sub>2</sub> and two diodes D<sub>1</sub> and D<sub>2</sub>, input is 230V 50 Hz Ac supply. DC output V<sub>O</sub> is appears across the load resistance R.</li>
+                <li>During the positive half cycle of the supply voltage, SCR T<sub>1</sub> is triggered at triggering angle α since T<sub>1</sub> and D<sub>1</sub> is in forward biased and it conducts hence output current I<sub>O</sub> flows to the load through T<sub>1</sub> and D<sub>1</sub>. The equivalent circuit is as shown in figure. The output voltage V<sub>O</sub>=V<sub>S</sub> appears across the load. Since load is resistive output current waveform is same as the output voltage waveform but amplitude changes because due to factor R.</li>
+                <p>Therefore output current,</p>
+                <div style="overflow-x: auto">
+                    \[{I_O} = \frac{{{V_O}}}{R} = \frac{{{V_S}}}{R}\]
+                </div>
+                <p>And</p>
+                <p>Output current is same as the supply current and thyristor current</p>
+                <div style="overflow-x: auto">
+                    \[{I_O} = {I_S} = {I_{T1}}\;\left( {when\;T1 - D1\;condcuts} \right)\]
+                </div>
+                <p>At π supply voltage V<sub>S</sub>=0 hence SCR current I<sub>S</sub>=0 and T<sub>1</sub> is turn OFF.</p>
+                <li>During negative half cycle of the supply voltage SCR T<sub>2</sub> is triggered at triggering angle π+α since T<sub>2</sub> and D<sub>2</sub> is in forward biased and it conducts hence output current I<sub>O</sub> flows to the load through T<sub>2</sub> and D<sub>2</sub>. The equivalent circuit is as shown in figure. The output voltage V<sub>O</sub>=-V<sub>S</sub> appears across the load therefore output current,</li>
+                <div style="overflow-x: auto">
+                    \[{I_O} = \frac{{{V_O}}}{R} = \frac{{ - {V_S}}}{R}\]
+                </div>
+                <p>Here output current is same as the SCR T<sub>2</sub> current.</p>
+                <div style="overflow-x: auto">
+                    \[i.e.,\;{I_O} = {I_{T2}}\]
+                </div>
+                <p>I<sub>O</sub> and I<sub>S</sub> is the same current but direction is opposite as shown.</p>
+                <div style="overflow-x: auto">
+                    \[i.e.,\;{I_S} =  - {I_O}\]
+                </div>
+                <p>At 2π supply voltage V<sub>S</sub>=0 hence I<sub>S</sub>=0 and SCR T<sub>2</sub> is turn OFF.</p>
+                <li>The wave form of all the currents and voltages are shown in figure.</li>
+            </ul>
+            <h3>Two quadrant full converter or single phase full converter (full bridge converter):</h3>
+            <div style="text-align: center">
+            <img src="img/pe/Single_Phase_Full_Converter.png" alt="full bridge converter" style="width: 100%; max-width: 400px;">
+            <p><cite>Fig: Circuit diagram of single phase full converter.</cite></p>
+            </div>
+            <div style="text-align: center">
+            <img src="img/pe/Two_Quadrant_Operation.png" alt="full bridge converter" style="width: 100%; max-width: 200px;">
+            <p><cite>Fig: Two quadrant operation</cite></p>
+            </div>
+            <div style="text-align: center">
+            <img src="img/pe/Single_Phase_Full_Converter_Positive.png" alt="full bridge converter" style="width: 100%; max-width: 400px;">
+            <p><cite>Fig: Conduction of T<sub>1</sub> & T<sub>2</sub> in +ve half cycle of supply.</cite></p>
+            </div>
+            <div style="text-align: center">
+            <img src="img/pe/Single_Phase_Full_Converter_Negetive.png" alt="full bridge converter" style="width: 100%; max-width: 400px;">
+            <p><cite>Fig: Conduction of T<sub>3</sub> & T<sub>4</sub> in -ve half cycle of supply.</cite></p>
+            </div>
+            <div style="text-align: center">
+            <img src="img/pe/Single_Phase_Full_Converter_Waveform.png" alt="full bridge converter" style="width: 100%; max-width: 500px;">
+            <p><cite>Fig: Waveforms of full converter.</cite></p>
+            </div>
+            <ul>
+                <li>Figure shows the circuit diagram and two quadrant operation of single phase full bridge converter. It consists of four SCR’s T<sub>1</sub>, T<sub>2</sub>, T<sub>3</sub> and T<sub>4</sub>. The conduction of all these SCR’s is controlled hence it is called full converter. Input is 230 V 50 Hz and out is DC across the load R.</li>
+                <li>During positive half cycle of supply voltage, SCR T<sub>1</sub> T<sub>2</sub> is triggered of triggering angle α since T<sub>1</sub> and T<sub>2</sub> are in forward biased and it conducts hence output current I<sub>O</sub> flows to the load through T<sub>1</sub> and T<sub>2</sub>. The output voltage V<sub>O</sub>=V<sub>S</sub> is appears across the load.</li>
+                <p>Therefore output current,</p>
+                <div style="overflow-x: auto">
+                    \[{I_O} = \frac{{{V_O}}}{R} = \frac{{{V_S}}}{R}\]
+                </div>
+                <p>V<sub>O</sub> and I<sub>O</sub> are same but amplitude changes due to factor R and here I<sub>O</sub>=I<sub>S</sub>.</p>
+                <p>At π supply voltage V<sub>S</sub>=0 hence supply current I<sub>S</sub>=0 then T<sub>1</sub> and T<sub>2</sub> turn OFF.</p>
+                <li>During negative half cycle of supply voltage, SCR T<sub>3</sub> and T<sub>4</sub> are triggered at triggering angle π+α since T<sub>3</sub> and T<sub>4</sub> are in forward biased and it conducts hence output current I<sub>O</sub> flows to the load through T<sub>3</sub> and T<sub>4</sub>. The equivalent circuit is as shown in figure. The output voltage V<sub>O</sub>=-V<sub>S</sub> appears across the load.</li>
+                <p>Therefore output current,</p>
+                <div style="overflow-x: auto">
+                    \[{I_O} = \frac{{{V_O}}}{R} = \frac{{ - {V_S}}}{R}\]
+                </div>
+                <p>Here supply current is same as the load current but in opposite directions.</p>
+                <div style="overflow-x: auto">
+                    \[i.e.,\;{I_S} =  - {I_O}\]
+                    <p style="text-align: center">Or</p>
+                    \[\;{I_O} =  - {I_S}\]
+                </div>
+                <p>At 2π supply voltage V<sub>S</sub>=0 hence I<sub>S</sub>=0 and SCR’s T<sub>3</sub> and T<sub>4</sub> is turn OFF.</p>
+                <li>The waveform is shown in figure.</li>
+            </ul>
+            <h3>Single phase full converter with RLE load type with continuous load current:</h3>
+            <div style="text-align: center">
+            <img src="img/pe/Single_Phase_Full_Converter_With_RLE_Load.png" alt="Single phase full converter with RLE load" style="width: 100%; max-width: 400px;">
+            <p><cite>Fig: Single phase full converter feeding RLE load.</cite></p>
+            </div>
+            <div style="text-align: center">
+            <img src="img/pe/Single_Phase_Full_Converter_With_RLE_Load_Positive.png" alt="Single phase full converter with RLE load" style="width: 100%; max-width: 400px;">
+            <p><cite>Fig: Conduction of T<sub>1</sub> & T<sub>2</sub> during +ve half cycle of supply.</cite></p>
+            </div>
+            <div style="text-align: center">
+            <img src="img/pe/Single_Phase_Full_Converter_With_RLE_Load_Negetive.png" alt="Single phase full converter with RLE load" style="width: 100%; max-width: 400px;">
+            <p><cite>Fig: Conduction of T<sub>3</sub> & T<sub>4</sub> during -ve half cycle of supply.</cite></p>
+            </div>
+            <div style="text-align: center">
+            <img src="img/pe/Single_Phase_Full_Converter_With_RLE_Load_Waveform.png" alt="Single phase full converter with RLE load" style="width: 100%; max-width: 500px;">
+            <p><cite>Fig: Wavefforms of Single phase full converter with RLE load.</cite></p>
+            </div>
+            <ul>
+                <li>We assume that load consists of large inductance such that load current is continuous and ripple current will be reduced. RLE load is normally motor load. R is resistance, L is inductance of armature winding of the motor and E is the emf induced in the motor.</li>
+                <li>It consists of four thyristors T<sub>1</sub>, T<sub>2</sub>, T<sub>3</sub> and T<sub>4</sub>. Input is AC and output is DC. During positive half cycle of supply voltage, SCR T<sub>1</sub> and T<sub>2</sub> is triggered at triggering angle α since T<sub>1</sub> and T<sub>2</sub> are in forward biased and it conducts hence output current is flows to the load through T<sub>1</sub> and T<sub>2</sub> since load is inductive current keeps on increasing and it is maximum at π. At π V<sub>S</sub> is zero but current does not zero. This is because of load inductance opposes this sudden change of current. The load inductance generates the large voltage <span>\(\frac{{{d_{io}}}}{{dt}}\)</span> so as to maintain the load current. When V<sub>S</sub>=0 SCR T<sub>1</sub> and T<sub>2</sub> does not turn OFF till the next SCR’s T<sub>3</sub> and T<sub>4</sub> are triggered. During negative half cycle of supply voltage at π+α SCR’s T<sub>3</sub> and T<sub>4</sub> are triggered and it conducts. The process repeats as same as positive half cycle.</li>
+            </ul>
+            <h3>Dual converter:</h3>
+            <ul>
+                <li>A fully controlled converter provides the two quadrant operation. When two such converters are connected back to back to obtain a four quadrant operation called dual converter.</li>
+                <li>Dual converters are employed when low power DC motors have to be operated in four quadrants.</li>
+            </ul>
+            <h4>Four quadrant operation of DC motors:</h4>
+            <div style="text-align: center">
+            <img src="img/pe/4_Quadrant_Operation_of_DC_Motor.png" alt="Four quadrant operation of DC motor" style="width: 100%; max-width: 300px;">
+            </div>
+            <p>Three phase fully converter and three phase dual converters are used in large capacitive inductance drive motor.</p>
+            <h3>Single phase dual converters:</h3>
+            <div style="text-align: center">
+            <img src="img/pe/Single_Phase_Dual_Converter_1.png" alt="Single phase dual converter" style="width: 100%; max-width: 600px;">
+            <p><cite>Fig: Circuit Diagram</cite></p>
+            </div>
+            <div style="text-align: center">
+            <img src="img/pe/Single_Phase_Dual_Converter_2.png" alt="Single phase dual converter" style="width: 100%; max-width: 200px;">
+            <p><cite>Fig: Quadrant of operation.</cite></p>
+            </div>
+            <div style="text-align: center">
+            <img src="img/pe/Single_Phase_Dual_Converter_3.png" alt="Single phase dual converter" style="width: 100%; max-width: 400px;">
+            <p><cite>Fig: Equivalent Circuit.</cite></p>
+            </div>
+            <div style="text-align: center">
+            <img src="img/pe/Single_Phase_Dual_Converter_Waveform.png" alt="Single phase dual converter" style="width: 100%; max-width: 500px;">
+            <p><cite>Fig: Waveforms of single phase dual converter.</cite></p>
+            </div>
+            <ul>
+                <li>Single phase full converters with inductive load allow the two quadrant operation if two of these full converters are connected back to back to obtain a four quadrant operation is called dual converter. Both of the converters output voltage and load current flows can be reversed. The characteristic of dual converter is as shown in figure.</li>
+                <li>α1 and α2 are the delay angles of converters 1 and 2 respectively. The corresponding output voltage is V<sub>O1</sub> and V<sub>O2</sub> or V<sub>DC1</sub> and V<sub>DC2</sub>. The delay angles are controlled in such that one converter operated as rectifier and other converter operates as inverter. Both the converters produce the same average output voltages.</li>
+                <p>The firing angle of converter 1 is α1 and converter 2 is α2.</p>
+                <p>Therefore for converter 1 (rectifier)</p>
+                <div style="overflow-x: auto">
+                    \[\alpha 1 = \alpha \]
+                </div>
+                <p>For converter 2 (Inverter)</p>
+                <div style="overflow-x: auto">
+                    \[\alpha 2 = \pi  - \alpha 1\]
+                    \[ = \pi  - \alpha \]
+                </div>
+                <p>Net DC output voltage is,</p>
+                <div style="overflow-x: auto">
+                    \[{V_{O1}} + {V_{O2}} = 0\]
+                    \[{V_{O1}} =  - {V_{O2}}\]
+                </div>
+                <p style="text-align: center">Or</p>
+                <div style="overflow-x: auto">
+                    \[{V_{DC1}} + {V_{DC2}} = 0\]
+                    \[{V_{DC1}} =  - {V_{DC2}}\]
+                </div>
+                <li>The instantaneous output voltages of two converters are out of phase, they will be an instantaneous voltage difference. This results in circulating current (Ir) between the two converters. This circulating current is normally limited by circulating current reactor (inductor) Lr. (therefore inductor Lr limits the circulating current Ir)</li>
+                <p>The instantaneous voltage across circulating current limiting is</p>
+                <div style="overflow-x: auto">
+                    \[{V_r} = {V_{O1}} + {V_{O2}}\]
+                </div>
+                <li>Dual converters can be operated with or without circulating current. In case of operating without circulating current only one converter operates at a time and carries the load current but other converter is completely blocked by inhibiting (stop) gate pulses.</li>
+            </ul>
+            <h3>Advantages of circulating current mode of operation:</h3>
+            <ul>
+                <li>Circulating current maintains the continuous conduction of both converters over the entire control range independent of load.</li>
+                <li>Since one converter always operates as rectifier and another converter operates as inverter. The power flow is in either direction at any time is possible.</li>
+                <li>Since both the converters are continuous conduction over the time response for changing from one quadrant operation to another quadrant operation is fast.</li>
+            </ul>
+            <p><b>Note:</b> single phase converter has two modes of operation.</p>
+            <p><b>1. Converting mode (α<90<sup>0</sup>):</b></p>
+            <p>The range of firing angle is 0<sup>0</sup><α<90<sup>0</sup>. In this mode power flows from source to load.</p>
+            <p><b>2) Inverting mode (α >90<sup>0</sup>):</b></p>
+            <p>The range of firing angle is 90<sup>0</sup> ≤ α < 180<sup>0</sup>. In this mode power flows from load to source.</p>
+            <h3>Three phase converter:</h3>
+            <div style="text-align: center">
+            <img src="img/pe/Three_Phase_Converter.png" alt="Three phase converter" style="width: 100%; max-width: 600px;">
+            </div>
+            <div style="overflow-x: auto">
+            <table style="width: 100%">
+               <tr>
+                   <th>Initial Conducting</th>
+                    <th>Triggering</th>
+                    <th>Commutating</th>
+                    <th>Conducting</th>
+                    <th>Duration</th>
+                    <th>Load Voltage V<sub>O</sub></th>
+               </tr>
+               <tr>
+                   <td>T<sub>5</sub>T<sub>6</sub></td>
+                   <td>T<sub>1</sub></td>
+                   <td>T<sub>5</sub></td>
+                   <td>T<sub>1</sub>T<sub>6</sub></td>
+                   <td>0<sup>0</sup> to 60<sup>0</sup></td>
+                   <td>V<sub>RY</sub></td>
+               </tr>
+               <tr>
+                   <td>T<sub>6</sub>T<sub>1</sub></td>
+                   <td>T<sub>2</sub></td>
+                   <td>T<sub>6</sub></td>
+                   <td>T<sub>1</sub>T<sub>2</sub></td>
+                   <td>60<sup>0</sup> to 120<sup>0</sup></td>
+                   <td>V<sub>RB</sub></td>
+               </tr>
+               <tr>
+                   <td>T<sub>1</sub>T<sub>1</sub></td>
+                   <td>T<sub>3</sub></td>
+                   <td>T<sub>1</sub></td>
+                   <td>T<sub>2</sub>T<sub>3</sub></td>
+                   <td>120<sup>0</sup> to 180<sup>0</sup></td>
+                   <td>V<sub>YB</sub></td>
+               </tr>
+               <tr>
+                   <td>T<sub>2</sub>T<sub>3</sub></td>
+                   <td>T<sub>4</sub></td>
+                   <td>T<sub>2</sub></td>
+                   <td>T<sub>3</sub>T<sub>4</sub></td>
+                   <td>180<sup>0</sup> to 240<sup>0</sup></td>
+                   <td>V<sub>YR</sub></td>
+               </tr>
+               <tr>
+                   <td>T<sub>3</sub>T<sub>4</sub></td>
+                   <td>T<sub>5</sub></td>
+                   <td>T<sub>3</sub></td>
+                   <td>T<sub>4</sub>T<sub>5</sub></td>
+                   <td>240<sup>0</sup> to 300<sup>0</sup></td>
+                   <td>V<sub>BR</sub></td>
+               </tr>
+               <tr>
+                   <td>T<sub>4</sub>T<sub>5</sub></td>
+                   <td>T<sub>6</sub></td>
+                   <td>T<sub>4</sub></td>
+                   <td>T<sub>5</sub>T<sub>6</sub></td>
+                   <td>300<sup>0</sup> to 360<sup>0</sup></td>
+                   <td>V<sub>RY</sub></td>
+               </tr>
+            </table>
+            </div>
+            <ul>
+                <li>In case of single phase converter the output voltage waveform contains two pulses per cycle but in case of three phase full wave converters the output voltage waveform contains six pulses per cycle. That is the output voltage has a frequency six times the supply frequency. That is,</li>
+                <div style="overflow-x: auto">
+                    \[{f_O} = 6 \times {f_S}\]
+                </div>
+                <p>Where,</p>
+                <p>f<sub>O</sub> = output frequency<br>f<sub>S</sub> = supply frequency</p>
+                <li>It consists of six thyristors, T<sub>1</sub>, T<sub>3</sub> and T<sub>5</sub> (upper group) forms the positive group devices because they conduct when supply voltage is positive.</li>
+                <li>T<sub>2</sub>, T<sub>4</sub> and T<sub>6</sub> (lower group) forms the negative group because they conduct when supply voltage is negative. There are six pulses of output in one cycle of input wave it is also known as six pulse converter.</li>
+                <li>The triggering interval between two successive thyristor comes in conduction is 60<sup>0</sup> or π/3. Commutation occurs for every 60<sup>0</sup> that is six times in one complete cycle.</li>
+                <p>The firing sequences,</p>
+                <div style="text-align: center">
+                <img src="img/pe/Firing_Sequence.png" alt="firing sequences" style="width: 100%; max-width: 450px;">
+                </div>
+                <p>Each thyristor conducts for 120<sup>0</sup> or 2π/3.</p>
+                <li>At any given interval two devices conducts at a time that is one from positive group and another from negative group but no two devices of the same limbs conducts simultaneously.</li>
+                <li>During the positive half cycle of the voltage of phase are the thyristor T<sub>1</sub> is fired at firing angle α=60<sup>0</sup> or π/3.</li>
+                <li>If T<sub>5</sub> T<sub>6</sub> are conducting, when T<sub>1</sub> is fired then T<sub>5</sub> is commutating then T<sub>6</sub> T<sub>1</sub> conducts, the load current i<sub>O</sub>=i<sub>Q</sub>.</li>
+            </ul>
+            <p>Therefore, </p>
+            <p>T<sub>5</sub> T<sub>6</sub> conducts from 0<sup>0</sup> to 60<sup>0</sup>.<br>T<sub>1</sub> is fired, T<sub>5</sub> is commutating then T<sub>6</sub> T<sub>1</sub> conducts from 0<sup>0</sup> to 60<sup>0</sup>.</p>
+            <p>Similarly,<br> T<sub>6</sub> T<sub>1</sub> conducts from 0<sup>0</sup> to 60<sup>0</sup>.<br>T<sub>2</sub> is fired, T<sub>6</sub> is commutating then T<sub>1</sub> T<sub>2</sub> conducts from 60<sup>0</sup> to 120<sup>0</sup>.</p>
+            <p>Similarly,<br> T<sub>1</sub> T<sub>2</sub> conducts from 60<sup>0</sup> to 120<sup>0</sup>.<br>T<sub>3</sub> is fired, T<sub>1</sub> is commutating then T<sub>2</sub> T<sub>3</sub> conducts from 120<sup>0</sup> to 180<sup>0</sup>.</p>
+            <p>Similarly,<br> T<sub>2</sub> T<sub>3</sub> conducts from 120<sup>0</sup> to 180<sup>0</sup>.<br>T<sub>4</sub> is fired, T<sub>2</sub> is commutating then T<sub>3</sub> T<sub>4</sub> conducts from 180<sup>0</sup> to 240<sup>0</sup>.</p>
+            <p>Similarly,<br> T<sub>3</sub> T<sub>4</sub> conducts from 180<sup>0</sup> to 240<sup>0</sup>.<br>T<sub>5</sub> is fired, T<sub>3</sub> is commutating then T<sub>4</sub> T<sub>5</sub> conducts from 240<sup>0</sup> to 300<sup>0</sup>.</p>
+            <p>Similarly,<br> T<sub>4</sub> T<sub>5</sub> conducts from 240<sup>0</sup> to 300<sup>0</sup>.<br>T<sub>6</sub> is fired, T<sub>4</sub> is commutating then T<sub>5</sub> T<sub>6</sub> conducts from 300<sup>0</sup> to 360<sup>0</sup>.</p>
+            <h3>Three phase full bridge converter with resistive load:</h3>
+            <div style="text-align: center">
+            <img src="img/pe/Three_Phase_Full_Bridge_Converter_with_R_Load.png" alt="Three phase full bridge converter" style="width: 100%; max-width: 600px;">
+            <p><cite>Fig: Circuit diagram</cite></p>
+            </div>
+            <div style="text-align: center">
+            <img src="img/pe/Three_Phase_Full_Bridge_Converter_with_R_Load_2.png" alt="Three phase full bridge converter" style="width: 100%; max-width: 600px;">
+            <p><cite>Fig: Operation of three phase full converter in interval (T<sub>6</sub> - T<sub>1</sub>)</cite></p>
+            </div>
+            <div style="text-align: center">
+            <img src="img/pe/Three_Phase_Phaser_Diagram.png" alt="Three Phase Phaser Diagram" style="width: 100%; max-width: 250px;">
+            <p><cite>Fig: Phasor diagram of three phase supply.</cite></p>
+            </div>
+            <div style="text-align: center">
+            <img src="img/pe/Three_Phase_Full_Bridge_Converter_with_R_Load_Waveform.png" alt="Three phase full bridge converter Waveforms" style="width: 100%; max-width: 600px;">
+            <p><cite>Fig: Waveforms of three phase full bridge converter with R load.</cite></p>
+            </div>
+            <ul>
+                <li>Figure shows the circuit diagram of three phases fully controlled bridge converter. Six SCR’s are controlled in three phases. Any time two SCR’s (one from upper group (+) and another from lower group (-)) conducts. Figure shows the phaser diagram of three phase supply.</li>
+                <li>R, Y, B are the phase voltages and RB, YB, YR, BR, BY and RY are the line voltages.</li>
+                <li>Waveform with resistive load consists of supply voltage phase voltage R, Y, B and supply line voltages as shown.</li>
+                <li>For diode rectifier considerably firing angle starts from wt=π/6 or 30<sup>0</sup>. But in three phase fully controlled converter considerably line voltages instead of phase voltages. So here consider the firing angle starts at π/3 or 60<sup>0</sup> instead of π/6 or 30<sup>0</sup>. Therefore six gate drives are occurs and six pulses comes in one cycle.</li>
+                <li>Figure shows gate drive is given to SCR T<sub>6</sub> and T<sub>1</sub> hence line voltage VRY is applied across the load hence output voltage V<sub>O</sub>=V<sub>RY</sub> and output current I<sub>O</sub> flows in R phase that is I<sub>O</sub>=I<sub>R</sub> and output current I<sub>O</sub> and Y phase current flows in opposite direction. i.e., I<sub>O</sub>=-I<sub>Y</sub>.</li>
+                <p>Therefore T<sub>6</sub> T<sub>1</sub> conducts from 60<sup>0</sup> to 120<sup>0</sup>.</p>
+                <p>When T<sub>2</sub> is fired at 120<sup>0</sup>, T<sub>6</sub> is commutating then T<sub>1</sub> T<sub>2</sub> conducts from 120<sup>0</sup> to 180<sup>0</sup>. Similarly for next intervals.</p>
+                <li>Waveform for different firing angle as α=30<sup>0</sup>, α=60<sup>0</sup> and α is greater than 90<sup>0</sup>. Output voltage waveform is continuous upto 60<sup>0</sup> and discontinuous for α is greater than 90<sup>0</sup>.</li>
+            </ul>
+            <h3 style="text-align: center">Choppers (DC to DC converters):</h3>
+            <div style="text-align: center">
+            <img src="img/pe/Chapper_2.png" alt="Chopper" style="width: 100%; max-width: 500px;">
+            </div>
+            <p>To conversion of fixed input DC voltage into fixed or variable DC voltage output called choppers. Hence it also called as DC to DC converter.</p>
+            <ul>
+                <li>Figure shows the block diagram of choppers is as shown in figure.</li>
+                <li>The output voltage V<sub>O</sub> or greater or less than the input voltage hence the coppers can be step down or step up type.</li>
+                <li>Chopper is basically a switch which connects and disconnects an input supply to the load for certain interval of time.</li>
+                <li>Choppers uses the switching devices like SCR, power BJT, MOSFET, IGBT, GTO etc.</li>
+            </ul>
+            <p><b>1) Set up chopper:</b> Conversion from lower input voltage to higher output voltage.</p>
+            \[{V_O} > {V_i}\]
+            <p><b>2) Step down chopper:</b> conversion from higher input voltage to lower output voltage.</p>
+            \[{V_O} < {V_i}\]
+            <h3>Classification of choppers:</h3>
+            <p>Choppers are classified based on its operation in different quadrant such as single quadrant, two quadrant and four quadrant.</p>
+            <p>Types of choppers are,</p>
+            <ol>
+                <li>Class A</li>
+                <li>Class B</li>
+                <li>Class C</li>
+                <li>Class D</li>
+                <li>Class E</li>
+            </ol>
+            <h4>1) Class A Chopper:</h4>
+            <div style="text-align: center">
+            <img src="img/pe/Class_A.png" alt="Class A Chopper" style="width: 100%; max-width: 300px;">
+            </div>
+            <ul>
+                <li>This chopper operates in 1<sup>st</sup> quadrant. The output voltage V<sub>O</sub> and load current I<sub>O</sub> is always positive.</li>
+                <li>In this chopper current flows from source to load and energy (power) transferred from source to load. Hence this type of choppers operates as rectifier. Hence it is called forward motoring.</li>
+            </ul>
+            <h4>2) Class B Chopper:</h4>
+            <div style="text-align: center">
+            <img src="img/pe/Class_A.png" alt="Class B Chopper" style="width: 100%; max-width: 300px;">
+            </div>
+            <ul>
+                <li>This chopper operates in 2<sup>nd</sup> quadrant. The output voltage V<sub>0</sub> is positive and load current I<sub>0</sub> is negative.</li>
+                <li>In this chopper current flow from load to source and energy is transferred from load to source. This type of choppers operates as inverter. In this situation breaking operation of motors occurs hence it is called forward regenerative.</li>
+                <li>In this chopper output voltage V<sub>0</sub> is greater than input voltage V<sub>i</sub>. i.e., V<sub>i</sub><V<sub>0</sub> hence it is called step up chopper.</li>
+            </ul>
+            <h4>3) Class C Chopper:</h4>
+            <div style="text-align: center">
+            <img src="img/pe/Class_A.png" alt="Class C Chopper" style="width: 100%; max-width: 300px;">
+            </div>
+            <ul>
+                <li>This chopper operates in two quadrants. It is combination of class A and class B choppers. It operates as a rectifier as well as inverter. In 1<sup>st</sup> quadrant forward motoring takes place and in 2<sup>nd</sup> quadrant forward regenerative breaking takes place.</li>
+                <li>Here output voltage is positive and output current is both positive and negative.</li>
+                <li>Here energy transferred in either direction that is source to load and load to source.</li>
+            </ul>
+            <h4>4) Class D Chopper:</h4>
+            <div style="text-align: center">
+            <img src="img/pe/Class_A.png" alt="Class D Chopper" style="width: 100%; max-width: 300px;">
+            </div>
+            <ul>
+                <li>This chopper operates in two quadrants (1<sup>st</sup> and 4<sup>th</sup>). The output current I<sub>O</sub> is positive and output voltage V<sub>O</sub> is positive or negative.</li>
+                <li>In 1st quadrant rectifying operation takes place hence it is called forward motoring. Here both V<sub>O</sub> and I<sub>O</sub> are positive.</li>
+                <li>When voltage is reversed V<sub>O</sub> is negative and I<sub>O</sub> is positive. Therefore inverting operation takes place that is the energy fed from load to source. Hence 4<sup>th</sup> quadrant operation is also called as reverse regeneration.</li>
+            </ul>
+            <h4>5) Class E Chopper:</h4>
+            <div style="text-align: center">
+            <img src="img/pe/Class_A.png" alt="Class E Chopper" style="width: 100%; max-width: 300px;">
+            </div>
+            <ul>
+                <li>This chopper operates in four quadrants. Output voltage as well as output current both can tak either positive or negative values.</li>
+                <li>1<sup>st</sup> quadrant is forward motoring here V<sub>O</sub> and I<sub>O</sub> both are positive.</li>
+                <li>The 3<sup>rd</sup> quadrant is reverse motoring that is motor rotates in opposite direction compare to 1<sup>st</sup> quadrant. Since power flows from source to load in 3<sup>rd</sup> quadrant and it is rectifying operation.</li>
+                <li>In 2<sup>nd</sup> and 4<sup>th</sup> quadrant power flows from load to source hence it is called inverting operation.</li>
+            </ul>
+            <h3>Step down chopper:</h3>
+            <div style="text-align: center">
+            <img src="img/pe/Basic_Step_Down_Chapper.png" alt="Basic Step Down Chapper" style="width: 100%; max-width: 300px;">
+            <p><cite>Fig: Basic step down chopper.</cite></p>
+            </div>
+            <div style="text-align: center">
+            <img src="img/pe/Step_Down_Chapper_Ckt_with_SCR_as_a_Switch.png" alt="Step Down Chapper Ckt with SCR as a Switch" style="width: 100%; max-width: 350px;">
+            <p><cite>Fig: Step down chopper circuit with SCR as a switch.</cite></p>
+            </div>
+            <div style="text-align: center">
+            <img src="img/pe/Step_Down_Chapper_Waveform.png" alt="Step Down Chapper Waveform" style="width: 100%; max-width: 500px;">
+            <p><cite>Fig: Waveforms of output voltage and current.</cite></p>
+            </div>
+            <ul>
+                <li>Figure shows the circuit diagram of step down chopper. In this circuit SCR is used as a switch. V<sub>i</sub> is the input voltage to chopper circuit given to the SCR and load resistance is connected through the inductor L.</li>
+                <li>Inductor L is used because to get the smooth fluctuation in the output current which are produced due to switching operation of chopper.</li>
+                <li>When drive is applied to SCR which is in forward biased for the period O to OT. Switch T is turned ON and diode D is in OFF state due to it is reverse biased. Hence output voltage V<sub>O</sub>=V<sub>S</sub> in this period. Here inductance L charges the energy then given to load.</li>
+                <li>When drive switch is removed for the period OT to T, switch T is turned OFF and diode is in reverse biased and it conducts due to energy stored in inductor which produces the voltage. Therefore output current IO does not reach to zero it will be continuous flow towards the load.</li>
+                <li>The average output voltage V<suv>O avg</suv> is as shown in waveform.</li>
+                <p>Therefore, V<sub>O</sub><V<sub>i</sub> hence it is called step down chopper. Here power flows from source to load.<br>The average output voltage VO is given by,</p>
+            </ul>
+            <div style="overflow-x: auto">
+                \[{V_O} = \left( {\frac{{{T_{ON}}}}{{{T_{ON}} + {T_{OFF}}}}} \right) \times {V_i}\]
+                \[ = \frac{{{T_{ON}}}}{T} \times {V_i}\]
+                \[ = D \times {V_i}\]
+                <p>Where,</p>
+                \[Duty\;Cycle\;D = \frac{{{T_{ON}}}}{{{T_{ON}} + {T_{OFF}}}}\]
+            </div>
+            <h3>Step up chopper:</h3>
+            <div style="text-align: center">
+            <img src="img/pe/Step_Up_Chapper_Switch.png" alt="Step_Up_Chapper_Switch" style="width: 100%; max-width: 350px;">
+            <p><cite>Fig: Step up chopper switch.</cite></p>
+            </div>
+            <div style="text-align: center">
+            <img src="img/pe/Step_Up_Chapper_Switch_TON.png" alt="Step Up Chapper T ON" style="width: 100%; max-width: 350px;">
+            <p><cite>Fig: Switch T is ON (L Stores the energy).</cite></p>
+            </div>
+            <div style="text-align: center">
+            <img src="img/pe/Step_Up_Chapper_Switch_TOFF.png" alt="Step Up Chapper T OFF" style="width: 100%; max-width: 400px;">
+            <p><cite>Fig: Switch T is OFF.</cite></p>
+            </div>
+            <div style="text-align: center">
+            <img src="img/pe/Step_Up_Chapper_Waveform.png" alt="Step Up Chapper Waveform" style="width: 100%; max-width: 500px;">
+            <p><cite>Fig: Waveforms of output voltage and current.</cite></p>
+            </div>
+            <ul>
+                <li>Figure shows the step up chopper circuit. In this chopper large inductance L is connected in series with supply voltage V<sub>i</sub>, chopper switch T is connected across the supply voltage V<sub>i</sub> or load.</li>
+                <li>When switch T is turned ON the voltage is applied then inductor L stores the energy in the period O to OT but diode D is in OFF state. In this period inductor current I<sub>L</sub> or supply current I<sub>S</sub> increasing gradually.</li>
+                <li>When switch T is turned OFF, the energy stored in the inductor gets discharges and generates the inductor voltage <span>\(L.\frac{{{d_i}}}{{{d_t}}}\)</span>  in the period OT to T. as a result output voltage V<sub>O</sub> exceeds the input voltage (V<sub>O</sub>>V<sub>i</sub>) that is output voltage is the sum of input voltage V<sub>i</sub> and inductor voltage V<sub>L</sub>.</li>
+                <div style="overflow-x: auto">
+                    \[{V_O} = {V_i} + {V_L}\]
+                    \[{V_O} = {V_i} + L\frac{{{d_i}}}{{{d_t}}}\]
+                </div>
+                <li>Here output voltage V<sub>O</sub> is greater than input voltage V<sub>i</sub> hence it acts as step up chopper. The waveform is as shown in figure.</li>
+            </ul>
+            <h3 style="text-align: center">Inverters (DC to AC converters):</h3>
+            <div style="text-align: center">
+            <img src="img/pe/Inverter.png" alt="Inverter" style="width: 100%; max-width: 500px;">
+            </div>
+            <p>The device used for conversion of DC power to AC power is called inverters. This process is called inversion. It is the reverse process of rectification.</p>
+            <p>Input is fixed or variable DC and output is variable voltage and variable frequency AC. Figure shows the principle of inverter.</p>
+            <ul>
+                <li>The output voltage can be controlled with the help of drives of the switches.</li>
+                <li>The output voltage waveform of inverter can be square wave, quasi wave to get the sinusoidal output voltage by using the suitable techniques and design.</li>
+            </ul>
+            <h3>Classification of inverters:</h3>
+            <ol>
+                <li>Based on output phases.
+                    <ol type="i">
+                        <li>Single phase inverter</li>
+                        <li>Three phase inverter</li>
+                    </ol>
+                </li>
+                <li>Based on method of commutation.
+                    <ol type="i">
+                        <li>Line commutation inverters</li>
+                        <li>Forced commutation inverters</li>
+                    </ol>
+                </li>
+                <li>Based on load connection or method of connecting thyristor and commutation element (based on switch connection).
+                    <ol type="i">
+                        <li>Series inverter</li>
+                        <li>Parallel inverter</li>
+                        <li>Bridge inverter
+                            <ol type="a">
+                                <li>Half bridge inverter</li>
+                                <li>Full bridge inverter</li>
+                            </ol>
+                        </li>
+                    </ol>
+                </li>
+                <li>Based on method control of nature of DC source feeding to inverter.
+                    <ol type="i">
+                        <li>Voltage source inverter (VSI) or voltage fed inverters (VFI)</li>
+                        <li>Current source inverter (CSI) or current fed inverter (CFI)</li>
+                    </ol>
+                </li>
+            </ol>
+            <h4>Two main types of inverters are,</h4>
+            <h4>1) Voltage source inverter (VSI):</h4>
+            <div style="text-align: center">
+            <img src="img/pe/VSI.png" alt="VSI" style="width: 100%; max-width: 400px;">
+            </div>
+            <p>Figure shows the block diagram of VSI. It is a constant voltage source. It can be obtained by connected a large capacitor across the DC voltage source for such inverters the amplitude of load voltage (V<sub>L</sub>) is equal to DC input voltage (V<sub>S</sub>). Here the current waveform depends upon the load.</p>
+            <h4>2) Current source inverter (CSI):</h4>
+            <div style="text-align: center">
+            <img src="img/pe/CSI.png" alt="CSI" style="width: 100%; max-width: 400px;">
+            </div>
+            <p>Figure shows the block diagram of CSI. The input to the CSI is constant DC current source. This constant current source can be obtained by connecting a large inductor L in series with DC current source. Here the load current is equal to input current but output voltage depends upon the load.</p>
+            <h3>Differences between VSI and CSI:</h3>
+            <table style="width: 100%">
+                <tr>
+                    <th style="width: 50%">VSI</th>
+                    <th style="width: 50%">CSI</th>
+                </tr>
+                <tr>
+                    <td>1. Input is constant voltage</td>
+                    <td>1. Input is constant current.</td>
+                </tr>
+                <tr>
+                    <td>2. Current waveform depends on load.</td>
+                    <td>2. Voltage waveform depends on load.</td>
+                </tr>
+                <tr>
+                    <td>3. Large capacitor is connected across the DC voltage source of inverter.</td>
+                    <td>3. Large inductor is connected in series with DC input current source of inverter.</td>
+                </tr>
+                <tr>
+                    <td>4. Freewheeling diodes are required in case of inductive load.</td>
+                    <td>4. Freewheeling diodes are not required.</td>
+                </tr>
+                <tr>
+                    <td>5. Short circuit can damage the circuit.</td>
+                    <td>5. Short circuit cannot damage the circuit.</td>
+                </tr>
+                <tr>
+                    <td>6. A series resonance or tank circuit is required.</td>
+                    <td>6. No resonance circuit is required.</td>
+                </tr>
+            </table>
+            <h3>Single phase half bridge inverter (VSI):</h3>
+            <div style="text-align: center">
+            <img src="img/pe/Single_Phase_Half_Bridge_Inverter.png" alt="Single phase half bridge inverter" style="width: 100%; max-width: 300px;">
+            <p><cite>Fig: Single phase half bridge inverter.</cite></p>
+            </div>
+            <div style="text-align: center">
+            <img src="img/pe/Single_Phase_Half_Bridge_Inverter_Eq_Ckt_1.png" alt="Single phase half bridge inverter EqCkt 1" style="width: 100%; max-width: 300px;">
+            <p><cite>Fig: Equivalent Circuit 1.</cite></p>
+            </div>
+            <div style="text-align: center">
+            <img src="img/pe/Single_Phase_Half_Bridge_Inverter_Eq_Ckt_2.png" alt="Single phase half bridge inverter EqCkt 2" style="width: 100%; max-width: 300px;">
+            <p><cite>Fig: Equivalent circuit 2.</cite></p>
+            </div>
+            <div style="text-align: center">
+            <img src="img/pe/Single_Phase_Half_Bridge_Inverter_Waveform.png" alt="Single phase half bridge inverter waveform" style="width: 100%; max-width: 500px;">
+            <p><cite>Fig: Waveforms of half bridge inverter with R-load.</cite></p>
+            </div>
+            <ul>
+                <li>Figure shows the single phase half bridge inverter and it consists of two transistors T<sub>1</sub> and T<sub>2</sub>, two diodes D<sub>1</sub>, D<sub>2</sub> and two supply voltage sources and load is resistive. When load is resistive the diode does not carries ant current these diodes are used to freewheeling operation for feedback when load is inductive.</li>
+                <li>When load is supplied by battery one, the transistor T<sub>1</sub> is triggered for positive half cycle of output and it conducts. The current flows from positive of source to negative of source that is point A to B through the load. Therefore T<sub>1</sub> conducts from O to T/2 and output voltage V<sub>O</sub>=V<sub>S</sub>/2.</li>
+                <li>When load is supplied by battery two, T<sub>1</sub> is turned off and T<sub>2</sub> is triggered at T/2 for negative half cycle of output and it conducts. The current flows from positive of source to negative of source that is from point B to A through the load. Therefore T<sub>2</sub> conducts from T/2 to T and output voltage V<sub>O</sub>=-V<sub>S</sub>/2.</li>
+                <li>The output of this inverter is square wave since there are two transistors and two diodes in the bridge hence it is called half bridge inerter.</li>
+            </ul>
+            <h3>Single phase full bridge inverter:</h3>
+            <div style="text-align: center">
+            <img src="img/pe/Single_Phase_Full_Bridge_Inverter.png" alt="Single phase full bridge inverter" style="width: 100%; max-width: 500px;">
+            <p><cite>Fig: Circuit of single phase full bridge inverter.</cite></p>
+            </div>
+            <div style="text-align: center">
+            <img src="img/pe/Single_Phase_Full_Bridge_InverterEq_Ckt_1.png" alt="Single phase full bridge inverter EqCkt1" style="width: 100%; max-width: 350px;">
+            <p><cite>Fig: Equivalent circuit 1.</cite></p>
+            </div>
+            <div style="text-align: center">
+            <img src="img/pe/Single_Phase_Full_Bridge_InverterEq_Ckt_2.png" alt="Single phase full bridge inverter EqCkt2" style="width: 100%; max-width: 350px;">
+            <p><cite>Fig: Equivalent circuit 2.</cite></p>
+            </div>
+            <div style="text-align: center">
+            <img src="img/pe/Single_Phase_Full_Bridge_Inverter_Waveform.png" alt="Single phase full bridge inverter waveform" style="width: 100%; max-width: 500px;">
+            <p><cite>Fig: Waveforms of full bridge inverter for R load.</cite></p>
+            </div>
+            <ul>
+                <li>Figure shows the circuit diagram and waveform of single phase full bridge inverter for R load. It consists of four transistors, four diodes and one voltage source. The diodes are required when load is inductive but for resistive load diodes are not required it does not carries any load current.</li>
+                <li>Full bridge inverter is used to overcome the uses of two voltage source in half bridge inverter.</li>
+                <li>During the positive half cycle of input two transistors T<sub>1</sub> and T<sub>2</sub> are triggered together and conducts from 0 to T/2. The direction of load current flows from positive of source to negative of source through T<sub>1</sub>, T<sub>2</sub> and from point A to B of load.<br>Therefore, output voltage V<sub>O</sub>=V<sub>S</sub>.</li>
+                <li>During the negative half cycle of input, T<sub>1</sub> and T<sub>2</sub> are turned OFF and T<sub>3</sub> and T<sub>4</sub> are triggered together and it conducts from T/2 to T. The direction of load current flows from positive of source to negative of source through T<sub>3</sub>, T<sub>4</sub> and from point B to A of load.<br>Therefore output voltage V<sub>O</sub>=-V<sub>S</sub>.</li>
+            </ul>
+            <p><b>Note:</b> Diodes are used at load for freewheeling operation and comes into operations only for inductive load (RL and RLC load).</p>
+            <h3>Three phase Inverter (Three phase VSI):</h3>
+            <div style="text-align: center">
+            <img src="img/pe/Three_Phase_Inverter.png" alt="Three Phase Inverter" style="width: 100%; max-width: 500px;">
+            </div>
+            <ul>
+                <li>•	Single phase inverters are used for low power applications. For higher power and three phase motor drives, three phase inverters are used in inverter generators the three phase output RYB. The load can be connected to the inverter in star or delta mode, figure shows the circuit diagram of three phase inverter uses the BJT as switches.</li>
+                <li>•	In the above circuit there are six BJT’s T<sub>1</sub>, T<sub>2</sub>, T<sub>3</sub>, T<sub>4</sub>, T<sub>5</sub> and T<sub>6</sub>. Upper BJT’s are positive group devices and numbered as T<sub>1</sub>, T<sub>3</sub> and T<sub>5</sub>. Similarly lower BJT’s are negative group devices and numbered as T<sub>4</sub>, T<sub>6</sub> and T<sub>2</sub>. Here T<sub>1</sub> and T<sub>4</sub> are connected to phase R when T<sub>1</sub> conducts R is connected to +VS, when T<sub>4</sub> conducts R is connected to –VS. Similarly T<sub>3</sub> and T<sub>6</sub> are connected to Y and T<sub>5</sub> and T<sub>2</sub> are connected to B.</li>
+            </ul>
+            <p>Depending upon the drives applied to BJT’s there are two types of three phase inverters are,</p>
+            <ol>
+                <li>180<sup>0</sup> conduction and</li>
+                <li>120<sup>0</sup> conduction</li>
+            </ol>
+            <p>In 180<sup>0</sup> each BJT conducts for 180<sup>0</sup>.<br>In 120<sup>0</sup> each BJT conducts for 120<sup>0</sup>.</p>
+            <h4>180<sup>0</sup> conduction type of three phase inverter:</h4>
+            <div style="text-align: center">
+            <img src="img/pe/Three_Phase_Inverter.png" alt="Three Phase Inverter" style="width: 100%; max-width: 500px;">
+            <p><cite>Fig (a)</cite></p>
+            </div>
+            <div style="text-align: center">
+            <img src="img/pe/Three_Phase_Inverter_561.png" alt="Three Phase Inverter" style="width: 100%; max-width: 150px;">
+            <p><cite>Fig (b)</cite></p>
+            </div>
+            <ul>
+                <li>•	In this mode T<sub>1</sub>, T<sub>3</sub>, T<sub>5</sub> are upper group devices called positive group, T<sub>4</sub>, T<sub>6</sub>, T<sub>2</sub> are lower group devices called negative group switches. At any time three switches of the same limb will be conducting simultaneously.</li>
+                <li>•	When two switches of same limb conducting simultaneously the positive DC source is short circuited by the switches loads to large power flow results in damage of switches.</li>
+                <li>•	The firing sequence will be T1-T2-T3-T4-T5-T6 one cycle of 360<sup>0</sup> is divided into six intervals of 60<sup>0</sup>, each the intervals are named as I, II, III, IV, V, VI in each interval three transistors conducts.</li>
+            </ul>
+            <p>Conducting sequences are,</p>
+            <div style="text-align: center">
+            <img src="img/pe/Conducting_Sequence.png" alt="Conducting_Sequence" style="width: 100%; max-width: 200px;">
+            </div>
+            <p>The base drives of all the six BJT’s are as shown in figure. The base drive as T<sub>1</sub> is applied for 180<sup>0</sup> and it is of for remaining 180<sup>0</sup>. Base drive of T<sub>2</sub> is applied for 180<sup>0</sup> of T<sub>2</sub> is called with 60<sup>0</sup> delay with respect to T<sub>1</sub> for example in interval I. T<sub>5</sub>, T<sub>6</sub> and T<sub>1</sub> are applied for base drives and it is conducting, figure shows R is connected to positive through T<sub>1</sub> and B is connected to +VS through T<sub>5</sub> and Y is connected to –VS through T<sub>6</sub>.</p>
+            <p>Now the line voltages and phase voltages are calculated as,</p>
+            <p>Line voltage, V<sub>RY</sub>=+V<sub>S</sub>, V<sub>BY</sub>=+V<sub>S</sub>, V<sub>RB</sub>=0</p>
+            <p>Here assume that all the phases of load have some resistance and there produce is repeated for all the six intervals as shown in table.</p>
+            <div style="overflow-x: auto">
+                <table style="text-align: center">
+                    <tr>
+                        <th>Interval</th>
+                        <th>Conducting Transistor</th>
+                        <th>Equivalent Circuit</th>
+                        <th>Line Voltage V<sub>RY</sub></th>
+                        <th>Phase Voltage V<sub>R</sub></th>
+                    </tr>
+                    <tr>
+                        <td>I</td>
+                        <td>561</td>
+                        <td><img src="img/pe/Three_Phase_Inverter_561.png" style="max-width: 100px"></td>
+                        <td>+V<sub>S</sub></td>
+                        <td>+V<sub>S</sub>/3</td>
+                    </tr>
+                    <tr>
+                        <td>II</td>
+                        <td>612</td>
+                        <td><img src="img/pe/Three_Phase_Inverter_612.png" style="max-width: 100px"></td>
+                        <td>+V<sub>S</sub></td>
+                        <td>+2V<sub>S</sub>/3</td>
+                    </tr>
+                    <tr>
+                        <td>III</td>
+                        <td>123</td>
+                        <td><img src="img/pe/Three_Phase_Inverter_123.png" style="max-width: 100px"></td>
+                        <td>0</td>
+                        <td>+V<sub>S</sub>/3</td>
+                    </tr>
+                    <tr>
+                        <td>IV</td>
+                        <td>234</td>
+                        <td><img src="img/pe/Three_Phase_Inverter_234.png" style="max-width: 100px"></td>
+                        <td>-V<sub>S</sub></td>
+                        <td>-V<sub>S</sub>/3</td>
+                    </tr>
+                    <tr>
+                        <td>V</td>
+                        <td>345</td>
+                        <td><img src="img/pe/Three_Phase_Inverter_345.png" style="max-width: 100px"></td>
+                        <td>-V<sub>S</sub></td>
+                        <td>-2V<sub>S</sub>/3</td>
+                    </tr>
+                    <tr>
+                        <td>VI</td>
+                        <td>456</td>
+                        <td><img src="img/pe/Three_Phase_Inverter_456.png" style="max-width: 100px"></td>
+                        <td>0</td>
+                        <td>-V<sub>S</sub>/3</td>
+                    </tr>
+                </table>
+            </div>
+            <ul>
+                <li>The maximum line voltage is positive that is V<sub>RY</sub>=±V<sub>S</sub>/3. Waveform of other line voltages will be 60<sup>0</sup> delayed with respect to V<sub>RY</sub>.</li>
+                <li>Figure shows the phase voltages of R phase V<sub>RN</sub> it is a six step low waveform. The minimum phase voltage is ±2V<sub>S</sub>/3. The phase voltages V<sub>Y</sub> and V<sub>B</sub> parallel to V<sub>R</sub> or V<sub>RN</sub>. These phase voltages have 120<sup>0</sup> phase swift with respect to each other.<br>Ex: V<sub>Y</sub> is lagging 120<sup>0</sup> with respect to R.</li>
+            </ul>
+            <div style="text-align: center">
+            <img src="img/pe/Three_Phase_Inverter_Waveform.png" alt="Waveform" style="width: 100%; max-width: 600px;">
+            <p><cite>Fig: Waveforms of Three phase inverter.</cite></p>
+            </div>
+            <h3 style="text-align: center">Cyclo converters:</h3>
+            <p>Cyclo converter is a circuit which converts the input AC of one frequency level to an output AC of another frequency level.</p>
+            <div style="text-align: center">
+            <img src="img/pe/Cyclo_Converter.png" alt="Cyclo Converter" style="width: 100%; max-width: 500px;">
+            </div>
+            <h3>Types of cyclo converter:</h3>
+            <p>Depending upon the output frequency the cyclo converters are mainly classified as,</p>
+            <h4>1) Step up cyclo converter:</h4>
+            <p>The frequency of the output is higher than the frequency if input then it is called step up cyclo converter.</p>
+            \[{f_O} > {f_{in}}\]
+            <h4>2) Step down cyclo converter:</h4>
+            <p>The frequency of output is lesser than the frequency of input then it is called step down cyclo converter.</p>
+            \[{f_O} < {f_{in}}\]
+            <p><b>Cyclo converters are also classified as,</b></p>
+            <ol>
+                <li>Single phase to single phase devices
+                    <ol type="i">
+                        <li>Mid-point configuration or center tapped configuration.</li>
+                        <li>Bridge configuration</li>
+                    </ol>
+                </li>
+                <li>Three phase to single phase devices</li>
+                <li>Three phase to three phase devices</li>
+            </ol>
+            <h3>Advantages of cyclo converters:</h3>
+            <ul>
+                <li>Cyclo converters are AC to AC converters without any DC link is used as in case of inverters.</li>
+                <li>Output frequency can be increased or decreased.</li>
+                <li>Conversion from single phase to single phase, three phase to single phase and three phase to three phase is possible.</li>
+                <li>It works well for even inductive load.</li>
+                <li>Cyclo converters are capable of supplying high powers.</li>
+            </ul>
+            <h3>Disadvantages of cyclo converters:</h3>
+            <ul>
+                <li>Output voltage of cyclo converter is not sinusoidal because it contains large no. of harmonics at high frequencies that is waveform is distraction.</li>
+                <li>Harmonics content is large hence heavy filters are required to remove the harmonics.</li>
+                <li>Cyclo converter requires several thyristors hence control system is complex and cost is also more.</li>
+            </ul>
+            <h3>Step up cyclo converters:</h3>
+            <div style="text-align: center">
+            <img src="img/pe/Step_Up_Cyclo_Converter.png" alt="Step up cyclo converter" style="width: 100%; max-width: 300px;">
+            <p><cite>Fig: Mid-point type cyclo converter.</cite></p>
+            </div>
+            <div style="text-align: center">
+            <img src="img/pe/Step_Up_Cyclo_Converter_Waveform.png" alt="Step up cyclo converter waveform" style="width: 100%; max-width: 500px;">
+            <p><cite>Fig: Waveforms of step up cyclo converter.</cite></p>
+            </div>
+            <ul>
+                <li>When the frequency of output is higher than the frequency of input then it is called step up converter. Figure shows the mid-point type step up cyclo converter. The waveform is also shown in figure.</li>
+                <li>In the half cycle T<sub>1</sub> is triggered and conducts from 0 to t1 hence output voltage is positive. At time t1, T<sub>1</sub> is forced commutated and T<sub>4</sub> is triggered hence load voltage is negative. At time t2, T<sub>4</sub> is forced commutated and T<sub>1</sub> is triggered again therefore output voltage is again positive. At time t3, T<sub>1</sub> is forced commutated and T<sub>4</sub> is turned ON hence output voltage is negative.</li>
+                <li>At π, T<sub>4</sub> is OFF and T<sub>3</sub> is turned ON. Therefore output voltage is positive. At time t4, T<sub>3</sub> is forced commutated and T<sub>2</sub> is triggered hence output voltage is negative. The sequence is continuous.</li>
+                <li>Observe that output voltage waveform as the frequency of</li>
+                <div style="overflow-x: auto">
+                    \[{f_O} = \frac{1}{{{t_2} - {t_1}}}\]
+                </div>
+                <p>This frequency is higher than the input frequency.</p>
+            </ul>
+            <h3>Step down cyclo converter:</h3>
+            <ul>
+                <li>When the output frequency is less than the input frequency the converter can be operated as step down cyclo converter.</li>
+            </ul>
+            <div style="text-align: center">
+            <img src="img/pe/Step_Down_Cyclo_Converter_Waveform.png" alt="Step down cyclo converter waveform" style="width: 100%; max-width: 500px;">
+            <p><cite>Fig: Waveforms of step down cyclo converter.</cite></p>
+            </div>
+            <ul>
+                <li>•	Figure shows the mid-point type cyclo converter and the waveform for highly inductive load with continuous output current, output voltage is controlled by varying firing angle.</li>
+                <li>•	Consider the period of input supply is T and the period of output is $T. four cycles of input voltage makes one cycle of output voltage. The dotted line shows the equivalent output voltage waveform which as step down voltage.</li>
+                <li>•	Thus the input frequency is divided by 4. T1, T3 are triggered to obtain positive half cycle of output voltage similarly T2, T4 are triggered to obtain negative half cycle of output voltage.<br>Output frequency will be,</li>
+                <div style="overflow-x: auto">
+                    \[{f_O} = \frac{1}{{{T_O}}} = \frac{1}{{4\pi }}\]
+                </div>
+            </ul>            
+
+        </div>
+
+        <div id="main-right">
+            <div>
+                <!--SPACE FOR GOOGLE ADSENSE-->
+            </div>
+        </div>
+    </div>
+
+
+    <div>
+        <!--SPACE FOR GOOGLE ADSENSE-->
+    </div>
+
+    <div id="footer">
+        <h3>Need to talk with us?</h3>
+        <p>geteeenotes123@outlook.com</p>
+    </div>
+
+    <button id="topbtn"><i class="fa fa-arrow-up" aria-hidden="true"></i></button>
+
+    <script>
+        $(document).ready(function() {
+
+            $(window).scroll(function() {
+                if ($(this).scrollTop() > 40) {
+                    $('#topbtn').fadeIn();
+                } else {
+                    $('#topbtn').fadeOut();
+                }
+            });
+
+            $("#topbtn").click(function() {
+                $('html, body').animate({
+                    scrollTop: 0
+                }, 800);
+            });
+        });
+    </script>
+
+</body>
+
+</html>

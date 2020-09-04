@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Analog Electronics - 4.Rectifiers, filters and regulators - getEEEnotes!</title>
+        <meta name="viewport" content="width-device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css" type="text/css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+        <link rel="icon" href="img/favicon.png" sizes="16x16">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+        
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-174242618-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-174242618-2');
+</script>
+        
+    </head>
+    
+    <body>
+        
+        <div id="header">
+        <div id="logo">
+            <a href="https://www.geteeenotes.tk/"><img src="img/logo1.png"></a>
+        </div>
+        <div id="socialicons">
+           <ul>
+               <li><a href="https://www.facebook.com/Geteeenotes-109734954168942/" target="_blank"><img src="img/facebook.png"></a></li>
+               <li><a href="https://www.instagram.com/geteeenotes5/" target="_blank"><img src="img/instagram.png"></a></li>
+               <li><a href="https://www.youtube.com/channel/UCgVMxyH-_CDSpZXi8fnl3MA/" target="_blank"><img src="img/youtube.png"></a></li>
+               <li><a href="https://t.me/getEEEnotes" target="_blank"><img src="img/telegram.png"></a></li>
+           </ul>            
+        </div>
+    </div>
+       
+       <div id="header-bar">
+       <p><b>Welcome to getEEEnotes!</b></p>
+       <p><b>MAKE DIPLOMA EEE EASIER</b></p>
+       
+    </div>
+      
+      <div class="navigate" style="border-bottom: 1px solid black">
+          <p><a href="https://www.geteeenotes.tk/" style="color: rgb(85, 39, 144)">Home</a> <i class="fa fa-angle-double-right" aria-hidden="true"></i> <a href="ae.html" style="color: rgb(85, 39, 144)">A E</a> <i class="fa fa-angle-double-right" aria-hidden="true"></i> <a href="aefour.html" style="color: rgb(36, 169, 226)">4. Rectifiers, filters and regulators</a></p>
+      </div>
+       
+       <div>
+        <!--SPACE FOR GOOGLE ADSENSE-->
+        </div>
+        
+        <div id="main">
+        <div id="main-left" style="font-family: 'Open Sans', sans-serif; line-height: 25px">
+        
+        <h2>CHAPTER 04 : RECTIFIERS, FILTERS AND REGULATORS</h2>
+            <h3>Regulated Power Supply:</h3>
+            <div style="text-align: center">
+            <img src="img/ae/Regulated_Power_Supply.png" alt="Regulated Power Supply" style="width: 100%; max-width: 700px;">
+            </div>
+            <p>In the block diagram of regulated power supply input is connected to transformer which is step down AC voltage level to desired AC output voltage (230V). A diode rectifier then provides pulsating DC voltage which is filtered by a filter to produce DC output voltage.</p>
+            <p>The resulting output of a filter has some ripple (AC components). It is applied as input to the regulator.</p>
+            <p>Regulator circuit produces constant output even when the input voltage and load is varying.</p>
+            <h3>Rectifier:</h3>
+            <p>Rectifier is a device which converts AC voltage to pulsating DC using one or more PN junction.</p>
+            <p>Rectifiers are classified into two types.</p>
+            <ol>
+                <li>Half wave rectifier</li>
+                <li>Full wave rectifier
+                    <ol type="i">
+                        <li>Full wave bridge rectifier</li>
+                        <li>Full wave center tapped rectifier</li>
+                    </ol>
+                </li>
+            </ol>
+            <h3>Half Wave Rectifier:</h3>
+            <div style="text-align: center">
+            <img src="img/ae/Half_Wave_Rectifier_Ckt.png" alt="Half Wave Rectifier Circuit" style="width: 100%; max-width: 300px;">
+            <p><cite>Fig  (a): Circuit Diagram</cite></p>
+            </div>
+            <div style="text-align: center">
+            <img src="img/ae/Half_Wave_Rectifier_Waveform.png" alt="Half Wave Rectifier Waveform" style="width: 100%; max-width: 400px;">
+            <p><cite>Fig  (b): Waveform</cite></p>
+            </div>
+            <p>Semiconductor diode is connected in series with the load resistance and secondary winding of transformer.</p>
+            <p><b>Operation:</b></p>
+            <ul>
+                <li>The AC cycle is applied to the primary winding of the transformer. During the +ve half cycle of the AC input end P becomes +ve and Q becomes -ve. This makes a diode forward bias when diode is connecting in forward bias it conducts. Hence we get positive cycle of the AC rectifier.</li>
+                <li>During –ve half cycle of AC, P becomes –ve and Q becomes +ve and diode is reverse biased.</li>
+                <li>During reverse bias of a diode it does not conduct hence negative half cycle of the AC is not rectified.</li>
+                <li>Therefore, we conclude that current flows through the diode during +ve half cycle of the AC only. It is blocked during the -ve half cycle hence a pulsating DC is obtain across R<sub>L</sub>.</li>
+            </ul>
+            <div style="overflow-x: auto">
+                \[{V_{dc}} = {V_{avg}} = \frac{1}{{2\pi }}\mathop \smallint \limits_0^{2\pi } {V_m}\sin \theta .d\theta \]
+                \[ = \frac{{{V_m}}}{{2\pi }}\mathop \smallint \limits_0^\pi  \sin d\theta  + \mathop \smallint \limits_\pi ^{2\pi } \theta .d\theta \]
+                \[ = \frac{{{V_m}}}{{2\pi }} - \cos \mathop \smallint \limits_0^{2\pi } \]
+                \[ = \frac{{{V_m}}}{{2\pi }}\left[ {1 - \left( { - 1} \right)} \right]\]
+                \[{V_{avg}} = \frac{{{V_m}}}{{2\pi }}\;\left( 2 \right)\]
+                \[{V_{dc}} = \frac{{{V_m}}}{\pi }\]
+                \[ = \frac{1}{{3.14}}\]
+                \[{V_{dc}} = 0.318\;{V_m}\]
+                \[{I_{dc}} = \frac{{{V_{dc}}}}{{{R_d} + {R_L}}}\]
+                \[{I_{dc}} = \frac{{{V_m}}}{{\pi \left( {{R_d} + {R_L}} \right)}}\]
+                <p style="text-align: center">For half wave rectifier,</p>
+                \[{I_{RMS}} = \frac{{{I_m}}}{2}\]
+                <p><b>Efficiency:</b></p>
+                \[\eta  = \frac{{Output\;Power}}{{Input\;Power}}\]
+                \[{P_O} = {I_{dc}}^2\left( {{R_d} + {R_L}} \right)\]
+                \[ = {\left( {\frac{{{I_m}}}{\pi }} \right)^2}\left( {{R_d} + {R_L}} \right)\]
+                \[ = {\left( {{I_{rms}}} \right)^2}{R_L}\]
+                \[ = {\left( {\frac{{{I_m}}}{\pi }} \right)^2}{R_L}\]
+                \[\eta  = \frac{{{{\left( {\frac{{{I_m}}}{\pi }} \right)}^2}\left( {{R_d} + {R_L}} \right)}}{{{{\left( {\frac{{{I_m}}}{\pi }} \right)}^2}{R_L}}}\]
+                \[\eta  = \frac{{{I_m}^2\;4\;\left( {{R_d} + {R_L}} \right)}}{{{\pi ^2} \times {I_m}^2{R_L}}}\]
+                \[ = \frac{4}{{{\pi ^2}}}\left( {\frac{{{R_d} + {R_L}}}{{{R_L}}}} \right)\]
+                <p style="text-align: center">Note: R<sub>d</sub> less R<sub>L</sub> hence Rd is neglected.</p>
+                \[ = \frac{4}{{{\pi ^2}}}\]
+                \[ = 0.405\]
+                \[\eta  = 40.5\% \]
+            </div>
+            <h3>Full Wave Center Tapped Rectifier:</h3>
+            <div style="text-align: center">
+            <img src="img/ae/Full_Wave_Center_Tapped_Rectifier_Ckt.png" alt="Full Wave Center Tapped Rectifier Circuit" style="width: 100%; max-width: 300px;">
+            <p><cite>Fig  (a): Circuit Diagram</cite></p>
+            </div>
+            <div style="text-align: center">
+            <img src="img/ae/Full_Wave_Center_Tapped_Rectifier_Waveform.png" alt="Full Wave Center Tapped Rectifier Waveform" style="width: 100%; max-width: 400px;">
+            <p><cite>Fig  (b): Waveform</cite></p>
+            </div>
+            <p>It essentially consists of two diodes D<sub>1</sub>, D<sub>2</sub> and load resistance R<sub>L</sub> is connected to the secondary center tap transformer. Input signal is applied to the primary winding of the transformer. The center tap of the secondary winding usually taken as a ground or 0 voltage.</p>
+            <p><b>Operation:</b></p>
+            <ul>
+                <li>During the +ve half cycle of secondary voltage, P of the secondary winding becomes +ve and Q becomes –ve. This makes diode D<sub>1</sub> forward biased and diode D<sub>2</sub> reverse biased. Therefore D<sub>1</sub> conducts while D<sub>2</sub> does not conducts the conventional current flow.</li>
+                <li>During –ve half cycle the polarity of the secondary voltage changes that means during –ve half cycle, P becomes –ve and Q becomes +ve under this condition D<sub>2</sub> conducts while D<sub>1</sub> does not conduct.</li>
+                <li>From the above discussion we conclude the current flows through the load R<sub>L</sub> remains same for +ve and –ve half cycle of AC input voltage.</li>
+                <li>Therefore the pulsating DC voltage is obtained across load R<sub>L</sub>.</li>
+            </ul>
+            <h3>Full Wave Center Taped Rectifier Derivation:</h3>
+            <div style="overflow-x: auto">
+                \[{V_{dc}} = \frac{1}{\pi }\mathop \smallint \limits_0^\pi  {V_m}\sin \theta d\theta \]
+                \[ = \frac{{{V_m}}}{\pi }\mathop \smallint \limits_0^\pi  \sin \theta d\theta \]
+                \[ = \frac{{{V_m}}}{\pi } - \cos \theta \left\{ {\begin{array}{*{20}{c}}\pi \\0\end{array}} \right.\]
+                \[ = \frac{{2{V_m}}}{\pi } - \cos \pi  - \left( { - \cos \theta } \right)\]
+                \[ = \frac{{2{V_m}}}{\pi }\left( 2 \right)\]
+                \[{V_{dc}} = \frac{{2{V_m}}}{\pi }\]
+                \[{I_{dc}} = \frac{{{V_{dc}}}}{{{R_L}}}\]
+                \[{I_{dc}} = \frac{{2{V_m}}}{{\pi \left( {{R_L}} \right)}}\]
+                <p style="text-align: center">For full wave rectifier,</p>
+                \[{I_{rms}} = \frac{{{I_m}}}{{\sqrt 2 }}\]
+                <p><b>Efficiency:</b></p>
+                \[\eta  = \frac{{{P_O}}}{{{P_{in}}}}\]
+                \[{P_O} = {I_{dc}}^2\;{R_L}\]
+                \[{P_{in}} = {I_{rms}}^2\left( {{R_d} + {R_L}} \right)\]
+                \[ = \frac{{{{\left( {\frac{{2{I_m}}}{\pi }} \right)}^2}{R_L}}}{{{{\left( {\frac{{{I_m}}}{{\sqrt 2 }}} \right)}^2}\left( {{R_d} + {R_L}} \right)}}\]
+                \[ = \frac{{4\;{I_m}^2 \times 2\left( {{R_L}} \right)}}{{{\pi ^2} \times {I_m}^2\left( {{R_d} + {R_L}} \right)}}\]
+                \[ = \frac{8}{{{\pi ^2}}}\;\frac{{{R_L}}}{{\left( {{R_d} + {R_L}} \right)}}\]
+                \[\eta  = \frac{8}{{{\pi ^2}}}\;\frac{{{R_L}}}{{{R_L}}} = 0.81\]
+                \[\eta  = 81\% \]
+            </div>
+            <h4>Forward Current:</h4>
+            <p>It is a current flowing through a forward bias diode every diode has been design to withstand maximum value of forward current.</p>
+            <h4>Peak Inverse Voltage:</h4>
+            <p>It is a maximum inverse voltage that diode can withstand without destroying the junction.</p>
+            <h4>Peak Inverse Voltage of Half Wave Rectifier:</h4>
+            <p>During the –ve half cycle of the AC voltage diode is in reverse bias and it does not conduct. Thus the maximum value of reverse voltage occurs at the peak of the –ve input cycle which is equal to V<sub>M</sub>.</p>
+            <h4>Peak Inverse Voltage of Full Wave Rectifier:</h4>
+            <p>In such type of circuit one diode conducts while another diode doesn’t conduct. Therefore whole of the secondary voltage appear across the non-conducting diode. Ultimately peak inverse voltage is,</p>
+            \[{V_M} + {V_M} = 2{V_M}\]
+            <h3>Full Wave Bridge Rectifier:</h3>
+            <div style="text-align: center">
+            <img src="img/ae/Full_Wave_Bridge_Rectifier_Ckt.png" alt="Full Wave Bridge Rectifier" style="width: 100%; max-width: 400px;">
+            <p><cite>Fig  (a): Circuit Diagram</cite></p>
+            </div>
+            <div style="text-align: center">
+            <img src="img/ae/Full_Wave_Bridge_Rectifier_EqCkt_1.png" alt="Full Wave Bridge Rectifier" style="width: 100%; max-width: 400px;">
+            <p><cite>Fig  (b): +ve Half Cycle</cite></p>
+            </div>
+            <div style="text-align: center">
+            <img src="img/ae/Full_Wave_Bridge_Rectifier_EqCkt_2.png" alt="Full Wave Bridge Rectifier" style="width: 100%; max-width: 400px;">
+            <p><cite>Fig  (c): -ve Half Cycle</cite></p>
+            </div>
+            <div style="text-align: center">
+            <img src="img/ae/Full_Wave_Bridge_Rectifier_Waveform.png" alt="Full Wave Bridge Rectifier Waveform" style="width: 100%; max-width: 400px;">
+            <p><cite>Fig  (a): Waveform</cite></p>
+            </div>
+            <ul>
+                <li>The need of s center taped transformer is eliminated in the bridge rectifier. It contains four diodes D<sub>1</sub>, D<sub>2</sub>, D<sub>3</sub> and D<sub>4</sub> connected to form a bridge.</li>
+                <li>The AC supply to be rectified is applied to diagonally opposite ends of the bridge through the transformer.</li>
+                <li>Between other two ends of the bridge the load R<sub>L</sub> is connected.</li>
+            </ul>
+            <p><b>Operation:</b></p>
+            <ul>
+                <li>During +ve half cycle of the AC input, point A becomes +ve and B becomes –ve. Diode D<sub>1</sub> and D<sub>3</sub> are forward biased and they conduct while D<sub>4</sub> and D<sub>2</sub> are reverse biased and they does not conduct.</li>
+                <li>Therefore these two diodes will be in series with resistance RL as shown in figure (a).</li>
+                <li>During –ve half cycle of the AC input, point A becomes –ve and B becomes +ve and diode D<sub>2</sub> and D<sub>4</sub> are in forward biased and they conducts and D<sub>1</sub> and D<sub>3</sub> are in reverse biased and they does not conduct.</li>
+                <li>Therefore D<sub>2</sub> and D<sub>4</sub> are in series with the resistance R<sub>L</sub> as shown in figure (b).</li>
+            </ul>
+            <h4>Average Values:</h4>
+            <p>The average values of output voltage and load current are same as for center tap transformer rectifier.</p>
+            \[{V_{dc}} = \frac{{2{V_m}}}{\pi }\]
+            \[{I_{dc}} = \frac{{2{I_m}}}{\pi }\]
+            \[{I_{rms}} = \frac{{{I_m}}}{{\sqrt 2 }}\]
+            \[PIV = {V_m}\]
+            <h4>Ripple Factor:</h4>
+            <p>The output of the half wave rectifier is not a pure DC but a pulsating DC. The output containing pulsating components called ripple.</p>
+            <p>It is defined as the ratio of RMS value of AC component output to the average value of DC component of the output.</p>
+            <p>Ripple factor for half wave rectifier is 1.21.</p>
+            <p>Ripple factor for full wave rectifier is 0.48.</p>
+            <h3>Filters:</h3>
+            <p>Filter is a circuit which removes the unwanted AC components from rectifier output but allows only DC components to reach the load.</p>
+            <h3>Necessity of Filers:</h3>
+            <p>A filter consists of positive circuit elements such as resistors, inductors and capacitors.</p>
+            <p>The rectified output consists of unwanted AC components called ripple. These ripples are not useful for electronic circuits. To achieve pure DC a filter circuit is required.</p>
+            <h3>Inductor Capacitor or Inverted L Type Filter:</h3>
+            <div style="text-align: center">
+            <img src="img/ae/L_Type_Filter.png" alt="Inverted L Type Filter" style="width: 100%; max-width: 300px;">
+            </div>
+            <ul>
+                <li>In this type of filter the inductor and capacitor are connected in the form of inverted L shape hence the name is Inverted L shape filter.</li>
+                <li>The output of the rectifier is given as the input to the filter circuit.</li>
+                <li>The output of the rectifier contains some AC and DC components.</li>
+                <li>The choke offers high opposition to the AC component but allows only DC components.</li>
+                <li>At point M DC with less pulsation passes and AC component which are present at M passes through capacitor hence only DC reaches the load.</li>
+            </ul>
+            <h3>Pie Filter:</h3>
+            <div style="text-align: center">
+            <img src="img/ae/Pie_Filter.png" alt="Pie Filter" style="width: 100%; max-width: 300px;">
+            </div>
+            <ul>
+                <li>Figure shows the pie filter, capacitor C<sub>1</sub> allows only AC components to pass through it hence DC passes through choke.</li>
+                <li>At point M if any AC component is left will be manage to pass through capacitor C<sub>2</sub> hence only DC reaches the load.</li>
+            </ul>
+            <h3>Voltage Regulator:</h3>
+            <div style="text-align: center">
+            <img src="img/ae/Voltage_Regulator_Block_Diagram.png" alt="Voltage Regulator" style="width: 100%; max-width: 600px;">
+            </div>
+            <p>Voltage regulator circuit is one which is design to keep the output voltage of a power supply nearly constant under varying input voltage and varying load conditions.</p>
+            <p>Operating voltages,</p>
+            <p>7809 = +9 V<br>7812 = +12V<br>7905 = -5V<br>7912 = -12V</p>
+            <h3>Working of the 7805:</h3>
+            <div style="text-align: center">
+            <img src="img/ae/Voltage_Regulator_7805.png" alt="Voltage Regulator 7805" style="width: 100%; max-width: 300px;">
+            </div>
+            <ul>
+                <li>IC 7805 is connected to provide voltage regulation with output DC +5V. an un regulated input voltage V<sub>i</sub> is filtered by input capacitor C<sub>in</sub> Connected to IC<sub>in</sub> terminal pin 1. It is used to cancel the effect due to long distribution.</li>
+                <li>Another bypass capacitor Cout connected at IC<sub>out</sub> terminal pin 2 used as regulator. Output produces +5V to improve transient response.</li>
+                <li>The third IC terminal is connected to the ground.</li>
+            </ul>            
+        </div>
+       
+       <div id="main-right">
+        <div>
+            <!--SPACE FOR GOOGLE ADSENSE-->
+        </div>
+    </div>
+       </div>
+       
+       
+       <div>
+        <!--SPACE FOR GOOGLE ADSENSE-->
+        </div>
+       
+       <div id="footer">
+           <h3>Need to talk with us?</h3>
+           <p>geteeenotes123@outlook.com</p>
+       </div>
+       
+       <button id="topbtn"><i class="fa fa-arrow-up" aria-hidden="true"></i></button>
+       
+       <script>
+        
+        $(document).ready(function(){
+            
+            $(window).scroll(function(){
+               if($(this).scrollTop() > 40){
+                   $('#topbtn').fadeIn();
+               } else{
+                   $('#topbtn').fadeOut();
+               }
+            });
+           
+            $("#topbtn").click(function(){
+                $('html, body').animate({scrollTop : 0}, 800);
+            });
+        });
+        
+        </script>
+        
+    </body>
+</html>

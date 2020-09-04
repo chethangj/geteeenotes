@@ -1,0 +1,729 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Power Electronics - 1.Power Semiconductor Devices - getEEEnotes!</title>
+        <meta name="viewport" content="width-device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css" type="text/css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+        <link rel="icon" href="img/favicon.png" sizes="16x16">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+        
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-174242618-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-174242618-2');
+</script>
+
+    </head>
+    
+    <body>
+        
+        <div id="header">
+        <div id="logo">
+            <a href="https://geteeenotes.tk/"><img src="img/logo1.png"></a>
+        </div>
+        <div id="socialicons">
+           <ul>
+               <li><a href="https://www.facebook.com/Geteeenotes-109734954168942/" target="_blank"><img src="img/facebook.png"></a></li>
+               <li><a href="https://www.instagram.com/geteeenotes5/" target="_blank"><img src="img/instagram.png"></a></li>
+               <li><a href="https://www.youtube.com/channel/UCgVMxyH-_CDSpZXi8fnl3MA/" target="_blank"><img src="img/youtube.png"></a></li>
+               <li><a href="https://t.me/getEEEnotes" target="_blank"><img src="img/telegram.png"></a></li>
+           </ul>            
+        </div>
+    </div>
+       
+       <div id="header-bar">
+       <p><b>Welcome to getEEEnotes!</b></p>
+       <p><b>MAKE DIPLOMA EEE EASIER</b></p>
+       
+    </div>
+      
+      <div class="navigate" style="border-bottom: 1px solid black">
+          <p><a href="https://geteeenotes.tk/" style="color: rgb(85, 39, 144)">Home</a> <i class="fa fa-angle-double-right" aria-hidden="true"></i> <a href="pe.html" style="color: rgb(85, 39, 144)">P E</a> <i class="fa fa-angle-double-right" aria-hidden="true"></i> <a href="peone.html" style="color: rgb(36, 169, 226)">1. Power Semiconductor Devices</a></p>
+      </div>
+       
+       <div>
+        <!--SPACE FOR GOOGLE ADSENSE-->
+        </div>
+        
+        <div id="main">
+        <div id="main-left" style="font-family: 'Open Sans', sans-serif; line-height: 25px">
+        
+        <h2>CHAPTER 01 : Power Semiconductor Devices</h2>
+            <h3>Power Electronics:</h3>
+            <p>Power electronics is one of the important branch of electrical and electronics engineering. It deals with conversion and control of electrical energy.</p>
+            <h3>Block Diagram of Power Electronics System:</h3>
+            <div style="text-align: center">
+            <img src="img/pe/PE_Block_Diagram.png" alt="PE Block Diagram" style="width: 100%; max-width: 500px;">
+            </div>
+            <h3>Control and Conversion:</h3>
+            <p>Power semiconductor devices are used as ON / OFF switches in power control circuits.</p>
+            <p>These devices are broadly classified into 3 types.</p>
+            <ol>
+                <li>Diode
+                <ol type="i">
+                    <li>General purpose</li>
+                    <li>High speed</li>
+                    <li>Schottky</li>
+                </ol></li>
+                <li>Thyristor
+                <ol type="i">
+                    <li>SCR</li>
+                    <li>GTO</li>
+                    <li>RCT</li>
+                    <li>SITH</li>
+                    <li>GATT</li>
+                    <li>LASCR</li>
+                    <li>MCT</li>
+                    <li>TRIACC</li>
+                </ol></li>
+                <li>Transistor
+                <ol type="i">
+                    <li>BJT</li>
+                    <li>MOSFET</li>
+                    <li>IGBT</li>
+                    <li>SIT</li>
+                </ol></li>
+            </ol>
+            <h3>Power Diode:</h3>
+            <div style="text-align: center">
+            <img src="img/pe/Diode.png" alt="Diode Symbol" style="width: 100%; max-width: 300px;">
+            <p><cite>Fig (a): Symbol</cite></p>
+            </div>
+            <div style="text-align: center">
+            <img src="img/pe/Diode_Structure.png" alt="Diode Stucture" style="width: 100%; max-width: 300px;">
+            <p><cite>Fig (b): Structure</cite></p>
+            </div>
+            <p>Power diodes are required in most of the power converters. Power diode is a unidirectional device.</p>
+            <p>When anode A is positive with respect to cathode (k) diode starts conducting, current flows from anode to cathode and diode set to be forward bias.</p>
+            <p>When cathode voltage is greater than anode voltage than the diode do not conduct and is set to be reverse bias which is shown in above figure a.</p>
+            <h4>Structure of Power Diode:</h4>
+            <p>Figure b shows the structure of power diode.</p>
+            <ul>
+                <li>The n+ subtract forms the cathode of the diode.</li>
+                <li>The pn junction is formed by diffusing a heavily doped p+ region. This p+ region forms anode of the diode.</li>
+                <li>The thickness of n- drift region depends upon the breakdown voltage of the diode.</li>
+                <li>For higher breakdown voltage drift region is wide and almost absent for low power signal diode.</li>
+                <li>This power diode conducts only in forward bias condition that is from anode to cathode.</li>
+            </ul>
+            <h3>VI Characteristics of Power Diode:</h3>
+            <div style="text-align: center">
+            <img src="img/pe/Diode_VI_Char.png" alt="VI Char of Diode" style="width: 100%; max-width: 500px;">
+            </div>
+            <ul>
+                <li>When the positive of the supply is given to anode and negative of the supply is given to cathode then the diode is set to be forward bias. In forward bias condition anode current increases linearly with voltage.</li>
+                <li>The negative of the supply is connected to the anode and positive of the supply is connected to the cathode then the supply is connected to the cathode then the diode is set to reverse biased. When diode is reverse biased very small anode current flows called as leakage current.</li>
+                <li>When the voltage exceeds VRBD, anode current rises rapidly hence large power dissipation takes place in the diode which may damage the device. This can be avoided by operating the diode bellow the breakdown voltage. </li>
+            </ul>
+            <h3>Applications of Power Diode:</h3>
+            <p>They are used in rectifiers, voltage amplifiers, battery chargers, chopper, inverters, and converters.</p>
+            <h3>Thyristor:</h3>
+            <p>Thyristors are the oldest semiconductor devices which are used in power controlled applications. There are 2 types of Thyristors.</p>
+            <ol>
+                <li>Unidirectional Thyristor</li>
+                <li>Bidirectional Thyristor</li>
+            </ol>
+            <h3>Silicon Control Rectifier (SCR):</h3>
+            <div style="text-align: center">
+            <img src="img/pe/SCR.png" alt="SCR Symbol" style="width: 100%; max-width: 400px;">
+            <p><cite>Fig (a): Symbol</cite></p>
+            </div>
+            <div style="text-align: center">
+            <img src="img/pe/SCR_Structure.png" alt="SCR Structure" style="width: 100%; max-width: 300px;">
+            <p><cite>Fig (b): Structure</cite></p>
+            </div>
+            <p>SCR is a four layer; three terminal semiconductor device which is shown is above figure.</p>
+            <h4>Structure:</h4>
+            <p>It consists of three pn junction namely J1, J2 and J3. Anode (A) is taken out from the P1 layer and cathode (K) is taken out from the N2 layer and gate (G) is taken out from the P2 layer. The gate terminal is used to turn ON the device which is shown in the above figure.</p>
+            <p>SCR is having three basic modes of operation.</p>
+            <ol type="i">
+                <li>Forward blocking mode (FBM)</li>
+                <li>Forward conduction mode (FCM)</li>
+                <li>Reverse blocking mode (RBM)</li>
+            </ol>
+            <h4>Working of SCR:</h4>
+            <h4>(i)  Forward Biased:</h4>
+            <ul>
+                <li>When anode is positive with respect to cathode SCR is set to be forward bias which is shown in fig (a).</li>
+                <li>During forward blocking mode, I<sub>g</sub>=0 that is gate is kept open, under this condition junction J1 and J3 is forward bias J2 is reverse bias. Therefore SCR will not conduct when a small voltage is applied.</li>
+                <li>But if applied voltage (V<sub>AK</sub>) is increased to a certain value called forward break over voltage (V<sub>BO</sub>) then the junction J2 is breakdown. This causes SCR to conduct hence called as forward conduction mode even when gate is kept open.</li>
+                <li>In ON state the current through the SCR is large and it can be controlled by the applied voltage and external resistance.</li>
+            </ul>
+            <div style="text-align: center">
+            <img src="img/pe/SCR_FB.png" alt="SCR FB" style="width: 100%; max-width: 400px;">
+            <p><cite>Fig (a): Forward Bias of SCR</cite></p>
+            </div>
+            <h4>(ii) Reverse Bias:</h4>
+            <p>When anode is made negative with respect to cathode SCR is set to be reverse bias. In this mode junction J1 and J3 is reverse bias and J2 is forward bias. There is no current in the gate terminal expect reverse leakage current flow to the SCR. Hence SCR will be in the OFF state. This mode is called as reverse blocking mode shown in fig (b).</p>
+            <p>If reverse voltage V<sub>AK</sub> is increases to a certain value called reverse break over voltage (V<sub>RO</sub>) then a large current will start to flow in SCR which may damage SCR.</p>
+            <div style="text-align: center">
+            <img src="img/pe/SCR_RB.png" alt="SCR RB" style="width: 100%; max-width: 400px;">
+            <p><cite>Fig (b): Reverse Bias of SCR</cite></p>
+            </div>
+            <h3>Ideal Characteristics of SCR:</h3>
+            <div style="text-align: center">
+            <img src="img/pe/SCR_Ideal_Char.png" alt="Ideal Characteristics of SCR" style="width: 100%; max-width: 400px;">
+            </div>
+            <h3>VI Characteristics of SCR:</h3>
+            <div style="text-align: center">
+            <img src="img/pe/SCR_VI_Char.png" alt="VI Characteristics of SCR" style="width: 100%; max-width: 500px;">
+            </div>
+            <h4>Forward bias:</h4>
+            <p>The above graph shows the VI or static characteristics of SCR.</p>
+            <p>From point O to A current is very small (minority charge carriers) SCR is in OFF state. This mode is called forward blocking mode whenever the forward voltage (V<sub>AK</sub>) reaches forward break over voltage (V<sub>BO</sub>) the thyristor (SCR) turns ON, junction J2 breakdown and anode current increases rapidly (I<sub>A</sub>) shown in the figure from B to C. now the device is set to be in forward conduction mode.</p>
+            <h4>Latching Current (I<sub>L</sub>):</h4>
+            <p>It is the minimum anode current required maintaining the SCR in ON state immediately after a thyristor has been turned ON, gate signal has been removed.</p>
+            <p>“The ability of SCR to remain conducting even when gate signal is removed is known as latching current.” The region C is in forward conduction mode.</p>
+            <h4>Holding Current (I<sub>H</sub>):</h4>
+            <p>It is the minimum anode current to maintain the SCR in ON state but the holding current is less than the latching current i.e., I<sub>H</sub> less than I<sub>L</sub>, when anode current reduces bellow the holding current SCR turns OFF.</p>
+            <h4>Reverse Biased Characteristics:</h4>
+            <p>A very small current flows to the SCR due to minority charge carriers. When the reverse voltage reaches reverse break over voltage SCR conducts called reverse blocking mode but the device gate is damaged.</p>
+            <h3>Two Transistor Model of SCR (or) Two Transistor Analogy:</h3>
+            <div style="text-align: center">
+            <img src="img/pe/Two_Transistor_Analogy.png" alt="Two Transistor Analogy" style="width: 100%; max-width: 600px;">
+            <p><cite>Fig (a): Equivalent Circuit</cite></p>
+            </div>
+            <div style="text-align: center">
+            <img src="img/pe/Two_Transistor_Analogy_Structure.png" alt="Two Transistor Analogy Structure" style="width: 100%; max-width: 400px;">
+            <p><cite>Fig (b): Basic Structure</cite></p>
+            </div>
+            <p><b>Construction:</b></p>
+            <p>A thyristor can be considered as two complementary transistors one is pnp (Q1) and another is npn (Q2). The base of the transistor Q1 is connected to the collector of Q2. Similarly base of the transistor Q2 is connected to the collector of Q1. In this circuit we have an action of positive feedback or regeneration. It means that if there is any change in current at any point in the loop formed by transistor Q1 and Q2 it is amplified and return to the starting point with the same phase.</p>
+            <p><b>Working:</b></p>
+            <p>Fig a and b shows the equivalent circuit and basic structure of two transistor model of SCR. If the base current of transistor Q2 increases the collector current of transistor Q2 is also increased. It causes more base current through the transistor Q1 due to which collector current of Q1 also increases. This action will continue till both the transistors are driven into the saturation. In this circuit SCR act as ON switch and it will pass current from anode to cathode.</p>
+            <h3>Applications of SCR:</h3>
+            <ul>
+                <li>SCR’s best suitable for uncontrolled rectifiers.</li>
+                <li>It is used in AC regulators, light dimmers, heating applications.</li>
+                <li>DC motor drives, large power supplies and electronic circuit breaker.</li>
+                <li>Battery charger.</li>
+                <li>Inverters.</li>
+            </ul>
+            <h3>TRIAC:</h3>
+            <div style="text-align: center">
+            <img src="img/pe/TRIAC.png" alt="TRIAC Symbol" style="width: 100%; max-width: 400px;">
+            <p><cite>Fig (a): Symbol</cite></p>
+            </div>
+            <div style="text-align: center">
+            <img src="img/pe/TRIAC_Equivalent.png" alt="TRIAC Equivalent" style="width: 100%; max-width: 400px;">
+            <p><cite>Fig (b): Equivalent Circuit of SCR Connected in Antiparallel</cite></p>
+            </div>
+            <div style="text-align: center">
+            <img src="img/pe/TRIAC_Structure.png" alt="TRIAC Sectional View" style="width: 100%; max-width: 300px;">
+            <p><cite>Fig (c): Sectional View of TRIAC</cite></p>
+            </div>
+            <p><b>Construction:</b></p>
+            <p>TRIAC is a bidirectional switching device. It conducts both the direction that is forward and reverse bias. Therefore it acts as an AC switch which can control AC whereas SCR conducts only in one direction.</p>
+            <p>TRIAC has three terminals that is main terminal 1 (MT1), main terminal (MT2) and gate (G) which is shown in the above fig a and b. it consists of TRIAC equivalent circuit in which two SCR’s are connected antiparallel with common gate terminal fig © the shows sectional view or construction of TRIAC.</p>
+            <p>It consist of two type (n type and p type) 4 layers with a common gate terminal (N3). Therefore P1N1P2N2 forms SCR2 and P2N1P1N4 forms SCR1.</p>
+            <h3>Gate triggering modes of TRIAC:</h3>
+            <p>table</p>
+            <p>There are four operating modes in a TRIAC operation depending upon the polarity of voltage across its main terminal and gate terminal.</p>
+            <h4>Mode 1:</h4>
+            <div style="text-align: center">
+            <img src="img/pe/TRIAC_Mode1.png" alt="TRIAC Mode1" style="width: 100%; max-width: 200px;">
+            <p><cite>Fig (a)</cite></p>
+            </div>
+            <p>MT2 is made positive and gate is positive. It operates in 1st quadrant the operation is just like SCR. The current flows from MT2 to MT1 through the switch P1N1P2N2. It requires less gate current to turn ON TRIAC which is shown in above fig.</p>
+            <h4>Mode 2:</h4>
+            <div style="text-align: center">
+            <img src="img/pe/TRIAC_Mode2.png" alt="TRIAC Mode2" style="width: 100%; max-width: 200px;">
+            <p><cite>Fig (b)</cite></p>
+            </div>
+            <p>MT2 is made positive and gate is negative, it operates in 1st quadrant that is forward biased and current flows from MT2 to MT1 through the switch P1N1P2N2. It requires high gate current shown in figure.</p>
+            <h4>Mode 3:</h4>
+            <div style="text-align: center">
+            <img src="img/pe/TRIAC_Mode3.png" alt="TRIAC Mode3" style="width: 100%; max-width: 200px;">
+            <p><cite>Fig (c)</cite></p>
+            </div>
+            <p>MT2 is negative and gate is positive it operates in 3rd quadrant which is reverse biased and current flows from MT1 to MT2. Higher gate current is required to turn ON TRIAC. The current flows through the switch P2N1P1N4 shown in figure.</p>
+            <h4>Mode 4:</h4>
+            <div style="text-align: center">
+            <img src="img/pe/TRIAC_Mode4.png" alt="TRIAC Mode4" style="width: 100%; max-width: 200px;">
+            <p><cite>Fig (d)</cite></p>
+            </div>
+            <p>MT2 is negative and gate is negative it operates in 3rd quadrant which is reverse biased. The current flows from Mt1 to MT2 through the switch P2N1P1N4. It requires less gate current to turn ON the TRIAC shown in figure.</p>
+            <p>Normally mode 1 and mode 4 are the preferred modes of operation of TRIAC.</p>
+            <h3>VI Characteristics of TRIAC:</h3>
+            <div style="text-align: center">
+            <img src="img/pe/TRIAC_VI_Char.png" alt="VI Characteristics of TRIAC" style="width: 100%; max-width: 600px;">
+            </div>
+            <p>When forward biased that is MT2 is positive with respect to MT1 then current flows from MT2 to MZT1 through the switch P1N1P2N2 which operates in 1st quadrant.</p>
+            <p>When MT2 is negative with respect to MT1 then it is set to be reversed biased. The current flows from MT1 to MT3 through the switch P2N1P1N4 which operates in 3rd quadrant.</p>
+            <p>When gate drive is applied to the TRIAC it is turned ON at lower voltage. The characteristic of TRIAC is similar in both forward and reverse direction (biased).</p>
+            <h3>Applications of TRIAC:</h3>
+            <ul>
+                <li>AC static switches.</li>
+                <li>It is used as triggering device for SCR.</li>
+                <li>Control of AC power in AC motors.</li>
+                <li>Temperature control of Furness.</li>
+                <li>Illumination control.</li>
+                <li>Speed control of AC motors.</li>
+                <li>Time delay relay.</li>
+            </ul>
+            <h3>Differences between SCR and TRIAC:</h3>
+            <table style="width: 100%">
+                <tr>
+                    <th style="width: 50%">SCR</th>
+                    <th style="width: 50%">TRIAC</th>
+                </tr>
+                <tr>
+                    <td>1. It conducts current in one direction only.</td>
+                    <td>1. It conducts current in both forward and reverse direction.</td>
+                </tr>
+                <tr>
+                    <td>2. It is triggered by an applying positive gate pulses to the gate terminal.</td>
+                    <td>2. It is triggered by applying both either positive or negative gate pulses to the gate terminal.</td>
+                </tr>
+                <tr>
+                    <td>3. SCR’s are available with large current rating.</td>
+                    <td>3. Compare to the SCR these are available with low current rating.</td>
+                </tr>
+                <tr>
+                    <td>4. It has fast turn OFF and therefore it can be used as switch in Ac supply for frequency upto few kHz.</td>
+                    <td>4. It has longer turn off time hence limited upto 400 Hz.</td>
+                </tr>
+            </table>
+            <h3>DIAC:</h3>
+            <div style="text-align: center">
+            <img src="img/pe/DIAC.png" alt="DIAC Symbol" style="width: 100%; max-width: 400px;">
+            <p><cite>Fig (a): Symbol</cite></p>
+            </div>
+            <div style="text-align: center">
+            <img src="img/pe/DIAC_Structure.png" alt="DIAC Structure" style="width: 100%; max-width: 400px;">
+            <p><cite>Fig (b): Structure</cite></p>
+            </div>
+            <div style="text-align: center">
+            <img src="img/pe/DIAC_VI_Char.png" alt="VI Char of DIAC" style="width: 100%; max-width: 600px;">
+            <p><cite>Fig (c): VI Characteristics of DIAC</cite></p>
+            </div>
+            <p>A DIAC is a two terminal bidirectional triggering device which can be switched from OFF state to the ON state during both the cycle (forward and reverse bias (or) positive and negative cycle) of AC input signal. This device consists of 2 PNPN section switches connected in antiparallel which is shown in fig (b) but it has no gate terminal. DIAC is similar to 2 SCR’s connected in antiparallel without a gate terminal. It is also called as trigger diode. The symbol is shown in fig (a).</p>
+            <h4>Operation of DIAC:</h4>
+            <p>The section P1N1P2N2 has junctions J2, J3, J4 similarly the section P2N1P1N3 as junction J1, J2, J3.</p>
+            <p>When MT1 is positive and MT2 is negative and the voltage is increases and the DIAC turns ON which offers negative resistance and current flows from MT1 to MT2.</p>
+            <p>Similarly MT2 is made positive and MT1 is made negative when voltage is increases the DIAC turns ON which offers negative resistance and current flows from MT2 to MT1.</p>
+            <p>When the applied voltage is less than V<sub>BO</sub> or V<sub>BR</sub> the DIAC blocks the flow of current and ac as open switch that is device is in OFF state.</p>
+            <p>When the applied voltage exceeds V<sub>BO</sub> or V<sub>BR</sub> the DIAC conducts and the current start flowing from MT1 to MT2 or MT2 to MT1 at the device set to be ON state.</p>
+            <h3>Applications of DIAC:</h3>
+            <ul>
+                <li>They are widely used in AC control circuit such as lamp dimmers, heat control, motor speed control etc.</li>
+                <li>Trigger devices for SCR control applications.</li>
+            </ul>
+            <h3>Light Activated SCR (LASCR) or Photo Diode:</h3>
+            <div style="text-align: center">
+            <img src="img/pe/LASCR.png" alt="LASCR Symbol" style="width: 100%; max-width: 150px;">
+            <p><cite>Fig (a): Symbol</cite></p>
+            </div>
+            <div style="text-align: center">
+            <img src="img/pe/LASCR_Structure.png" alt="LASCR Structure" style="width: 100%; max-width: 250px;">
+            <p><cite>Fig (b): Structure</cite></p>
+            </div>
+            <div style="text-align: center">
+            <img src="img/pe/LASCR_VI_Char.png" alt="LASCR VI Char" style="width: 100%; max-width: 500px;">
+            <p><cite>Fig (c): VI Characteristics of LASCR</cite></p>
+            </div>
+            <p>The light activated SCR can be triggered using a beam of light. Its gate region is photo sensitive. Figure (a) shows the symbol and figure (b) shows the VI characteristics of LASCR.</p>
+            <p>It has four layer 3 junctions just like an SCR. There is no gate terminal. Figure (b) shows the structure of LASCR. The layer P1 is exposed to sun light triggers the LASCR.</p>
+            <p>When light is incident in P1 region, electron hole pairs diffuse towards P1N1 that is junction J3. Now junctions J1 J3 is forward biased and J2 is reverse biased hence more light is required to break down the junction J2. If the junction J2 is broken then the current across J2 increases which drops voltage across anode and cathode this makes LASCR to turn ON.</p>
+            <p>LASCR turns ON even at low anode to cathode voltage if incident light intensity is higher.</p>
+            <h3>Advantages of LASCR:</h3>
+            <ul>
+                <li>It can be turned ON by a beam of light.</li>
+                <li>Low power losses in ON state.</li>
+                <li>Turn ON time is short.</li>
+            </ul>
+            <h3>Applications:</h3>
+            <ul>
+                <li>It is used in high power applications like HVDC transmission.</li>
+                <li>Used in noise environments for better triggering control.</li>
+            </ul>
+            <h3>Power Transistor:</h3>
+            <p>It is broadly classified into,</p>
+            <ol>
+                <li>Bipolar Junction Transistor (BJT)</li>
+                <li>Metal Oxide Semiconductor Field Effect Transistor (MOSFET)</li>
+                <li>Insulated Gate Bipolar Transistor (IGBT)</li>
+            </ol>
+            <h3>1. BJT:</h3>
+            <div style="text-align: center">
+            <img src="img/pe/BJT_PNP_NPN.png" alt="BJT PNP and NPN" style="width: 100%; max-width: 500px;">
+            <p><cite>Fig: NPN & PNP BJT</cite></p>
+            </div>
+            <p>In NPN BJT when the base emitter junction is forward bias the transistor turns ON and current flows from collector to emitter. The BJT turns OFF as soon as base emitter drive is removed.</p>
+            <p>In PNP BJT the base emitter junction is forward bias the transistor turns ON and current flows from emitter to collector. The BJT turns OFF as soon as base emitter drive is removed.</p>
+            <p>Power transistor or BJT is a bipolar device. There are two types NPN and PNP.</p>
+            <p>The available current and voltage ratings are higher for NPN devices.</p>
+            <h3>VI Characteristics of BJT:</h3>
+            <div style="text-align: center">
+            <img src="img/pe/BJT_VI_Char.png" alt="BJT VI Char" style="width: 100%; max-width: 500px;">
+            </div>
+            <p>Figure shows the VI characteristics of BJT. These characteristics are also called output characteristics. The collector current IC is plotted with respect to collector emitter voltage for different values of base current. There are four region namely cutoff region, active region, quasi saturation and hard saturation.</p>
+            <h3>BJT as a switch:</h3>
+            <p>In On state BJT operates in quasi or hard saturation region. In OFF state BJT operates in cutoff region.</p>
+            <p><b>Cutoff region:</b> The cutoff region is the area where base current is almost 0. Hence no current flows and transistor is OFF.</p>
+            <p><b>Quasi and Hard Saturation:</b> In quasi and hard saturation when base drive is applied and transistor is set to be turn ON. Hence the collector current flows depending upon the load and also flows from collector to emitter.</p>
+            <p><b>Active Region:</b> BJT is never operated in active region. In this region BJT acts as an amplifier.</p>
+            <p><b>Note:</b> Transistor is current control device. The base current decides it is in ON state or OFF state. In transistor base is a control terminal.</p>
+            <table style="width: 100%">
+                <tr>
+                    <th>Region</th>
+                    <th>EB Junction</th>
+                    <th>CB Junction</th>
+                    <th>State</th>
+                </tr>
+                <tr>
+                    <td>Cutoff Region</td>
+                    <td>Reverse Bias</td>
+                    <td>Reverse Bias</td>
+                    <td>OFF</td>
+                </tr>
+                <tr>
+                    <td>Active Region</td>
+                    <td>Forward Bias</td>
+                    <td>Reverse Bias</td>
+                    <td>Act as an Amplifier</td>
+                </tr>
+                <tr>
+                    <td>Saturation Region</td>
+                    <td>Forward Bias</td>
+                    <td>Reverse Bias</td>
+                    <td>ON</td>
+                </tr>
+            </table>
+            <h3>Merits of BJT:</h3>
+            <ul>
+                <li>BJT have small turn ON and turn OFF time hence their switching frequencies are higher.</li>
+                <li>BJT have small turn ON losses.</li>
+                <li>Base drive has fully controlled over the operation of BJT.</li>
+                <li>BJT do not require commutation circuits.</li>
+                <li>BJT is a bipolar device.</li>
+                <li>BJT available at low cost.</li>
+            </ul>
+            <h3>Demerits of BJT:</h3>
+            <ul>
+                <li>Base drive circuit of BJT is complex.</li>
+                <li>Storage charge in base reduces the switching frequencies.</li>
+            </ul>
+            <h3>Application of BJT:</h3>
+            <ul>
+                <li>SMPS (Switched Mode Power Supply)</li>
+                <li>Bridge inverters</li>
+                <li>DC to DC converters (Choppers)</li>
+                <li>Power factor correction technics.</li>
+            </ul>
+            <h3>Operation of NPN transistor as a switch:</h3>
+            <div style="text-align: center">
+            <img src="img/pe/BJT_As_a_Switch.png" alt="BJT As a Switch" style="width: 100%; max-width: 300px;">
+            </div>
+            <ul>
+                <li>The transistor operates in regions namely active region, saturation region and cutoff region.</li>
+                <li>When transistor is made to operate in active region then it acts as an amplifier.</li>
+                <li>When it is made to operate in cutoff region and saturation region it acts as a switch. For power electronic applications transistor is mainly used as a switch. The saturation state occurs when both EB and CB junctions are forward biased. The cutoff state occurs when both the junctions are reversing biased. A transistor can be used as a electronic switch which can turn ON and turn OFF the current.</li>
+                <li>When input base voltage (V<sub>BE</sub>) is positive the transistor saturates the collector current I<sub>C</sub> will flows through the collector resistance R<sub>C</sub>. This condition similar to a closed switch (ON) and the LED will glow.</li>
+                <li>When input base voltage is negative the transistor operates in cutoff region and no collector current (I<sub>C</sub>) flows through the collector resistance R<sub>C</sub>. This condition is similar to that of open switch (OFF) and the LED does not glow.</li>
+            </ul>
+            <h3>Switching Characteristics of BJT:</h3>
+            <div style="text-align: center">
+            <img src="img/pe/BJT_Switching_Char.png" alt="Switching Characteristics of BJT" style="width: 100%; max-width: 550px;">
+            <p><cite>Fig (a): Equivalent Model</cite></p>
+            </div>
+            <div style="text-align: center">
+            <img src="img/pe/BJT_Switching_Char_Waveform.png" alt="Switching Characteristics of BJT Waveform" style="width: 100%; max-width: 600px;">
+            <p><cite>Fig (b): Switching Waveforms of BJT</cite></p>
+            </div>
+            <ul>
+                <li>Figure (a) and (b) shows the equivalent model of BJT and switching waveforms of BJT. Base to emitter voltage (V<sub>BE</sub>) is positive to turn ON the BJT. When V<sub>BE</sub> is ON base current (I<sub>B</sub>) also start flowing.</li>
+                <li>In figure (b) shows that when base drive is applied collector current does not start flowing because collector base junction capacitance (C<sub>BE</sub>) state charging after the base drive is applied.</li>
+                <li>Delay time (t<sub>d</sub>) time required for collector current start increasing after base drive is applied. Now C<sub>BE</sub> charges to forward bias voltage (0.7 V) the collector current reaches to its steady state value. Now the BJT is fully turned ON.</li>
+                <li>Rise time (t1) time required for collector current to reach its steady state value. Turn ON time of BJT is equal to the sum of delay time and rising time.</li>
+                \[{t_{ON}} = {t_d} + {t_r}\]
+                <li>For turn OFF of the transistor base voltage is negative hence base current also negative but the collector current does not change till the time ts called storage time. In this time saturating charge is removed from the base.</li>
+                <li>When storage charge is removed base current and collector current starts flowing and reaches to the zero (storage charge is removed because of negative base current).</li>
+                <li>Once storage charge is removed C<sub>BE</sub> start charges the negative base voltage but base current is zero. The fall of the collector current depends on negative charge storage in C<sub>BE</sub>. The time required to fall of collector current is called full time.</li>
+                <li>The turn of time of the transistor is equal to the sum of the storage time (t<sub>s</sub>) and full time (t<sub>f</sub>).</li>
+                \[{t_{OFF}} = {t_s} + {t_f}\]
+            </ul>
+            <p><b>Note:</b> Here storage time t<sub>s</sub> is more because more time is required to remove the extra charge of the base.</p>
+            <h3>Comparison between SCR and BJT:</h3>
+            <table style="width: 100%">
+                <tr>
+                    <th style="width: 50%">SCR</th>
+                    <th style="width: 50%">BJT</th>
+                </tr>
+                <tr>
+                    <td>1. SCR is a four layer PNPN structure and three terminal devices.</td>
+                    <td>1. BJT is a 3 layer NPN or PNP structure and three terminal devices.</td>
+                </tr>
+                <tr>
+                    <td>2. SCR is turned ON by regeneration.</td>
+                    <td>2. No regeneration exists.</td>
+                </tr>
+                <tr>
+                    <td>3. Once the SCR is turn ON gate has no control over the operation of SCR.</td>
+                    <td>3. Base has full control over the conduction of BJT.</td>
+                </tr>
+                <tr>
+                    <td>4. To turn OFF a SCR external commutation circuit is required.</td>
+                    <td>4. No commutation circuit is required to turn OFF the BJT.</td>
+                </tr>
+                <tr>
+                    <td>5. For SCR switching frequencies are low.</td>
+                    <td>5. Switching frequencies are high.</td>
+                </tr>
+                <tr>
+                    <td>Applications: AC regulator, controlled rectifier etc.</td>
+                    <td>Applications: choppers, UPS, SMPS etc.</td>
+                </tr>
+            </table>
+            <h3>MOSFET:</h3>
+            <p>MOSFET are the majority carrier device. Power MOSFET is a device derived from FET. It is used as fast acting switch at low power levels.</p>
+            <p>BJJ is a current control device whereas MOSFET is a voltage control device. This is a fast switching transistor suitable for high frequency and low power applications.</p>
+            <p>Power MOSFET’s are in two types.</p>
+            <ol>
+                <li>N-Channel MOSFET</li>
+                <li>P-Channel MOSFET</li>
+            </ol>
+            <div style="text-align: center">
+            <img src="img/pe/MOSFET_Types.png" alt="MOSFET Symbols" style="width: 100%; max-width: 500px;">
+            </div>
+            <ul>
+                <li>MOSFET has three terminals. Gate (G), Drain (D) and Source (S).</li>
+                <li>When gate to source voltage is applied the MOSFET is turned ON. The current flows from drain to source.</li>
+                <li>When gate to source voltage is removed or zero the MOSFET is turned OFF. No current flows from drain to source.</li>
+                <li>Only voltage is applied to turn ON and turn OFF of a MOSFET. Thus gate has fully control over the conduction of MOSFET. Hence the MOSFET is a voltage control device.</li>
+            </ul>
+            <h3>Structure and Operation of MOSFET:</h3>
+            <div style="text-align: center">
+            <img src="img/pe/MOSFET_Strucrure_1.png" alt="MOSFET Structure" style="width: 100%; max-width: 300px;">
+            <p><cite>Fig (a): N-Channel Enhancement MOSFET</cite></p>
+            </div>
+            <div style="text-align: center">
+            <img src="img/pe/MOSFET_Strucrure_2.png" alt="MOSFET Structure" style="width: 100%; max-width: 300px;">
+            <p><cite>Fig (b): Formation of Inversion Layer (or) Channel</cite></p>
+            </div>
+            <div style="text-align: center">
+            <img src="img/pe/MOSFET_Strucrure_3.png" alt="MOSFET Structure" style="width: 100%; max-width: 500px;">
+            <p><cite>Fig (c): Four Layer Structure of N-Channel Enhancement MOSFET</cite></p>
+            </div>
+            <p>There are two types of MOSFET’s. Depletion type and Enhancement type MOSFET.</p>
+            <ul>
+                <li>Figure shows the structure of n channel enhancement type MOSFET.</li>
+                <li>The source and drain are connected to n+ regions which are heavily doped have intensity of 10<sup>19</sup>/cm<sup>3</sup>. P type body region forms the channel between drain and source having doping level intensity of 10<sup>15</sup>/cm<sup>3</sup>.</li>
+                <li>The gate metal is connected to the P type region in between an insulating gate oxide (SiO<sub>2</sub>) layer exists.</li>
+                <li>Figure (c) shows the four layer structure of N-Channel enhancement MOSFET. This is n+ p n- n+ structure. A drift region (n-) is lightly doped is shown in structure.</li>
+                <li>In this structure gate overlaps the P type and n+ region. Source also overlaps the P type and n+ region.</li>
+                <li>When gate to source (V<sub>GS</sub>) voltage is applied, accumulation layer of electrons is generated in the body region (P type) near oxide layer called induced channel of electrons.</li>
+                <li>Therefore the drain to source current (I<sub>DS</sub>) flows through this induced channel. When VGS is equal to zero, induced channel absent. Therefore no I<sub>DS</sub> current flows. This is called N-channel enhancement MOSFET.</li>
+                <li>Current I<sub>DS</sub> starts flowing from drain to source because of drift region ON state voltage drop of MOSFET increases thickness of drift region determines the breakdown voltage of MOSFET.</li>
+                <li>Here parasitic BJT is former base is in P type, emitter is in n+ and collector is in n- drift region. Emitter and base of the parasitic BJT are shorted to source, BJT does not conduct.</li>
+            </ul>
+            <h3>Transfer Characteristics of MOSFET:</h3>
+            <div style="text-align: center">
+            <img src="img/pe/MOSFET_Transfer_Char.png" alt="Transfer Characteristics of MOSFET" style="width: 100%; max-width: 400px;">
+            </div>
+            <ul>
+                <li>•	Figure shows the transfer characteristics of MOSFET. It is a variation of drain current (ID) with respect to gate to source voltage (VGS).</li>
+                <li>•	As shown VGST is the minimum positive voltage that is required to induce the channel of electrons in the MOSFET. In other words VGST is required to turn ON the device.</li>
+                <li>•	VGST is normally 2-3 volts for turn ON a device.<br>When<br>VGS less than VGST MOSFET is turned OFF.<br>VGS>VGST MOSFET is turned ON.</li>
+            </ul>
+            <h3>Applications of MOSFET:</h3>
+            <ul>
+                <li>High frequency and low power inverters.</li>
+                <li>High frequency SMPS.</li>
+                <li>Choppers.</li>
+                <li>Low power AC and DC drives.</li>
+            </ul>
+            <h3>IGBT:</h3>
+            <div style="text-align: center">
+            <img src="img/pe/IGBT_Symbol.png" alt="IGBT Symbol" style="width: 100%; max-width: 600px;">
+            </div>
+            <ul>
+                <li>IGBT is a voltage controlled switch. It is obtained by combining the property of MOSFET and BJT. The gate circuit of MOSFET and collector emitter circuit of BJT is combining together to form a new device called IGBT. Hence IGBT have advantages of both BJT and MOSFET.</li>
+                <li>BJT have low ON state losses for high value of current but MOSFET can turned ON and OFF faster hence MOSFET have high ON state losses.</li>
+                <li>The drive circuit of BJT is complex but drive circuit of MOSFET is simple hence IGBT is formed.</li>
+                <li>IGBT has three terminals gate, collector and emitter. Therefore current flows from collector to emitter.</li>
+                <li>When gate to emitter voltage is applied IGBT is turned ON. When gate to emitter voltage is removed IGBT turned OFF. Thus gate has fully controlled over the conduction of IGBT.</li>
+            </ul>
+            <h3>Structure of IGBT:</h3>
+            <div style="text-align: center">
+            <img src="img/pe/IGBT_Stucture.png" alt="IGBT Structure" style="width: 100%; max-width: 500px;">
+            </div>
+            <ul>
+                <li>The structure of IGBT is similar to that of MOSFET. Figure shows the vertical crossection of IGBT. In this structure n+ p n- n+ p+ regions are present.</li>
+                <li>Compare to MOSFET there is an additional p+ injecting layer is present. This layer is collector (drain) of IGBT. This p+ injecting layer is heavily doped having doping intensity of 10<sup>19</sup>/cm<sup>3</sup>.</li>
+                <li>The doping of other layer is similar to that of MOSFET. N+ layers have 1019/cm3, P type region has doping level of 10<sup>16</sup>/cm<sup>3</sup>.</li>
+                <li>N- drift region is lightly doped having doping level of 10<sup>14</sup>/cm<sup>3</sup>. This region results in ON state losses of IGBT increases. Thickness of drift region determines the breakdown voltage.</li>
+            </ul>
+            <h3>Applications of IGBT:</h3>
+            <ul>
+                <li>AC motor drive that is inverters.</li>
+                <li>DC to DC power supply that is choppers.</li>
+                <li>UPS systems.</li>
+                <li>Harmonic compensator.</li>
+            </ul>
+            <h3>Comparison of SCR, BJT, MOSFET and IGBT:</h3>
+            <table style="width: 100%">
+                <tr>
+                    <th>Parameters</th>
+                    <th>SCR</th>
+                    <th>BJT</th>
+                    <th>MOSFET</th>
+                    <th>IGBT</th>
+                </tr>
+                <tr>
+                    <td>1. Drive control</td>
+                    <td>Gate has no control once SCR is turned ON.</td>
+                    <td>Base has fully control over the conduction of BJT.</td>
+                    <td>Base has fully control over the conduction of MOSFET.</td>
+                    <td>Base has fully control over the conduction of IGBT.</td>
+                </tr>
+                <tr>
+                    <td>2. ON state voltage drop</td>
+                    <td>Less than 2 Volts</td>
+                    <td>Less than 2 Volts</td>
+                    <td>4-6 Volts</td>
+                    <td>3.3 Volts</td>
+                </tr>
+                <tr>
+                    <td>3. Switching frequency</td>
+                    <td>500 Hz</td>
+                    <td>10 KHz</td>
+                    <td>Upto 100 KHz</td>
+                    <td>20 KHz</td>
+                </tr>
+                <tr>
+                    <td>4. Voltage and current ratings</td>
+                    <td>10 KV/4KA</td>
+                    <td>2KV/1KA</td>
+                    <td>1KV/50A</td>
+                    <td>1.5KV/400A</td>
+                </tr>
+                <tr>
+                    <td>5.Applications</td>
+                    <td>AC to DC converters, AC voltage controllers.</td>
+                    <td>DC to AC converters, induction motor drives, UPS, SMPS, choppers.</td>
+                    <td>DC choppers, low power UPS, SMPS, brushless DC motor drives.</td>
+                    <td>DC to AC converters, AC motor drives, UPS, choppers, SMPS.</td>
+                </tr>
+            </table>
+            <h3>Unijunction Transistor (UJT):</h3>
+            <div style="text-align: center">
+            <img src="img/pe/UJT_Symbol.png" alt="UJT Symbol" style="width: 100%; max-width: 300px;">
+            <p><cite>Fig: Symbol of UJT</cite></p>
+            </div>
+            <p>UJT is also known as double base diode because it is two layers, three terminal solid state switching devices and it has only one junction. So it is called Unijunction device.</p>
+            <h3>Construction and Operation of UJT:</h3>
+            <div style="text-align: center">
+            <img src="img/pe/UJT_Constructionl.png" alt="UJT Structure" style="width: 100%; max-width: 400px;">
+            <p><cite>Fig (a): Construction</cite></p>
+            </div>
+            <div style="text-align: center">
+            <img src="img/pe/UJT_Equivalent_Ckt.png" alt="UJT Equivalent Ckt" style="width: 100%; max-width: 300px;">
+            <p><cite>Fig (b): Equivalent Circuit</cite></p>
+            </div>
+            <div style="text-align: center">
+            <img src="img/pe/UJT_Base_Current_Ckt.png" alt="UJT Base Current Ckt" style="width: 100%; max-width: 500px;">
+            <p><cite>Fig (c): UJT Base Current</cite></p>
+            </div>
+            <p><b>Construction:</b></p>
+            <ul>
+                <li>UJT is three terminal single junction two layer device and it is similar to a thyristor compare to a transistor. It has high impedance in OFF state and low impedance in ON state.</li>
+                <li>PN junction has P region and N region the emitter is of p type. The silicon bar has two ohmic contacts which have base 1 and base 2.</li>
+                <li>The resistance between B1 and B2 when the emitter is open circuit is called inter base resistance.</li>
+                <li>The emitter junction is usually situated closer to base 2 than base 1.</li>
+                <li>The symbol of UJT is shown. When device is forward biased it is active or is in the conduction state.</li>
+                <li>In N type material arrow head points in the direction of conventional state.</li>
+            </ul>
+            <p><b>Operation:</b></p>
+            <p>(i)	UJT turned ON:</p>
+            <p>When emitter supply voltage V<sub>E</sub> is applied voltage increases slowly and emitter current I<sub>E</sub> flows through the diode V<sub>D</sub>. V<sub>E</sub> or V<sub>X</sub> increases above the n.V<sub>BB</sub> UJT is turned ON.</p>
+            \[{V_E} = {V_X} = \eta .{V_{BB}}\]
+            <p>Where,<br>h= 0.63 for silicon diode.<br>V<sub>X</sub>= potential difference at point X.</p>
+            <p>(ii)	UJTT is turned OFF:</p>
+            <p>When the emitter current I<sub>E</sub> is less than the valley current I<sub>V</sub> UJT is turned OFF.<br>i.e., I<sub>E</sub> less than I<sub>V</sub></p>
+            <p>This valley current acts like holding current for the UJT.</p>
+            <h3>VI Characteristics of UJT:</h3>
+            <div style="text-align: center">
+            <img src="img/pe/UJT_VI_Char.png" alt="VI Characteristics of UJT" style="width: 100%; max-width: 600px;">
+            </div>
+            <ul>
+                <li>Plot a graph of emitter voltage V<sub>E</sub> and emitter current I<sub>E</sub> of UJT as shown.</li>
+                <li>In this figure shows that before point A UJT operated in cutoff region and it is turned OFF. That is I<sub>E</sub> less than I<sub>V</sub></li>
+                <li>After point B UJT is operated in saturation region hence UJT is turned ON. Here equation.</li>
+                <li>When V<sub>X</sub> is equal to n.V<sub>BB</sub> holes from heavily doped emitter of P region are injected to the N region bar. Because of this large numbers of holes resistance RB1 reduces. This causes the voltage VX dropped.</li>
+                <li>At the same time emitter current IE increases further this forms a negative resistance region as shown in figure from point A to B of the characteristics.</li>
+            </ul>
+            <h3>Applications of UJT:</h3>
+            <ul>
+                <li>UJT is used as triggering device for SCR, GTO and TRIAC etc.</li>
+                <li>It is used as flasher in low power switching circuit.</li>
+                <li>Due to the negative resistance characteristics it is used as oscillation.</li>
+            </ul>
+            <h3>Gate Turn OFF Thyristor (GTO):</h3>
+            <div style="text-align: center">
+            <img src="img/pe/GTO_Symbol.png" alt="GTO Symbol" style="width: 100%; max-width: 250px;">
+            </div>
+            <ul>
+                <li>GTO is called as gate turn OFF thyristor. It is similar to the SCR but it can be turned OFF by gate terminal/ figure shows the bidirectional current flows through the gate.</li>
+                <li>A small positive voltage is applied to gate to cathode of GTO a positive current flow through the gate of GTO then GTO is turned ON. Similarly GTO can be turned OFF by negative current flows through the gate. Hence gate has fully controlled over the conduction of GTO.</li>
+                <li>GTO do not requires any commutation circuit for turn OFF because it is turn OFF by applying negative gate current.</li>
+                <li>The operation of GTO can be explained with the help of two transistor analogy. The gain of the transistor is reduced. This reduces the regenerative action.</li>
+            </ul>
+            <h3>Applications of GTO:</h3>
+            <ul>
+                <li>GTO’s are suitable for low power applications.</li>
+                <li>Induction heating and motor drives.</li>
+                <li>Rolling mills, robotics and machine tools.</li>
+                <li>Adjustable frequency inverter drives.</li>
+                <li>Traction drive.</li>
+            </ul>
+            
+            
+        </div>
+       
+       <div id="main-right">
+        <div>
+            <!--SPACE FOR GOOGLE ADSENSE-->
+        </div>
+    </div>
+       </div>
+       
+       
+       <div>
+        <!--SPACE FOR GOOGLE ADSENSE-->
+        </div>
+       
+       <div id="footer">
+           <h3>Need to talk with us?</h3>
+           <p>geteeenotes123@outlook.com</p>
+       </div>
+       
+       <button id="topbtn"><i class="fa fa-arrow-up" aria-hidden="true"></i></button>
+       
+       <script>
+        
+        $(document).ready(function(){
+            
+            $(window).scroll(function(){
+               if($(this).scrollTop() > 40){
+                   $('#topbtn').fadeIn();
+               } else{
+                   $('#topbtn').fadeOut();
+               }
+            });
+           
+            $("#topbtn").click(function(){
+                $('html, body').animate({scrollTop : 0}, 800);
+            });
+        });
+        
+        </script>
+        
+    </body>
+</html>

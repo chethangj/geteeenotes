@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Transmision Distribution and Utilisation - 2.HVDC, FACTS and Sub-Stations - getEEEnotes!</title>
+        <meta name="viewport" content="width-device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css" type="text/css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+        <link rel="icon" href="img/favicon.png" sizes="16x16">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+        
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-174242618-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-174242618-2');
+</script>
+
+    </head>
+    
+    <body>
+        
+        <div id="header">
+        <div id="logo">
+            <a href="https://geteeenotes.tk/"><img src="img/logo1.png"></a>
+        </div>
+        <div id="socialicons">
+           <ul>
+               <li><a href="https://www.facebook.com/Geteeenotes-109734954168942/" target="_blank"><img src="img/facebook.png"></a></li>
+               <li><a href="https://www.instagram.com/geteeenotes5/" target="_blank"><img src="img/instagram.png"></a></li>
+               <li><a href="https://www.youtube.com/channel/UCgVMxyH-_CDSpZXi8fnl3MA/" target="_blank"><img src="img/youtube.png"></a></li>
+               <li><a href="https://t.me/getEEEnotes" target="_blank"><img src="img/telegram.png"></a></li>
+           </ul>            
+        </div>
+    </div>
+       
+       <div id="header-bar">
+       <p><b>Welcome to getEEEnotes!</b></p>
+       <p><b>MAKE DIPLOMA EEE EASIER</b></p>
+       
+    </div>
+      
+      <div class="navigate" style="border-bottom: 1px solid black">
+          <p><a href="https://geteeenotes.tk/" style="color: rgb(85, 39, 144)">Home</a> <i class="fa fa-angle-double-right" aria-hidden="true"></i> <a href="tdu.html" style="color: rgb(85, 39, 144)">T D & U</a> <i class="fa fa-angle-double-right" aria-hidden="true"></i> <a href="tdutwo.html" style="color: rgb(36, 169, 226)">2. HVDC, FACTS and Sub-Stations</a></p>
+      </div>
+       
+       <div>
+        <!--SPACE FOR GOOGLE ADSENSE-->
+        </div>
+        
+        <div id="main">
+        <div id="main-left" style="font-family: 'Open Sans', sans-serif; line-height: 25px">
+        
+        <h2>CHAPTER 02 : HVDC, FACTS, AND SUBSTATIONS</h2>
+            <h3>Typical HVDC Transmission System:</h3>
+            <div style="text-align: center">
+            <img src="img/tdu/HVDC.png" alt="Typical HVDC Transmission System" style="width: 100%; max-width: 600px;">
+            </div>
+            <p>The electric power is generated as AC. Its voltage is stepped up to high voltage by step up transformer and converted in to DC by suitable rectifying device. The transmission of electric power is carried at high DC voltage (500 KV).</p>
+            <p>At the receiving end DC power is converted back in to three phase AC using suitable converters (Inverter) and then stepped down to LV for distribution by suitable step down transformer.</p>
+            <h3>Advantages of HVDC Transmission:</h3>
+            <ul>
+                <li>There is no skin effect and Ferranti effect.</li>
+                <li>There is no stability problem with DC line.</li>
+                <li>A DC line requires no reactive compensation.</li>
+                <li>Time required for fault clearing is less.</li>
+                <li>Interconnection is easy.</li>
+                <li>Requires less space compare to AC for the same voltage rating.</li>
+                <li>The power loss, radio and television interference due to corona is smaller in DC line.</li>
+                <li>Insulation level of HVDC lines is low.</li>
+                <li>HVDC is cheaper for long distance transmission.</li>
+            </ul>
+            <h3>Disadvantages of HVDC Transmission:</h3>
+            <ul>
+                <li>High cost of terminal equipments:
+                <ol type="i">
+                    <li>HVDC transmission system requires converters at both the ends those are very expensive.</li>
+                    <li>Converters also have less over load capacity.</li>
+                </ol></li>
+                <li>Introduction of harmonics:
+                <ol type="i">
+                    <li>Converters generates considerable amount of harmonics both on AC and DC sides. Some harmonics are filtered out but some harmonics are still entering into the system and affect the apparatus.</li>
+                    <li>These harmonics may also interfere with communication system.</li>
+                </ol></li>
+                <li>Blocking of reactive power:
+                <p>DC line blocks the flow of reactive power from one end to another end. These reactive powers are required by some load that must be fulfilled by the inverters.</p></li>
+                <li>Point to point transmission is not possible:
+                <p>It is not possible to tap DC power at several locations in the line. Whenever power is to be tapped a control station is required. This increases the cost of the system.</p></li>
+            </ul>
+            <h3>Types of HVDC Links:</h3>
+            <p>HVDC links are broadly classified into 3 types.</p>
+            <ol type="1">
+                <li>Mono polar HVDC link</li>
+                <li>Bipolar HVDC link</li>
+                <li>Homo polar HVDC link</li>
+            </ol>
+            <h4>1. Mono Polar HVDC Link:</h4>
+            <div style="text-align: center">
+            <img src="img/tdu/Mono_Polar_HVDC_Link.png" alt="Mono Polar HVDC Link" style="width: 100%; max-width: 500px;">
+            </div>
+            <p>Mono polar lines have only one conductor normally operated at negative polarity to reduce corona loss. Hence earth is used as return path.</p>
+            <h4>2. Bipolar HVDC Link:</h4>
+            <div style="text-align: center">
+            <img src="img/tdu/Bipolar_HVDC_Link.png" alt="Bipolar HVDC Link" style="width: 100%; max-width: 500px;">
+            </div>
+            <ul>
+                <li>Bipolar lines have 2 conductors.</li>
+                <li>One conductor operates at negative polarity and the other operates at positive polarity.</li>
+                <li>It can be operated as single mono polar in case of fault in any line.</li>
+                <li>In normal operation there is no current through ground but it is grounded because of its operation as mono polar in the event of faults in any line.</li>
+            </ul>
+            <h4>3. Homo Polar HVDC Link:</h4>
+            <div style="text-align: center">
+            <img src="img/tdu/Homo_Polar_HVDC_Link.png" alt="Homo Polar HVDC Link" style="width: 100%; max-width: 500px;">
+            </div>
+            <ul>
+                <li>Homo polar lines are more than two or more conductors having the same polarity.</li>
+                <li>Normally negative polarities are used due to corona loss and radio interference.</li>
+                <li>Ground is always used as a return path.</li>
+                <li>It can be operated as single mono polar link is case of faults in any one line.</li>
+            </ul>
+            <h3>FACTS (Flexible AC Transmission System):</h3>
+            <p>A FACT is a system composed of static equipments used for AC transmission of electrical energy. (It is meant to enhance controllability and increase power transfer capability of the network. It is general power electronics based system)</p>
+            <p>Power electronics based system and other static equipment that provide control of one or more AC transmission system parameters to enhance controllability and increase power transfer capability is defined as FACTS.</p>
+            <p>It is comparatively inexpensive and fast way to provide more power and control in existing networks with minimal environment impact.</p>
+            <h3>Objectives of FACTS:</h3>
+            <p>There are two objectives of FACTS.</p>
+            <ol>
+                <li>To increase the power transfer capability of power transmission:
+This objective implies that the power flow in a given line can be increased up to the thermal limit by injecting the necessary current through the series link impedance. At the same time stability of the transmission system is maintained via appropriate real time control of power flow during system faults.
+</li>
+           <li>To keep the power flow over designated route:
+This objective implies that the flow of power can be restricted to select transmission corridors by controlling the current in a transmission line while parallel and loop flows can be mitigated.
+Example: By changing the effective impedance of transmission line and its phase displacement.
+</li>
+            </ol>
+            <h3>Advantages of FACTS Controller:</h3>
+            <ul>
+                <li>FACTS reduces reactive power flow hence line carries more active power.</li>
+                <li>FACTS controller increases the system stability by raising the transient stability limit, limiting short circuit and over loads.</li>
+                <li>FACTS controller gives secure and controllable tie line connection.</li>
+                <li>FACTS provide greater flexibility.</li>
+                <li>FACTS controller reduces loop flows.</li>
+                <li>FACTS increase the loading capacity of capability of transmission lines to their thermal capabilities.</li>
+                <li>FACTS controller controls the flow of power in transmission corridors by controlling impedance of line.</li>
+            </ul>
+            <h3>Types of FACTS Controllers:</h3>
+            <p>There are 4 types.</p>
+            <ol>
+                <li>Series controller</li>
+                <li>Shunt controller </li>
+                <li>Combined series – series controller</li>
+                <li>Combined series – shunt controller</li>
+            </ol>
+            <h4>1. Series Controller:</h4>
+            <div style="text-align: center">
+            <img src="img/tdu/Series_FACTS_Controller.png" alt="Series FACTS Controller" style="width: 100%; max-width: 500px;">
+            </div>
+            <p>The series FACT controller could be of either variable impedance like variable capacitor, variable reactor etc. in series controller all the series controllers inject voltage in series with the line as long as the voltage is in phase quadrature with the current. This controller supplies or consumes only variable reactive power. The product of variable impedance and current through it gives injected series voltage in the line.</p>
+            <h4>2. Shunt Controller:</h4>
+            <div style="text-align: center">
+            <img src="img/tdu/Shunt_FACTS_Controller.png" alt="Shunt FACTS Controller" style="width: 100%; max-width: 500px;">
+            </div>
+            <p>Similar to the series controller the shunt controller can be a variable source, variable impedance or the combination of impedance and source. In the shunt controller all the controller inject current into the system at the junction point as long as the injected current is in phase quadrature with the line voltage. </p>
+            <p>This controller supplies or consumes only variable reactive power.</p>
+            <h4>3. Combined Series – Series Controller:</h4>
+            <div style="text-align: center">
+            <img src="img/tdu/Series_Series_FACTS_Controller.png" alt="Combined Series - Series FACTS Controller" style="width: 100%; max-width: 500px;">
+            </div>
+            <p>Series – series controller could be a combination of separate series controllers in multi transmission line these controllers works in a co-ordinated manner or series - series controller could be a unified controller in which series controllers provide independent series reactive compensation for each line. The real power is transfer among the lines via the DC power link. The capability of real power transfer of the unified series – series control referred as the flow control. This system makes it possible to balance both active and reactive power flow in the transmission line.</p>
+            <h4>4. Combined Series – Shunt Controller:</h4>
+            <div style="text-align: center">
+            <img src="img/tdu/Series_Shunt_FACTS_Controller.png" alt="Combined Series - Shunt FACTS Controller" style="width: 100%; max-width: 500px;">
+            </div>
+            <p>The combined series – shunt controller could be a combination of separate series and shunt controllers and they are connected in co-ordinated manner or a unified power flow controller with shunt and series elements connected in a line. The combined shunt and series controller injects current into the system with the help of shunt controller and voltage with the help of series controller. However when bot controllers are unified, the real power that is active power can be exchange between these controllers via the power link.</p>
+            <h3>Inter Connected power System:</h3>
+            <p>In olden days each area has their own station and line for their use only which have many disadvantages like availability of sources, extra reserve capacity etc. To overcome these difficulties modern power system network is formed by interconnecting several individual Ac networks which has its own generating station, transmission, distribution, load centers etc. The regional load control center controls the generation.</p>
+            <p>The exchange of power between neighboring AC network is done through interconnection called as national grid. If two national grids are interconnected then it is called super grid.  </p>
+            <p>The main purpose of this system is to transfer sufficient power from one AC system to another AC system during normal and emergency conditions.</p>
+            <h4>Advantages:</h4>
+            <ul>
+                <li>Better efficiency.</li>
+                <li>Better utilization of hydro power.</li>
+                <li>Reduction in operating coast.</li>
+                <li>Reduce over or install capacity.</li>
+            </ul>
+            <h4>Disadvantages:</h4>
+            <ul>
+                <li>Required more security.</li>
+                <li>Technical problems.</li>
+                <li>Planning, operation and control will be complex.</li>
+                <li>More investment for load control centers.</li>
+            </ul>
+            <h3>Load Dispatching:</h3>
+            <p>Large power system network consists of power stations interconnected and form a single grid. The operation of such grid is controlled from common center called load dispatch center.</p>
+            <p>Generally load dispatch center should be installed in the country with 3 level hierarchies. That is,</p>
+            <ol>
+                <li>State load dispatch</li>
+                <li>Regional load dispatch</li>
+                <li>National load dispatch</li>
+            </ol>
+            <p>In emergency, if the national load dispatch center gets out of order all regional load dispatch stations will act as backup to the national load dispatch station and control their respective regions. Similarly if the regional load dispatch stations are out of order then the state load dispatch stations continuous to control their grid independently.</p>
+            <p>For reliable and quick operation the modern load dispatch station requires,</p>
+            <ol type="i">
+                <li>Communication system</li>
+                <li>Computer system</li>
+                <li>Control system</li>
+                <li>Telemetering system</li>
+            </ol>
+            <h3>Substation:</h3>
+            <p>A substation can be defined as an assembly of apparatus installed to change certain characteristics of supply system. The substations are the important part of power system network.</p>
+            <p>The substation performs any one or two or all the following operations.</p>
+            <ul>
+                <li>To switch ON and OFF the power lines.</li>
+                <li>To change voltage level of the system.</li>
+                <li>To convert AC to DC or DC to AC.</li>
+                <li>To improve the power factor.</li>
+                <li>To change the magnitude of frequency.</li>
+            </ul>
+            <h4>Classification of Substations:</h4>
+            <p>The substations are mainly classified in the 2 ways.</p>
+            <ol>
+                <li>According to the construction or design.
+                <ol type="i">
+                    <li>Indoor substation</li>
+                    <li>Outdoor substation
+                    <ol type="a">
+                        <li>Pole mounted</li>
+                        <li>Plinth mounted</li>
+                    </ol></li>
+                    <li>Underground substation</li>
+                </ol></li>
+                <li>According to the service requirement.
+                <ol type="i">
+                    <li>Transformer substation</li>
+                    <li>Industrial substation</li>
+                    <li>Switching substation</li>
+                    <li>Converting substation</li>
+                    <li>Frequency changer substation</li>
+                    <li>Power factor correction substation or Synchronous substation</li>
+                </ol></li>
+            </ol>
+            <h4>Transformer Substation:</h4>
+            <p>In transformer substation the voltage level of the power system is changed using transformer. The main component of this station is a transformer which receives power at one voltage and delivers it at some other voltage.</p>
+            <h4>Industrial Substation:</h4>
+            <p>The station which supplies power to the individual industry is called industrial substation. Generally it is pole mounted transformer installed for particular industry.</p>
+            <h4>Switching Substation:</h4>
+            <p>The station meant switching operation of power lines without changing voltage is called switching substation.</p>
+            <h4>Converting Substation:</h4>
+            <p>For some special applications DC supply is necessary such as battery charging, electric welding etc. The substation which converts AC into DC is called converting substation.</p>
+            <h4>Frequency Changer Substation:</h4>
+            <p>For certain industrial applications higher frequencies are required like induction heating. The substation which changes supply frequency is known as frequency changer substation. </p>
+            <h4>PF Correction Substation:</h4>
+            <p>The station which is used for improving the power factor of the system is called PF correction substation. In this substation synchronous condensers are installed to improve the PF.</p>
+            <h4>Outdoor Substation:</h4>
+            <p>In this type of substation the required apparatus with operator desk is installed open to the atmosphere with sufficient spacing hence it is called outdoor substation.</p>
+            <p><b>a. Pole Mounted substation:</b> These substations are meant for distribution purpose and are usually two pole structures or four pole structures depends upon transformer capacity.</p>
+            <p><b>b. Plinth Mounted Substation:</b> These substations erected for higher capacities of transformers because the weight of transformer would be more for pole mounting. In this arrangement all apparatus are installed on a ground by constructing suitable structures.</p>
+            <h4>Underground Substation:</h4>
+            <p>In areas where density of population is high like metro Politian cities the availability of land is difficult and costly and for good appearance and beauty of city in such areas the substation with its major equipment is installed bellow the ground level called underground substation. The complete building is constructed under the ground and the top is covered by RCC slab. At one end entrance is provided with stair case and suitable ventilation. Hear all the wiring work is done by insulating cable.</p>
+            <h4>Indoor Substation:</h4>
+            <p>In this type of substation the required apparatus are installed within a building bellow the roof hence it is called indoor substation.</p>
+            <h3>Comparison between indoor and outdoor substation:</h3>
+            <table style="width: 100%">
+                <tr>
+                    <th style="width: 50%">Outdoor Substation</th>
+                    <th style="width: 50%">Indoor Substation</th>
+                </tr>
+                <tr>
+                    <td>1. Future extinction is easy.</td>
+                    <td>1. Future extinction is difficult.</td>
+                </tr>
+                <tr>
+                    <td>2. Fault location is easier.</td>
+                    <td>2. Fault location is difficult.</td>
+                </tr>
+                <tr>
+                    <td>3. It can be used for EHV and UHV.</td>
+                    <td>3. It can be used only upto 66 KV.</td>
+                </tr>
+                <tr>
+                    <td>4. Appearance is not good.</td>
+                    <td>4. Appearance is good.</td>
+                </tr>
+                <tr>
+                    <td>5. Space required is more.</td>
+                    <td>5. Space required is less.</td>
+                </tr>
+                <tr>
+                    <td>6. These are not much safe.</td>
+                    <td>6. These substations are safe.</td>
+                </tr>
+                <tr>
+                    <td>7. Time required for erection is less.</td>
+                    <td>7. Time require for construction is more.</td>
+                </tr>
+                <tr>
+                    <td>8. Capital cost is less.</td>
+                    <td>8. Capital cost is more.</td>
+                </tr>
+                <tr>
+                    <td>9. Operation is easy.</td>
+                    <td>9. Operation is difficult.</td>
+                </tr>
+                <tr>
+                    <td>10. Maintenance cost is high.</td>
+                    <td>10. Maintenance cost is low.</td>
+                </tr>
+            </table>
+            <h3>Receiving Station:</h3>
+            <p>The receiving station will receive the electrical power from different generating stations and supplies to the different substations. It is an intermediate station between generating station and substation. Generally receiving station is step down station but it can be step up also upon requirements.</p>
+            <p>In certain cases power generated by two generating stations are of different voltage ratings. To connect these lines in parallel the voltage of one line must be changed. This arrangement can be done in receiving station.</p>
+            <p>The number of receiving stations can be interconnected if any receiving station does not receives power due to any difficulty the power can be obtained by other station equipment.</p>
+            <p>The voltage at which the receiving station transmits the power depends upon the distance between receiving station and substation.</p>
+            <h3>Equipments Used in Substation:</h3>
+            <h4>1. Bus Bar:</h4>
+            <p>In substations numbers of lines are operated at the same voltage instead of connecting the bunch together they can be connected to a common electrical component called bus bar.</p>
+            <p>The bus may consist of copper or aluminum tubes or ACSR wire or standard copper.</p>
+            <h4>2. Insulator:</h4>
+            <p>The porcelain insulators are used in substations. These insulators support the conductors from the neighboring equipment and confine the current to conductors.</p>
+            <h4>3. Cables:</h4>
+            <p>In substations cables are used for giving connections to instruments and relays. And the cable should be withstand in dry locations. The laying system is by making trench or conduits and trays.</p>
+            <h4>4. Isolator:</h4>
+            <p>Isolators are used to disconnect a part of the system during maintenance and repair. Generally isolator is a knife switch design to operate under no load. The opening and closing can be carried out manually or automatically with the help of motor.</p>
+            <h4>5. Fuses:</h4>
+            <p>To protect circuit from over load and short circuit fuses are place in series with the circuit. Generally HRC fuse and cartridge type fuses are used.</p>
+            <h4>6. Power Transformer:</h4>
+            <p>The power transformer is a main component of substation and receiving station. It is used for step up and step down the system voltages. In primary stations it is used for increasing the voltage and for remaining stations it is used for decreasing the voltage.</p>
+            <h4>7. Instrument Transformer:</h4>
+            <p>The lines in substation and receiving station carry very high voltage and large quantity of current. To measure this high voltage and current is difficult. Hence the instrument transformers are used to extend the ranges of AC measuring instruments and supplies low voltage and low current for the operations of the instruments.</p>
+            <p>There are 2 types of instrument transformers.</p>
+            <ol type="i">
+                <li>Current transformer</li>
+                <li>Potential transformer</li>
+            </ol>
+            <h4>8. Metering and Indicating Instruments:</h4>
+            <p>Control and maintain the stability and reliability of supply system continuous watch over the essential quantities is necessary. Therefore metering and indicating instruments are installed in a control room they are ammeters, voltmeters, watt meters, frequency meters, PF meters, energy meters etc.</p>
+            <h4>9. Bus Coupler:</h4>
+            <p>Bus couplers are used to connect two bus bars. The bus coupler consists of two isolators and one circuit breaker connected in series. They are used while transferring power from one bus to another bus.</p>
+            <h4>10. Firefighting equipments:</h4>
+            <p>The firefighting equipments of adequate capacity should be provided in substation and receiving stations to fight against fire during accidents. The firefighting equipments are sand, water buckets and carbon dioxide cylinders.</p>
+            <h4>11. Auxiliary supply:</h4>
+            <p>In all substations transformers are connected to the 11 KV bus bar for giving supply to the auxiliaries at the voltage of 440 V and 230 V. The auxiliary supply is required for lighting circuits, ventilating fans, water supply, battery chargers, cooling fans etc.</p>
+            <h4>12. Earth Switch:</h4>
+            <p>At the incoming and outgoing side of the line earth switch is provided which is normally open if there is any repair or maintenance work is to be carried out then the supply of the line is interrupted, even though the current flows in a line due to line inductance and capacitance. By using earth switch this current is discharged to the earth.</p>
+            <h3>Bus Bar Arrangements:</h3>
+            <p> Following are the types of arrangements used for bus bar in substations.</p>
+            <ol>
+                <li>Single bus bar system with and without sectionalisation.</li>
+                <li>Double bus bar system with single breaker.</li>
+                <li>Double bus bar system with double breaker.</li>
+                <li>Double bus bar with bypass isolator.</li>
+                <li>Main and transfer bus scheme.</li>
+                <li>Breaker and a half scheme with two main buses.</li>
+                <li>Ring main busbar.</li>
+            </ol>
+            <h4>Single Bus Bar System without Sectionalisation:</h4>
+            <div style="text-align: center">
+            <img src="img/tdu/BusBar_Single_without_Section.png" alt="Single Bus Bar System without Sectionalisation" style="width: 100%; max-width: 700px;">
+            </div>
+            <p>In this arrangement only one bus bar is used too many input and output lines. The above figure shows single bus bar arrangement in a substation in which two alternators are connected parallel to common bus bar through a transformer called station transformer. The circuit breaker, isolator etc. are connected as usual to the same bus bar output line are also connected as usual. The main advantage of this system is that it is simple and economical compare to other systems but the disadvantage is if fault takes place in any one line the complete station system will be breakdown. This system is more popular for 11 KV.</p>
+            <h4>Single Bus Bar with Sectionalisation:</h4>
+            <div style="text-align: center">
+            <img src="img/tdu/BusBar_Single_with_Section.png" alt="Single Bus Bar System with Sectionalisation" style="width: 100%; max-width: 700px;">
+            </div>
+            <p>This system is modification over the single bus bar without sectionalisation arrangement. The disadvantage of single bus bar is rectified by this arrangement. Here a single bus is divided into two sections therefore it is called single bus bar with sectionalisation. The two sections of bus bar are interconnected with the help of bus coupler. The total input and output lines are divided into two parts and they are connected to each section of bus bar.</p>
+            <p>The major advantage of this system is the if fault takes place in one system only that system is isolated and supply will be continuous from other section and repair and maintenance of the other bus bar can be carried out.</p>
+            <h4>Ring Main Bus Bar:</h4>
+            <p>In this system of bus bar the input and output line is connected to single bus bar similar to that of single bus bar system. Such numbers of single bus bar sets are interconnected together with the help of bus coupler and forms a closed ring called ring main bus bar.</p>
+            <div style="text-align: center">
+            <img src="img/tdu/BusBar_Ring_Main.png" alt="Ring Main Bus Bar System" style="width: 100%; max-width: 700px;">
+            </div>
+            <p>If any faults occur in one line then that can be isolated by keeping the system ON by other bus bars. The main disadvantage of this system s=is that the system is costly because of numbers of bus couplers are required and the space required for installation will be more and the expansion is not possible with this scheme as it requires extinction mesh beyond the circuit that it supply originally which is extremely difficult.</p>
+            <h4>Double Bus Bar System with Double Breaker:</h4>
+            <div style="text-align: center">
+            <img src="img/tdu/BusBar_Double_with_Double_Breaker.png" alt="Double Bus Bar System with Double Breaker" style="width: 100%; max-width: 700px;">
+            </div>
+            <p>In this scheme the double breaker is used in each circuit and each circuit is connected to both bus bars that is bus bar 1 and bus bar 2. In double bus bar the circuit breakers and isolators are permitted for repair maintenance without interruption of supply. All though such a scheme is very costly yet it offered the best maintenance facilities for the breakers. Thus when one of the circuit breaker is being opened for repairs and usual checks the load can be shifted on the other circuit breaker easily.</p>
+        </div>
+       
+       <div id="main-right">
+        <div>
+            <!--SPACE FOR GOOGLE ADSENSE-->
+        </div>
+    </div>
+       </div>
+       
+       
+       <div>
+        <!--SPACE FOR GOOGLE ADSENSE-->
+        </div>
+       
+       <div id="footer">
+           <h3>Need to talk with us?</h3>
+           <p>geteeenotes123@outlook.com</p>
+       </div>
+       
+       <button id="topbtn"><i class="fa fa-arrow-up" aria-hidden="true"></i></button>
+       
+       <script>
+        
+        $(document).ready(function(){
+            
+            $(window).scroll(function(){
+               if($(this).scrollTop() > 40){
+                   $('#topbtn').fadeIn();
+               } else{
+                   $('#topbtn').fadeOut();
+               }
+            });
+           
+            $("#topbtn").click(function(){
+                $('html, body').animate({scrollTop : 0}, 800);
+            });
+        });
+        
+        </script>
+        
+    </body>
+</html>

@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Analog Electronics - 1.Semiconductors and Diodes - getEEEnotes!</title>
+        <meta name="viewport" content="width-device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css" type="text/css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+        <link rel="icon" href="img/favicon.png" sizes="16x16">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+        
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-174242618-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-174242618-2');
+</script>
+
+    </head>
+    
+    <body>
+        
+        <div id="header">
+        <div id="logo">
+            <a href="https://geteeenotes.tk/"><img src="img/logo1.png"></a>
+        </div>
+        <div id="socialicons">
+           <ul>
+               <li><a href="https://www.facebook.com/Geteeenotes-109734954168942/" target="_blank"><img src="img/facebook.png"></a></li>
+               <li><a href="https://www.instagram.com/geteeenotes5/" target="_blank"><img src="img/instagram.png"></a></li>
+               <li><a href="https://www.youtube.com/channel/UCgVMxyH-_CDSpZXi8fnl3MA/" target="_blank"><img src="img/youtube.png"></a></li>
+               <li><a href="https://t.me/getEEEnotes" target="_blank"><img src="img/telegram.png"></a></li>
+           </ul>            
+        </div>
+    </div>
+       
+       <div id="header-bar">
+       <p><b>Welcome to getEEEnotes!</b></p>
+       <p><b>MAKE DIPLOMA EEE EASIER</b></p>
+       
+    </div>
+      
+      <div class="navigate" style="border-bottom: 1px solid black">
+          <p><a href="https://geteeenotes.tk/" style="color: rgb(85, 39, 144)">Home</a> <i class="fa fa-angle-double-right" aria-hidden="true"></i> <a href="ae.html" style="color: rgb(85, 39, 144)">A E</a> <i class="fa fa-angle-double-right" aria-hidden="true"></i> <a href="aeone.html" style="color: rgb(36, 169, 226)">1. Semiconductors and Diodes</a></p>
+      </div>
+       
+       <div>
+        <!--SPACE FOR GOOGLE ADSENSE-->
+        </div>
+        
+        <div id="main">
+        <div id="main-left" style="font-family: 'Open Sans', sans-serif; line-height: 25px">
+        
+        <h2>CHAPTER 01 : Semiconductors and Diodes</h2>
+            <h3>Atomic Structure:</h3>
+            <p>According to classical Bohr’s model, the revolving electrons are arranged in the different orbits or shells at fixed distance from the nucleus.</p>
+            <p>The electrons are moving around the nucleus similar to revolution of planets around the sun.</p>
+            <p>The electrons are negatively charged and the proton is positively charged and present in nucleus. Hence there is a force of attraction between them.</p>
+            <p>Neil – Bohr’s</p>
+            <p>2n<sup>2</sup> where,</p>
+            <p>N = number of shells</p>
+            <p>1st or n<sub>1</sub> =1</p>
+            <p>2nd or n<sub>2</sub> = 8</p>
+            <p>3rd or n<sub>3</sub> = 18</p>
+            <h3>Valence and Free Electrons:</h3>
+            <ul>
+                <li>The electrons in the first orbit are closest to the nucleus hence there are under tremendous force of attraction by the nucleus.</li>
+                <li>The last orbit / electrons is the farthest from the nucleus and electrons in the orbit are loosely bound to the nucleus.</li>
+                <li>The outermost shell in the atom is called Valence Shell and the electrons in the shell are called Valence Electrons.</li>
+                <li>When an atom observes energy from the heat, sunlight, temperature energy level of electrons is raised.</li>
+                <li>The valence electrons are in the last orbit and when they receive energy they try to jump to the next orbit.</li>
+                <li>But there is no orbit next to the valence shell, thus these electrons are completely removed from the force of attraction of the nucleus. Such electrons are called free electrons.</li>
+            </ul>
+            <h3>Concept of Energy Levels:</h3>
+            <ul>
+                <li>Each shell has energy levels associated with it. Energy level of first shell is the lowest while the energy level of valence shell is highest.</li>
+                <li>More energy level indicates the electrons of the shells loosely bound to the nucleus.</li>
+                <li>But in solid there are infinite atoms which are very close to each other the valence electrons of each other by forming bonds such as covalent bonds.</li>
+                <li>When sharing of electrons takes place the energy level associated with them also merge in to each other’s to from energy band thus merging of energy level forms an energy band.</li>
+            </ul>
+            <h3>Energy Band Diagram:</h3>
+            <ul>
+                <li>Energy levels are associated with the valence electrons merge into each other to form a band is called Valence Band.</li>
+                <li>It is the amount of energy gained by the electrons moving across an electric potential difference 1 volt.</li>
+                <li>The energy level associated with the free electrons merge into each other to form a band called Conduction Band.</li>
+            </ul>
+            <h3>Conductors, Insulators and Semiconductors:</h3>
+            <p>Based on energy gap(EG) the materials are classified as conductor, insulator and semiconductor.</p>
+            <h4>Conductors:</h4>
+            <p>In conductors large number of free electrons is exits at normal temperature.  EG doesn’t exits i.e., 0. The valence and conduction band are overlap.</p>
+            <div style="text-align: center">
+                <table style="width: 25%">
+                <tr>
+                    <td>Conduction Band</td>
+                </tr>
+                <tr>
+                    <td>Forbidden Gap</td>
+                </tr>
+                <tr>
+                    <td>Valence Band</td>
+                </tr>
+                <tr>
+            </table>
+            </div>
+            <h4>Insulators:</h4>
+            <p>In insulators the energy gap is very high above 7 electrons volt. Hence at very high voltage of temperature the electrons cannot move from valence to conduction band. Hence these materials cannot conduct at all.</p>
+            <div style="text-align: center">
+                <table style="width: 25%">
+                <tr>
+                    <td>Conduction Band</td>
+                </tr>
+                <tr>
+                    <td>E<sub>G</sub>=7ev</td>
+                </tr>
+                <tr>
+                    <td>Valence Band</td>
+                </tr>
+                <tr>
+            </table>
+            </div>
+            <h4>Semi-Conductors:</h4>
+            <p>At normal temperature some electrons move from valence band to conduction band and few free electrons are available. Hence these materials can conduct partially at room temperature.</p>
+            <p>E<sub>G</sub>= 1.12 eV for silicon and 0.78 eV for germanium as temperature increases energy gap decreases large number of free electrons are available.</p>
+            <h3>Electron Hole Pairs:</h3>
+            <ul>
+                <li>When a valance electron absorbs the energy become free electrons</li>
+                <li>Thus the valance electron leaves the valence band and enters the conduction band.</li>
+                <li>When a valence electron drifts from the valance band the vacancy created in the valence band. Such a vacancy is called Hole.</li>
+                <li>As a negatively charged electrons leaves behind the hole the hole is treated as positively charged.</li>
+            </ul>
+            <h3>Intrinsic Semi-Conductors:</h3>
+            <ul>
+                <li>The sample of semi-conductors in its purest form is called Intrinsic Semi-Conductors.</li>
+                <li>The outermost shell of intrinsic semi-conductors contains 4 valance electrons.</li>
+                <li>Such atom has crystalline structure in which 4 electrons of one atom share the 4 electrons of an adjacent atom to forming covalent bond. Hence outermost shell of an atom is completely filled with 8 electrons and they are very stable.</li>
+                <li>Thus all electrons are tightly bound to the nucleus. Hence there are no free electrons and the conduction is very poor.</li>
+            </ul>
+            <h3>Extrinsic Semi-Conductors:</h3>
+            <ul>
+                <li>A pure extrinsic semi-conductor has poor conductivity.</li>
+                <li>Some impurity is added to it to increase the conduction.</li>
+                <li>Such impurities purposely added to make a material suitable for manufacturing of semiconductor devices.</li>
+            </ul>
+            <h3>Doping and Dopant:</h3>
+            <ul>
+                <li>The purpose of adding other material to extrinsic semi-conductors to improve its conductivity is called doping.</li>
+                <li>The impurity added is called dopant.</li>
+                <li>And the resulting doping semiconductor material is called extrinsic semiconductor.</li>
+                <li>There are two types of impurities used to obtain the different types of extrinsic semiconductors called p-type and n-type.</li>
+                <li>The impurity having 5 valence electrons is called pentavalent impurity. Ehen this is added, its each atom donates one free electrons and such doping is called donor doping. For Example Arsenic, Bismuth, Phosphorous and they create n-type extrinsic semiconductors.</li>
+                <li>The impurity which has 3 valence electrons is called trivalent impurity. When this is added, its each atom creates on hole which is ready to accept an electron. Hence this is called acceptor doping. For example Gallium, Indium etc. and they create p-type extrinsic semiconductors.</li>
+            </ul>
+            <h3>Compare extrinsic and intrinsic semiconductors:</h3>
+            <table style="width: 100%">
+                <tr>
+                    <th style="width: 50%">ISC</th>
+                    <th style="width: 50%">ESC</th>
+                </tr>
+                <tr>
+                    <td>1. Purest in form without impurity.</td>
+                    <td>1. Impurities added hence not pure.</td>
+                </tr>
+                <tr>
+                    <td>2. Naturally available.</td>
+                    <td>2. Obtain by the process called doping.</td>
+                </tr>
+                <tr>
+                    <td>3. Number of electrons and holes is always same.</td>
+                    <td>3. Either electrons are more or holes are more depending upon type (p-type / n-type).</td>
+                </tr>
+                <tr>
+                    <td>4. Conductivity is poor.</td>
+                    <td>4. Conductivity is high can be controlled by doping level.</td>
+                </tr>
+                <tr>
+                    <td>5. Not use for practical purpose in manufacturing devices.</td>
+                    <td>5. Used for manufacture of electronic devices.</td>
+                </tr>
+            </table>
+            <h3>Formation of n-type semiconductor:</h3>
+            <div style="text-align: center">
+            <img src="img/ae/N_Formation.png" alt="N Type" style="width: 100%; max-width: 400px;">
+            </div>
+            <ul>
+                <li>Consider a pentavalent impurity like arsenic which is added to silicon. It is a donor impurity with 5 valence electrons.</li>
+                <li>The arsenic atom fits in the silicon crystal in such a way that its 4 electrons from covalent bonds with adjacent atoms. The 5<sup>th</sup> electron of arsenic has no chance to form covalent bond hence this electrons enters in to conduction band as a free electron.</li>
+                <li>The number of free electrons can be controlled by the amount of impurities added.</li>
+            </ul>
+            <h3>Conduction in n-type material:</h3>
+            <div style="text-align: center">
+            <img src="img/ae/Conduction_Ntype.png" alt="Conduction in N type" style="width: 100%; max-width: 600px;">
+            </div>
+            <ul>
+                <li>In intrinsic semiconductor, the number of free electrons and holes is same but the pentavalent impurities added in large extents the numbers of free electrons become very high when compare to number of holes.</li>
+                <li>Thus the voltage is apply the current is mainly because of free electrons. They are large in numbers hence the free electrons are called majority carriers in n-type material.</li>
+                <li>While there is small current due to less number of holes hence the holes are called minority carriers.</li>
+            </ul>
+            <h3>Formation of p-type semiconductor:</h3>
+            <div style="text-align: center">
+            <img src="img/ae/P_Formation.png" alt="P Type" style="width: 100%; max-width: 400px;">
+            </div>
+            <ul>
+                <li>Consider a trivalent impurity gallium is added to silicon. It is an accepter impurity with 3 valence electrons.</li>
+                <li>The gallium atom fits into the silicon crystal in such a way that its 3 valence electrons form covalent bond with the 3 adjacent silicon atoms. There is a shortage of 1 electron to form a covalent bond. This creates a vacancy in 4th covalent bond which is nothing but a hole.</li>
+                <li>Thus each gallium atom added to silicon atom creates one hole which is ready to accept an electron.</li>
+            </ul>
+            <h3>Conduction in p-type material:</h3>
+            <div style="text-align: center">
+            <img src="img/ae/Conduction_Ptype.png" alt="Conduction in P type" style="width: 100%; max-width: 600px;">
+            </div>
+            <ul>
+                <li>When large trivalent impurity is added to silicon or germanium the numbers of holes become very high as compare to free electrons.</li>
+                <li>Thus the voltage is applied, the holes they are large in numbers move towards negative of battery and mainly responsible for the current. Hence the holes are called majority carriers in p-type.</li>
+                <li>In p-type material there is a small current due to the movement of less numbers of free electrons hence the free electrons are called minority carriers in p-type.</li>
+            </ul>
+            <h3>Diode:</h3>
+            <ul>
+                <li>The p and n junction form a popular semiconductor diode called pn junction diode.</li>
+                <li>pn junction has two terminals called electrodes.</li>
+                <li>One each from p region and n region due to the 2 electrode is called the diode.</li>
+                <li>To connect n and p region to the external terminals, a metal is applied to the heavily doped.</li>
+            </ul>
+            <h3>Formation of Depletion layer in unbiased pn Diode:</h3>
+            <div style="text-align: center">
+            <img src="img/ae/Formation_of_Depletion_Layer.png" alt="Formation of Depletion layer" style="width: 100%; max-width: 600px;">
+            </div>
+            <ul>
+                <li>In unbiased pn junction diode, when p side there are large number of holes while on n side there are large number of electrons. Hence the overall there is a non-uniform distribution of charges when such non –uniform distribution exits then the charge carriers starts moving from high concentration area to the low concentration are. This is called Diffusion.</li>
+                <li>In an unbiased diode, the majority holes on p side starts diffusing into n side while the majority free electrons on n side starts diffusing into p side.</li>
+                <li>In n region, the holes diffusing from p side recombine with free electrons thus due to additionally positively charged holes.</li>
+            </ul>
+            <h3>Barrier Potential:</h3>
+            <p>Due to immobile positive ions on n side and immobile negative ions on p side and there exists all electric field across the junction.</p>
+            <div style="text-align: center">
+            <img src="img/ae/Barrier_Potential.png" alt="Barrier Potential" style="width: 100%; max-width: 400px;">
+            </div>
+            <p>This creates p. different across the depletion region which acts as a barrier this is called junction potential or barrier potential.</p>
+            <h4>Barrier Potential depends on:</h4>
+            <ul>
+                <li>Type of semiconductor</li>
+                <li>Temperature</li>
+                <li>Donor impurity added</li>
+                <li>Acceptor impurity added</li>
+            </ul>
+            <h3>Forward Biasing:</h3>
+            <div style="text-align: center">
+            <img src="img/ae/Forward_Bias1.png" alt="Forward Biasing" style="width: 100%; max-width: 400px;">
+            </div>
+            <div style="text-align: center">
+            <img src="img/ae/Forward_Bias2.png" alt="Forward Biasing" style="width: 100%; max-width: 600px;">
+            </div>
+            <ul>
+                <li>When an external DC voltage is connected in such a way that p region is connected to positive and n region is connected to negative of the DC voltage. This type of biasing is called Forward Biasing.</li>
+                <li>The negative of the battery pushes the free electrons against the barriers from n to p region. Positive of the battery pushes the holes against barrier from p to n region due to this the width of the region reduces and consequently the barrier potential also reduces the width.</li>
+                <li>As applied voltage is increased at particular value the depletion region becomes very narrow and majority charge carriers can easily cross the junction.</li>
+                <li>The large amount of majority charge carriers constitutes a current called forward current.</li>
+                <li>The current in n region is due to movement of electrons.  It is called electron current.</li>
+                <li>The current in p region is due to movement of holes. It is called hole current.</li>
+                <li>The holes in the p region and electrons in the n region are majority charge carriers hence the forward current is due to majority charge carriers.</li>
+            </ul>
+            <h3>Reverse Biasing:</h3>
+            <div style="text-align: center">
+            <img src="img/ae/Reverse_Bias1.png" alt="Reverse Biasing" style="width: 100%; max-width: 400px;">
+            </div>
+            <div style="text-align: center">
+            <img src="img/ae/Reverse_Bias2.png" alt="Reverse Biasing" style="width: 100%; max-width: 600px;">
+            </div>
+            <ul>
+                <li>When external DC voltage is connected such a way that p region of a diode is connected to the negative terminal and n region of a diode is connected to the positive terminal of the DC voltage then the biasing is called reverse biasing.</li>
+                <li>In reverse biasing, negative of battery attracts the holes in p region and positive of battery attracts free electrons in n region away from the junction.</li>
+                <li>This widens the depletion region then the barrier potential increases, no majority charge carrier can cross the junction.</li>
+                <li>Resistance of the reverse bias diode is very high and the diode is said to be no operative in the reverse basis.</li>
+                <li>However due to the increases barrier potential free electrons on p side are dragged towards positive while holes on n side are dragged towards negative of the battery. This constitutes a current called reverse current flow due to minority charge carriers and hence its magnitude is very small.</li>
+            </ul>
+            <h3>Breakdown Mechanism in Diode:</h3>
+            <p>If reverse voltage is increased behind particular value, large reverse current can flow damaging the diode this is called reverse break down mechanism a diode.</p>
+            <h3>Breakdown due to avalanche effect:</h3>
+            <ul>
+                <li>If reverse voltage is increased at particular value velocity of minority carriers are increases.</li>
+                <li>Due to the kinetic energy associated with the minority carriers, more minority carriers are generated when there is collision of minority carriers with the atoms. The collision makes the electrons to break the covalent bonds.</li>
+                <li>These electrons are available as minority carriers and get accelerated due to high reverse voltage. They again collide with another atom to generate more minority carriers this is called carrier multiplication.</li>
+                <li>Finally large number of minority carriers move across the junction breaking the pn junction these large number of minority carriers give rise to a very high reverse current. This effect is called avalanche effect.</li>
+            </ul>
+            <h3>V-I Curve of Diode:</h3>
+            <div style="text-align: center">
+            <img src="img/ae/VI_Curve_Diode.png" alt="Reverse Biasing" style="width: 100%; max-width: 500px;">
+            </div>
+            <ul>
+                <li>The graph of voltage applied to pn junction and the current flowing through pn junction is called V-I characteristics of pn junction diode.</li>
+                <li>In forward biasing V<sub>f</sub> is the voltage across the pn junction and I<sub>f</sub> is the forward current. Hence graph of I<sub>f</sub> against V<sub>f</sub> is called forward characteristics of pn junction aas long as V<sub>f</sub> is less than Cut In voltage (V<sub>k</sub>). The current flowing is very small practically this current is assumed zero. As V<sub>f</sub> increases V<sub>k</sub> the width of depletion region goes on reducing. When V<sub>f</sub> exceeds V<sub>k</sub> that is cut in voltage the depletion region become very thin and current I<sub>f</sub> increases suddenly this increases in the current is exponential.</li>
+                <li>The forward current is the conventional current, hence it is treated as positive and the forward voltage V<sub>f</sub> is also treated as positive.</li>
+                <li>The reverse voltage across the diode is V<sub>r</sub> and reverse current through the load that is I<sub>r</sub>. Hence the graph of I<sub>r</sub> against V<sub>r</sub> is called reverse V-I characteristics of pn junction diode.</li>
+                <li>As a reverse voltage increases, reverse current initially increases but after a small voltage becomes constant equal to reserve saturation current.</li>
+                <li>After this reverse voltage is increases but the current remains constant.</li>
+                <li>When you apply the voltage equal to reverse break down voltage (V<sub>R</sub>=V<sub>BR</sub>) the current increases sharply and damaging the diode.</li>
+                <li>The polarity of V<sub>r</sub> is opposite to V<sub>f</sub> and direction of I<sub>r</sub> is opposite to I<sub>f</sub> and hence both V<sub>r</sub> and I<sub>r</sub> are treated as negative. Hence reverse characteristics are plotted in the third quadrant.</li>
+            </ul>
+            <h3>Ratings of Diode:</h3>
+            <h4>Reverse Breakdown Voltage:</h4>
+            <p>When the reverse voltage is increased at a certain value the breakdown of diode occurs and reverse current increases very sharply. This voltage is called reverse breakdown voltage denoted by VBR. The diode gets damages due to breakdown.</p>
+            <h4>Reverse Current:</h4>
+            <p>The constant reverse current flows through the diode, when it is reverse bias is called reverse saturation current of diode.</p>
+            <h4>Knee Voltage:</h4>
+            <p>The small forward voltage applied to a forward bias diode at which current starts increasing exponentially this is called knee voltage of diode.</p>
+            <h4>Maximum Forward Current:</h4>
+            <p>The maximum current that a forward biased diode can with stand before burning out due to high junction temperature is called maximum forward current.</p>
+            <h4>Peak Inverse Voltage:</h4>
+            <p>The maximum voltage applied to the diode in the reverse direction without breakdown of the diode is called peak inverse voltage of the diode.</p>
+            <h4>Maximum Power Rating:</h4>
+            <p>The maximum power that the diode can be dissipate safely without increasing the junction temperature above its limiting value is called maximum power rating.<p>
+            <h3>Zener Diode:</h3>
+            <div style="text-align: center">
+            <img src="img/ae/Zener_Symbol.png" alt="Zener Diode" style="width: 100%; max-width: 400px;">
+            </div>
+            <ul>
+                <li>Zener diode is a silicon pn junction semiconductor device which is operated in reverse breakdown region.</li>
+                <li>The zener diodes are fabricated with precise voltage by controlling the doping levels during manufacturing.</li>
+            </ul>
+            <h3>Zener Breakdown:</h3>
+            <p>When reverse voltage is less than 6V there exits an intends electric field across the pn junction. This high force is excreted on the valence electrons of atom tending to separate them from respective nuclear thus large electron hole pairs are  generated due to which there is a reverse breakdown cause in large current to flow.</p>
+            <h3>V-I Characteristics of Zener Diode:</h3>
+            <div style="text-align: center">
+            <img src="img/ae/VI_Curve_Zener.png" alt="V-I Characteristics of Zener Diode" style="width: 100%; max-width: 500px;">
+            </div>
+            <ul>
+                <li>In the forward biased zener diode behaves just like a normal diode.</li>
+                <li>Zener diode is usually design to operate in reverse bias condition. Hence this V-I characteristics is important.</li>
+                <li>When the reverse voltage is applied to zener diode initially current is small which its reverse saturation current.</li>
+                <li>It a certain reverse voltage reverse breakdown occurs and current enters the zener diode increases rapidly.</li>
+                <li>The sharp change in the zener current is called zener knee of the reverse characteristics.</li>
+                <li>The reverse bias voltage at which the breakdown occurs is called zener breakdown voltage.</li>
+            </ul>
+            <h3>Current Limiting Resistor:</h3>
+            <div style="text-align: center">
+            <img src="img/ae/Current_Limiting_Resistor.png" alt="Current Limiting Resistor" style="width: 100%; max-width: 400px;">
+            </div>
+            <p>For zener diode practically two currents are specified. I<sub>z</sub> minimum is minimum current through the zener diode to maintain its reverse breakdown. The I<sub>z</sub> max is the maximum current which zener current take safely maintaining it reverse break downing operation that is constant V<sub>z</sub> across it.</p>
+            <p>The voltage across zener diode is constant that is V<sub>z</sub> till current through zener diode is between I<sub>z</sub> min is V<sub>z</sub> till current through zener diode is between I<sub>z</sub> max for limiting current between I<sub>z</sub> min and I<sub>z</sub> max a limiting resistor is used.</p>
+            <h3>Zener Diode has Shunt Voltage Regulator:</h3>
+            <p>Zener diode is mainly used as a voltage regulator. A regulator is a device which maintains output voltage constant irrespective of change in supply voltage and load.</p>
+            <div style="text-align: center">
+            <img src="img/ae/Zener_Shunt_Vtg_Regulator.png" alt="Zener Diode has Shunt Voltage Regulator" style="width: 100%; max-width: 600px;">
+            </div>
+            <p>Zener diode is connected in shunt with the load resistance. The output voltage is equal to the zener voltage.</p>
+            <p>The zener diode has a characteristic as long as the current through it is between Iz min and Iz max the voltage across its constant and is equal to zener diode.</p>
+            <h3>Regulation with Varying Load:</h3>
+            <div style="text-align: center">
+            <img src="img/ae/Zener_Regulation_with_Varying_Load.png" alt="Regulation with Varying Load" style="width: 100%; max-width: 600px;">
+            </div>
+            <p>The input voltage is constant while the load resistance R<sub>L</sub> is variable.</p>
+            <p>As input voltage is constant and V<sub>O</sub> = V<sub>Z</sub> is constant then for constant are the current I<sub>in</sub> is constant.</p>
+            \[{I_{in}} = {I_Z} + {I_L}\]
+            <p>Now if R<sub>L</sub> decreases then to I<sub>L</sub> increases to keep I<sub>in</sub> constant I<sub>Z</sub> decreases but as long as it is between I<sub>Zmin</sub> and I<sub>Zmax</sub> output voltage V<sub>O</sub> will be constant.</p>
+            <p>Similarly if R<sub>L</sub> increases so I<sub>L</sub> decreases to keep I<sub>in</sub> constant I<sub>Z</sub> increases, but as long as it is between I<sub>Zmin</sub> and I<sub>Zmax</sub> output voltage V<sub>O</sub> will be constant.</p>
+            <p>These irrespective of changes in line voltage or changes in the load the output voltage remains constant.</p>
+            
+        </div>
+       
+       <div id="main-right">
+        <div>
+            <!--SPACE FOR GOOGLE ADSENSE-->
+        </div>
+    </div>
+       </div>
+       
+       
+       <div>
+        <!--SPACE FOR GOOGLE ADSENSE-->
+        </div>
+       
+       <div id="footer">
+           <h3>Need to talk with us?</h3>
+           <p>geteeenotes123@outlook.com</p>
+       </div>
+       
+       <button id="topbtn"><i class="fa fa-arrow-up" aria-hidden="true"></i></button>
+       
+       <script>
+        
+        $(document).ready(function(){
+            
+            $(window).scroll(function(){
+               if($(this).scrollTop() > 40){
+                   $('#topbtn').fadeIn();
+               } else{
+                   $('#topbtn').fadeOut();
+               }
+            });
+           
+            $("#topbtn").click(function(){
+                $('html, body').animate({scrollTop : 0}, 800);
+            });
+        });
+        
+        </script>
+        
+    </body>
+</html>
