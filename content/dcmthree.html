@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>DC Machines and Alternators - 3.DC Motors - getEEEnotes!</title>
+        <meta name="viewport" content="width-device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css" type="text/css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+        <link rel="icon" href="img/favicon.png" sizes="16x16">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+        
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-174242618-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-174242618-2');
+</script>
+        
+    </head>
+    
+    <body>
+        
+        <div id="header">
+        <div id="logo">
+            <a href="#"><img src="img/logo1.png"></a>
+        </div>
+        <div id="socialicons">
+           <ul>
+               <li><a href="https://www.facebook.com/Geteeenotes-109734954168942/" target="_blank"><img src="img/facebook.png"></a></li>
+               <li><a href="https://www.instagram.com/geteeenotes5/" target="_blank"><img src="img/instagram.png"></a></li>
+               <li><a href="https://www.youtube.com/channel/UCgVMxyH-_CDSpZXi8fnl3MA/" target="_blank"><img src="img/youtube.png"></a></li>
+               <li><a href="https://t.me/getEEEnotes" target="_blank"><img src="img/telegram.png"></a></li>
+           </ul>            
+        </div>
+    </div>
+       
+       <div id="header-bar">
+       <p><b>Welcome to getEEEnotes!</b></p>
+       <p><b>MAKE DIPLOMA EEE EASIER</b></p>
+       
+    </div>
+      
+      <div class="navigate" style="border-bottom: 1px solid black">
+          <p><a href="#" style="color: rgb(85, 39, 144)">Home</a> <i class="fa fa-angle-double-right" aria-hidden="true"></i> <a href="dcm.html" style="color: rgb(85, 39, 144)">D C M</a> <i class="fa fa-angle-double-right" aria-hidden="true"></i> <a href="dcmthree.html" style="color: rgb(36, 169, 226)">3. DC Motors</a></p>
+      </div>
+       
+       <div>
+        <!--SPACE FOR GOOGLE ADSENSE-->
+        </div>
+        
+        <div id="main">
+        <div id="main-left" style="font-family: 'Open Sans', sans-serif; line-height: 25px">
+        
+        <h2>CHAPTER 03 : DC MOTORS</h2>
+            <h3>DC Motor:</h3>
+            <p>The DC motor which converts DC electric energy into mechanical energy is called DC motor.</p>
+            <p style="text-align: center">Or</p>
+            <p>The arrangements which converts DC power into mechanical energy is knows as DC motor.</p>
+            <p>The operation is based on the principle of that a current carrying conductor is placed in a magnetic field and the conductor experiences the mechanical force. The direction of mechanical force is given by “Flemings Left Hand Rule” and magnitude is,</p>
+            <div style="overflow-x: auto">
+                \[F = B \times I \times L\;\;\;Newton\]
+            </div>
+            <p>Where,</p>
+            <p>B = Flux Density.<br>I = Current flowing through magnitude I (Conductor).<br>L = Length of the conductor.</p>
+            <h3>Conductor in a magnetic field:</h3>
+            <div style="text-align: center">
+            <img src="img/dcm/Conductor_in_a_Magnetic_Field.png" alt="Conductor in a magnetic field" style="width: 100%; max-width: 200px;">
+            </div>
+            <h3>Flux produced by current carrying conductor:</h3>
+            <div style="text-align: center">
+            <img src="img/dcm/Flux_Produced_By_Conductor.png" alt="Flux produced by current carrying conductor" style="width: 100%; max-width: 300px;">
+            </div>
+            <p>The magnetic field is produced by a permanent magnet but in practice DC motor it is produced by the field winding when it carries a current.</p>
+            <p>When the terminals of DC motor are connected to external DC source the field magnets are excited developing alternate north and south poles and the armature conductor carries a current.</p>
+            <h3>The comparison of motor and generator actions:</h3>
+            <ul>
+                <li>A generator converts mechanical energy to electrical energy while a motor converts electrical energy into mechanical energy.</li>
+                <li>A generator works on dynamically induced EMF that is whenever conductor cuts the flux EMF is induced in it. While a motor works on the principle of that whenever a current carrying conductor is placed in a magnetic flux it experiences a force.</li>
+                <li>In every energy conversion form, from one form to another there must exist some opposition.</li>
+                <li>In a generator when an armature carries current there is condition of carrying current placed in a magnetic field and armature rotation. This is called “Magnetic drag in generator”.</li>
+                <li>This magnetic drag is opposition and working done by overcoming this opposition is converted into electrical energy in case of generator.</li>
+                <li>In case of motor when its start rotating the rotating armature. Conductor cuts the flux and EMF induced in them. This EMF opposes the supply voltage of the motor. Hence this is called “Back EMF or Counter EMF”. The electrical work done by overcoming this back EMF is converted into mechanical energy.</li>
+            </ul>
+            <h3>Back EMF:</h3>
+            <p>When the armature of DC motor rotates under the influence of driving torque the armature conductor moves through the magnetic field and hence EMF is induced in it.</p>
+            <p>The induced EMF acts in some opposite direction to applied voltage (V) this is known as back EMF or Counter EMF.</p>
+            <p>Therefore the magnitude of back EMF,</p>
+            <div style="text-align: center">
+                \[{E_b} = \frac{{P\emptyset ZN}}{{60\;A}}\]
+                <p>Or</p>
+                \[{E_b} = \frac{{N\emptyset Z}}{{60}} \times \frac{P}{A}\]
+            </div>
+            <p>Where,</p>
+            <p>E<sub>b</sub> = Back EMF.<br>N = Number of armature in RPM.<br>Z = Total number of armature conductors.<br>Q = Flux produced by each pole in Webbers.<br>P = Number of poles.</p>
+            <div style="text-align: center">
+            <img src="img/dcm/Back_EMF.png" alt="Back EMF" style="width: 100%; max-width: 200px;">
+            </div>
+            <p>When a DC voltage (V) is applied across the motor terminals the field magnets are excited and the armature conductors are supply a current. The driving torque makes the armature rotation. As armature rotates the back EMF (E<sub>b</sub>) is induced. It opposes the applied voltage (V). The electrical work done by overcoming and causing the current to flow against the back EMF is converted into mechanical energy.</p>
+            <p>The net voltage across the armature is V-E<sub>b</sub>. The back EMF is always less than the applied voltage.</p>
+            <h3>Voltage Equation:</h3>
+            <div style="text-align: center">
+            <img src="img/dcm/Voltage_Eqn.png" alt="Voltage Equation" style="width: 100%; max-width: 200px;">
+            </div>
+            <p>Let,</p>
+            <p>V = Applied voltage<br>I<sub>a</sub> = Armature current<br>R<sub>a</sub> = armature resistance<br>E<sub>b</sub> = Back EMF</p>
+            <p>The net voltage across the armature circuit is,</p>
+            \[V - {E_b}\]
+            <p>Therefore the armature current,</p>
+            \[{I_a} = \frac{{V - {E_b}}}{{{R_a}}}\]
+            <p>Therefore voltage equation of DC motor is,</p>
+            \[V = {E_b} + {I_a}{R_a}\]
+            <h4>Power equation or power developed:</h4>
+            <p>Let the voltage equation is,</p>
+            \[V = {E_b} + {I_a}{R_a}\]
+            <p>Multiplying I<sub>a</sub> on both side.</p>
+            <p>Therefore,</p>
+            <div style="overflow-x: auto">
+                \[V \times {I_a} = {E_b}{I_a} + {I_a}^2{R_a}\]
+            </div>
+            <h3>Types of DC motor:</h3>
+            <p>The Dc motors are broadly classified into,</p>
+            <ol>
+                <li>Series wound DC motor</li>
+                <li>Shunt wound DC motor</li>
+                <li>Compound DC motor
+                    <ol type="i">
+                        <li>Long shunt DC motor</li>
+                        <li>Short shunt DC motor</li>
+                    </ol>
+                </li>
+            </ol>
+            <h3>1. Series Wound DC Motor:</h3>
+            <div style="text-align: center">
+            <img src="img/dcm/Series_Wound_DC_Motor.png" alt="Series Wound DC Motor" style="width: 100%; max-width: 200px;">
+            </div>
+            <p>The field winding is connected in series with the armature consisting of less number of turns of thick conductor.</p>
+            <p>The series field winding carries armature current.</p>
+            <p>The series field current,</p>
+            \[{I_{se}} = {I_a} = I\;\;Amps\]
+            <p>Back EMF,</p>
+            <div style="overflow-x: auto">
+                \[{E_b} = V - {I_a}\left( {{R_a} + {R_{se}}} \right)\]
+                \[V = {E_b} + {I_a}\left( {{R_a} + {R_{se}}} \right) + {V_{brush}}\]
+            </div>
+            <p>Power input,</p>
+            \[ = V \times I\]
+            <p>Power developed or Output,</p>
+            <div style="overflow-x: auto">
+                \[{P_O} = Power\;Input - Power\;Loss\]
+                \[{P_O} = {E_b} \times {I_a}\]
+            </div>
+            <h3>2. Shunt Wound DC Motor:</h3>
+            <div style="text-align: center">
+            <img src="img/dcm/Shunt_Wound_DC_Motor.png" alt="Shunt Wound DC Motor" style="width: 100%; max-width: 200px;">
+            </div>
+            <p>In this shunt wound DC motor the field winding is connected in parallel with the armature consisting of more number of turns of thin conductor.</p>
+            <p>The shunt current,</p>
+            \[{I_{sh}} = \frac{V}{{{R_{sh}}}}\;Amps\]
+            <p>Back EMF,</p>
+            <div style="overflow-x: auto">
+                \[{E_b} = V - {I_a}{R_a}\]
+                \[V = {E_b} + {I_a}{R_a} + {V_{brush}}\]
+            </div>
+            <p>Power developed,</p>
+            <div style="overflow-x: auto">
+                \[{V_O} = Power\;Output - Losses\]
+            </div>
+            <p>Power output,</p>
+            \[{P_O} = {E_b} \times {I_a}\]
+            <h3>3. Compound DC Motor:</h3>
+            <p>The compound motor having two field windings, one is connected in parallel and another winding is connected in series.</p>
+            <p>There are two types of compound DC motor.</p>
+            <ol type="i">
+                <li>Cumulative/Long shunt DC motor</li>
+                <li>Differential compound DC motor</li>
+            </ol>
+            <h4>i. Cumulative/Long Shunt DC Motor:</h4>
+            <div style="text-align: center">
+            <img src="img/dcm/Long_Shunt_Compound_DC_Motor.png" alt="Cumulative/Long Shunt DC Motor" style="width: 100%; max-width: 250px;">
+            </div>
+            <p>The field windings are connected in series parallel such a way that the direction of flow of current is same in both the winding is called cumulative compound DC motor.</p>
+            <p>Since the direction of the current is same the total magnetic field gets increased or the magnetic field strength.</p>
+            <p>The total current,</p>
+            \[{I_L} = {I_{sh}} + {I_{se}}\]
+            <p>But,</p>
+            \[{I_{se}} = {I_a}\]
+            <p style="text-align: center">And</p>
+            \[{I_{sh}} = \frac{V}{{{R_{sh}}}}\]
+            <p>Voltage Equation,</p>
+            <div style="overflow-x: auto">
+                \[V = {E_b} + {I_a}{R_a} + {I_{se}}{R_{se}} + {V_{brush}}\]
+                \[V = {E_b} + {I_a}\left( {{R_a} + {R_{se}}} \right) + {V_{brush}}\]
+            </div>
+            <h4>ii. Short Shunt / Differential Compound DC Motor:</h4>
+            <div style="text-align: center">
+            <img src="img/dcm/Short_Shunt_Compound_DC_Motor.png" alt="Short Shunt / Differential Compound DC Motor" style="width: 100%; max-width: 250px;">
+            </div>
+            <p>The field winding is connected in series parallel as shown in the diagram in such a way that the direction of flow of current is opposite to each other is called differential compound DC motor.</p>
+            <p>Since the direction of current is opposite to the total magnetic field decreases or magnetic field weaken.</p>
+            <p>Therefore,</p>
+            \[{I_L} = {I_{se}}\]
+            \[{I_L} = {I_a} + {I_{sh}}\]
+            <p>Voltage equation,</p>
+            <div style="overflow-x: auto">
+                \[V = {E_b} + {I_{se}}{R_{se}} + {I_a}{R_a} + {V_{brush}}\]
+                \[V = {E_b} + {I_L}{R_{se}} + {I_a}{R_a} + {V_{brush}}\]
+            </div>
+            <p>Voltage drop across shunt field winding,</p>
+            <div style="overflow-x: auto">
+                \[{E_b} = V - {I_L}{R_{se}}\]
+                \[ = {E_b} + {I_a}{R_a} + {V_{brush}}\]
+                \[V = {E_b} + {I_a}{R_a} + {V_{brush}}\]
+                \[{I_{sh}} = \frac{{V - {I_L}{R_{se}}}}{{{R_{sh}}}}\]
+                \[{I_{sh}} = \frac{{{E_b} + {I_a}{R_a} + {V_{brush}}}}{{{R_{sh}}}}\]
+            </div>
+            <h3>Comparison between DC shunt and series motor:</h3>
+            <table style="width: 100%">
+                <tr>
+                    <th style="width: 50%">Shunt DC Motor</th>
+                    <th style="width: 50%">Series DC Motor</th>
+                </tr>
+                <tr>
+                    <td>1. Field winding is connected in shunt with the armature.</td>
+                    <td>1. Field winding is connected in series with armature.</td>
+                </tr>
+                <tr>
+                    <td>2. Field winding has more number of turns with less cross sectional area.</td>
+                    <td>2. Field winding has less number of turns with more cross sectional area.</td>
+                </tr>
+                <tr>
+                    <td>3. Torque is proportional to armature.</td>
+                    <td>3. Torque id proportional to square of armature current.</td>
+                </tr>
+                <tr>
+                    <td>4. No load operation is possible.</td>
+                    <td>4. No load operation is not possible due to very high speed.</td>
+                </tr>
+                <tr>
+                    <td>5. Speed is constant.</td>
+                    <td>5. Speed is variable.</td>
+                </tr>
+                <tr>
+                    <td>6. Starting torque is moderate.</td>
+                    <td>6. Starting torque is high.</td>
+                </tr>
+                <tr>
+                    <td>7. Used for fan, blowers, machine tools, etc.</td>
+                    <td>7. Used for cranes, elevators, conveyors etc.</td>
+                </tr>
+            </table>
+            <h3>Power developed in a DC motor:</h3>
+            <p>The mechanical power developed,</p>
+            <div style="overflow-x: auto">
+                \[{P_M} = {E_b} \times {I_a}\;\;\;\;Eqn\;\left( 1 \right)\]
+            </div>
+            <p>But</p>
+            <div style="overflow-x: auto">
+                \[{E_b} = V - {I_a}{R_a}\;\;\;\;\;Eqn\;\left( 2 \right)\]
+            </div>
+            <p>Substitute Eqn (2) to Eqn (1),</p>
+            <div style="overflow-x: auto">
+                \[{P_M} = \left( {V - {I_a}{R_a}} \right) \times {I_a}\]
+                \[{P_M} = {I_a}V - {I_a}^2{R_a}\]
+            </div>
+            <p>The magnitude of V and Ra are fixed (Constant). Therefore power developed depends on I<sub>a</sub> and maximum power.</p>
+            <div style="overflow-x: auto">
+                \[\frac{{d{P_m}}}{{d{I_a}}} = 0\]
+                \[\therefore \frac{{d{P_m}}}{{d{I_a}}} = V - 2{I_a}{R_a}\]
+                <p style="text-align: center">Or</p>
+                \[V - 2{I_a}{R_a} = 0\]
+                \[{I_a}{R_a} = \frac{V}{2}\]
+            </div>
+            <p>But the voltage equation,</p>
+            <div style="overflow-x: auto">
+                \[V = {E_b} + {I_a}{R_a}\]
+                \[\therefore V = {E_b} + \frac{V}{2}\]
+                \[\therefore {E_b} = \frac{V}{2}\]
+            </div>
+            <p>For maximum power the back EMF should be equal to half of the applied voltage.</p>
+            <h3>Torque Equation:</h3>
+            <p>The twisting force or turning force around its axis is known as torque.</p>
+            <p>It is the product of force and radius.</p>
+            \[\therefore T = F \times r\]
+            <div style="text-align: center">
+            <img src="img/dcm/Torque_Eqn.png" style="width: 100%; max-width: 200px;">
+            </div>
+            <p>Consider a pulley of radius (r)in meters and F is the force in newton’s and it rotates at a speed N in RPM.</p>
+            <p>Therefore the torque on pulley,</p>
+            \[T = F \times r\]
+            <p>Work done in one revolution,</p>
+            \[ = F \times 2\pi r\]
+            <p>Power developed,</p>
+            <div style="overflow-x: auto">
+                \[ = Workdone \times Speed\]
+                \[p.d = F \times 2\pi r \times N\]
+                <p style="text-align: center">2πN=w (i.e., Angular Velocity)</p>
+                \[\therefore p.d = F \times r \times w\]
+                \[p.d = T \times w\]
+            </div>
+            <p>The power developed in 1 sec,</p>
+            <div style="overflow-x: auto">
+                \[ = \frac{{T \times 2\pi N}}{{60}}\]
+                <p style="text-align: center">Or</p>
+                \[P = \frac{{T \times N}}{{0.10}}\;\;\;rad/sec\]
+            </div>
+            <h4>Armature torque in DC motor:</h4>
+            <div style="overflow-x: auto">
+                \[p.d = {T_a} \times 2\pi N\]
+            </div>
+            <p>The electrical energy is converted into mechanical energy.</p>
+            <div style="overflow-x: auto">
+                \[\therefore {T_a} \times 2\pi N = {E_b} \times {I_a}\;\;\;\;Eqn\;\left( 1 \right)\]
+            </div>
+            <p>But the back EMF,</p>
+            <div style="overflow-x: auto">
+                \[{E_b} = \frac{{\emptyset NZP}}{{60A}}\;\;\;Eqn\;\left( 2 \right)\]
+            </div>
+            <p>Substitute Eqn (2) to Eqn (1)</p>
+            <div style="overflow-x: auto">
+                \[{T_a} \times 2\pi N = \frac{{\emptyset NZ}}{{60}} \times \frac{P}{A} \times {I_a}\]
+            </div>
+            <p>Therefore armature torque,</p>
+            <div style="overflow-x: auto">
+                \[{T_a} = \frac{{\emptyset Z}}{{60}} \times \frac{P}{A} \times \frac{{{I_a}}}{{2\pi }}\]
+                \[{T_a} = \frac{{\emptyset P \times Z}}{{60A}}{I_a}\]
+                \[ = \frac{{2\pi N}}{{60}}\]
+                \[{T_a} = 0.199 \times \emptyset  \times Z \times \frac{P}{A} \times {I_a}\;\;\;N/meter\]
+            </div>
+            <p>Therefore armature torque,</p>
+            <div style="overflow-x: auto">
+                \[ = {I_a}\;\alpha \;\emptyset \;\alpha \;{I_a}\]
+            </div>
+            <p>For series motor the flux (∅) is proportional to I<sub>a</sub>.</p>
+            <p>Therefore, the armature torque is proportional to I<sub>a</sub><sup>2</sup> for shunt motor. The flux is constant.</p>
+            <p>Therefore the armature torque is proportional to I<sub>a</sub>.</p>
+            <h4>Shaft Torque:</h4>
+            <p>The torque available at the motor shaft is known as shaft torque (T<sub>sh</sub>).</p>
+            <div style="overflow-x: auto">
+                \[{T_{sh}} = \frac{{9.55 \times Power\;Output}}{N}\]
+            </div>
+            <h3>Torque Speed Relationship:</h3>
+            <p>The torque speed equation is applied for various types of motors.</p>
+            \[T\;\alpha \;{I_a} \times \emptyset \]
+            <p>This is because <span>\(0.159\;\frac{{PZ}}{A}\)</span> is a constant for given motor. Then ∅ is the flux produced by the field winding and is proportional to the current passing through the field winding <span>\(\emptyset \;\alpha \;{I_a}\)</span></p>
+            <p>For Dc shunt motor I<sub>sh</sub> is constant and the supply V is also constant. Therefore flux is also constant.</p>
+            <p>Therefore <span>\(T\;\alpha \;{I_a}\)</span></p>
+            <p>For DC series motor I<sub>se</sub> same as I<sub>a</sub> hence the flux is proportional to the armature current. That is, <span>\(T\;\alpha \;{I_a}\;\alpha \;\emptyset \;\alpha \;{I_a}^2\)</span></p>
+            <p>Similarly,</p>
+            <div style="overflow-x: auto">
+                \[{E_b} = \frac{{\emptyset PNZ}}{{60A}}\]
+                \[{E_b}\;\alpha \;\emptyset N\]
+                \[N = \frac{{{E_b}}}{\emptyset }\]
+            </div>
+            <p>Voltage equation,</p>
+            <div style="overflow-x: auto">
+                \[{E_b} = V - {I_a}{R_a}\]
+            </div>
+            <p>For shunt motor flux is constant.</p>
+            <div style="overflow-x: auto">
+                \[\therefore Speed\;N = \frac{{{E_b}}}{\emptyset }\]
+                \[\therefore N\;\alpha \;V - {I_a}{R_a}\]
+            </div>
+            <p>For series motor the flux is proportional to I<sub>a</sub>.</p>
+            <div style="overflow-x: auto">
+                \[\therefore N = \frac{{V - {I_a}{R_a} - {I_a}{R_{se}}}}{{{I_a}}}\]
+            </div>
+            <h3>Characteristics of DC motor:</h3>
+            <p>The important characteristics of DC series, shunt and compound motors are:</p>
+            <ol>
+                <li>Torque Speed characteristics (T v/s I<sub>a</sub>)</li>
+                <li>Speed Load characteristics (N v/s I<sub>a</sub>)</li>
+                <li>Torque Load armature current characteristics</li>
+            </ol>
+            <h4>Torque Armature Current Characteristics (T v/s I<sub>a</sub>):</h4>
+            <p>The curve between the armature torque and armature current is known as torque armature current characteristics. It is also known as electrical characteristics.</p>
+            <h4>Speed Armature Current Characteristics:</h4>
+            <p>The graph between the speed and armature torque is known as speed armature torque characteristics. It is also known as mechanical characteristics.</p>
+            <h3>Characteristics of Shunt Motor:</h3>
+            <h4>Torque Armature Current Characteristics:</h4>
+            <p>The torque of the DC motor is the twisting force about its axis. The DC shunt motor is operating at constant supply voltage the flux remains constant therefore the torque is directly proportional to only armature current.</p>
+            <p>Therefore torque armature current characteristic is a straight line passing through origin.</p>
+            <div style="text-align: center">
+            <img src="img/dcm/Shunt_Motor_Torque_vs_Armature_Current.png" style="width: 100%; max-width: 200px;">
+            </div>
+            <h4>Speed v/s armature current:</h4>
+            <p>The speed of the DC shunt motor is proportional to <span>\({E_b}/\emptyset \)</span>.</p>
+            <p>Therefore at normal condition E<sub>b</sub> and ∅ are constant hence the speed of DC shunt motor remains constant.</p>
+            <p>When the load on the DC shunt motor increases the armature current get increases. It makes the armature resistance drop to be more hence the speed of DC motor get decreased.</p>
+            <div style="text-align: center">
+            <img src="img/dcm/Shunt_Motor_Speed_vs_Armature_Current.png" style="width: 100%; max-width: 250px;">
+            </div>
+            <h4>Speed – Torque Characteristics:</h4>
+            <p>The speed of DC shunt motor gets decrease when the torque of the motor becomes more.</p>
+            <div style="text-align: center">
+            <img src="img/dcm/Shunt_Motor_Speed_vs_Torque.png" style="width: 100%; max-width: 250px;">
+            </div>
+            <h3>Characteristics of Series Motor:</h3>
+            <h4>Torque Armature Current Characteristics:</h4>
+            <p>The torque is proportional to flux and the armature current that is torque (T<sub>a</sub>) is proportional to <span>\({T_a}\;\alpha \;\emptyset \;{I_a}\)</span></p>
+            <p>Up to the magnetic saturation flux is proportional to armature current therefore torque is directly proportional to square of the armature current.</p>
+            \[T\;\alpha \;{I_a}^2\]
+            <p>Hence the graph is like parabola.</p>
+            <div style="text-align: center">
+            <img src="img/dcm/Series_Motor_Torque_vs_Armature_Current.png" style="width: 100%; max-width: 200px;">
+            </div>
+            <p>After the magnetic saturation the flux is constant.</p>
+            <h4>Speed v/s Armature Current:</h4>
+            <p>The speed of the DC series motor is proportional to the E<sub>b</sub> and inversely proportional to the ∅.</p>
+            <p>When the armature current increases the back EMF decreases due to <span>\({I_a}\left[ {{R_a} + {R_{se}}} \right]\)</span> drop since the speed is proportional to 1/∅ or 1/I<sub></sub> as the armature current increases the speed of the motor gets decreases.</p>
+            <div style="text-align: center">
+            <img src="img/dcm/Series_Motor_Speed_vs_Armature_Current.png" style="width: 100%; max-width: 250px;">
+            </div>
+            <h4>Speed – Torque Characteristics:</h4>
+            <p>The DC series motor developing high starting torque at low speed. If the torque of series motor is high it require increase in armature current which is also a field current results in increases in the flux hence the speed of DC series motor gets decreases with the increasing the torque.</p>
+            <div style="text-align: center">
+            <img src="img/dcm/Series_Motor_Speed_vs_Torque.png" style="width: 100%; max-width: 200px;">
+            </div>
+            <h3>Characteristics of DC Compound Motor:</h3>
+            <h4>Torque Armature Current Characteristics:</h4>
+            <p>As the armature current increases the series field current increases but the shunt field current constant therefore the proportional to I<sub>a</sub>.</p>
+            <div style="text-align: center">
+            <img src="img/dcm/Compound_Motor_Torque_vs_Armature_Current.png" style="width: 100%; max-width: 200px;">
+            </div>
+            <h4>Speed v/s Armature Current:</h4>
+            <p>As the armature current increases the flux also increases. The speed is inversely proportional to flux. Therefore the speed of DC compound motor gets decreases also the increasing armature current.</p>
+            <div style="text-align: center">
+            <img src="img/dcm/Compound_Motor_Speed_vs_Armature_Current.png" style="width: 100%; max-width: 250px;">
+            </div>
+            <h4>Speed v/s Torque Characteristics:</h4>
+            <p>For the given armature current the torque of cumulative compound motor is more than the shunt and less than the series motor.</p>
+            <div style="text-align: center">
+            <img src="img/dcm/Compound_Motor_Speed_vs_Torque.png" style="width: 100%; max-width: 200px;">
+            </div>
+            <h3>Applications of DC Motors:</h3>
+            <table>
+                <tr>
+                    <th>Type</th>
+                    <th>Characteristics</th>
+                    <th>Applications</th>
+                </tr>
+                <tr>
+                    <td>Shunt Motor</td>
+                    <td>1. Approximately constant speed and adjustable speed.<br>2. Medium starting torque.</td>
+                    <td>Line shafting lathes, centrifugal pumps, machine tools, blowers and fans etc.</td>
+                </tr>
+                <tr>
+                    <td>Series Motor</td>
+                    <td>1. Variable Speed<br>2. Adjustable varying speed.<br>3. High starting torque.</td>
+                    <td>Traction and electronic locomotives, cranes, conveyors etc.</td>
+                </tr>
+                <tr>
+                    <td>Cumulative Compound Motor</td>
+                    <td>1. Variable speed.<br>2. Adjustable varying speed.<br>3. High starting torque.</td>
+                    <td>Elevators, conveyors, rolling mills, printing press, air compressor etc.</td>
+                </tr>
+            </table>
+            <h3>Speed Control of DC Motor:</h3>
+            <p>The speed controls of DC motor are preferred because of wide range of speed control and accurate control can be obtained.</p>
+            <p>Thus speed control can be obtained by different methods.</p>
+            <ol>
+                <li>Flux control method</li>
+                <li>Armature control method</li>
+                <li>Voltage control method</li>
+            </ol>
+            <h3>Flux Control Method:</h3>
+            <div style="text-align: center">
+            <img src="img/dcm/Flux_Control_Method.png" alt="Flux Control Method" style="width: 100%; max-width: 300px;">
+            </div>
+            <p>By varying the flux the motor speed can be change. It is known as flux control method of speed control. The variable resistance is placed series with the field winding. The shunt field rheostat reduces the shunt field current flux by varying the field rheostat resistance. The speed of DC motor can be achieved.</p>
+            <h3>Armature Control Method:</h3>
+            <div style="text-align: center">
+            <img src="img/dcm/Armature_Control_Method.png" alt="Armature Control Method" style="width: 100%; max-width: 250px;">
+            </div>
+            <p>In armature control method by varying the voltage available across the armature by connecting a variable resistance (R) the speed of the DC motor can be control. This is known as armature control method. By varying the armature circuit resistance the back EMF gets changes therefore the speed of the DC motor can be changed.</p>
+            <h3>Voltage Control Method:</h3>
+            <p>By controlling the supply voltage across the motor the speed of DC motor can be change either by,</p>
+            <ol type="a">
+                <li>Multiple supply voltage</li>
+                <li>Tapping in supply voltage</li>
+            </ol>
+            <h3>Electric Speed Control:</h3>
+            <p>The block diagram of electric speed control as shown below.</p>
+            <div style="text-align: center">
+            <img src="img/dcm/Electric_Speed_Control.png" style="width: 100%; max-width: 450px;">
+            </div>
+            <ul>
+                <li>In electric speed control AC supply is converted into DC in a rectifier circuit.</li>
+                <li>The control circuit consists of electronic devices such as thyristors.</li>
+                <li>The firing angle of thyristor controlled by external circuit.</li>
+                <li>If the firing angle is increased thyristor firing is delayed then the thyristor conducts period get produces and the reduced voltage get supplied to the armature of the motor. It decreases the speed of the motor.</li>
+                <li>If the firing angle decrease that is the thyristor is fired earlier then it conducts for more period and increased voltage gets applied to the armature of the motor increases the speed of the motor.</li>
+                <li>A variable DC voltage is obtained by the thyristor.</li>
+                <li>The firing angle of the thyristor the speed of DC motor can be controlled electronically.</li>
+            </ul>
+            <h3>Protection of DC Motor / Necessity of Starter for DC Motor:</h3>
+            <p>At the time of starting the motor is stationary there is no back EMF. When the motor is directly connected to the supply mains the armature will be drawn more current because of small resistance. This result to,</p>
+            <ul>
+                <li>Burning of armature conductors due to excessive heating.</li>
+                <li>Damages commutator and brushes due to sparking.</li>
+                <li>Excessive voltage drop in the line to which the motor is connected.</li>
+            </ul>
+            <p>In order to avoid high starting current a variable resistance is inserted in series with armature circuits. This can be provided by starter.</p>
+            <h3>Construction and Working of 3 – Point Starter:</h3>
+            <div style="text-align: center">
+            <img src="img/dcm/Three_Point_Starter.png" alt="3 – Point Starter" style="width: 100%; max-width: 400px;">
+            </div>
+            <p>The arrangement of 3 point starter as shown in the diagram.</p>
+            <p>It has three terminals L F A hence it is called 3 point starter consists of the starting resistance with several section connected in series with the armature. The tapping brought out through studs the NO volt coil is connected to the field circuit. One and half handle is connected to terminal L through over load release coil. The other end moves through studs at the time of starting the handle is in OFF position.</p>
+            <p>The handle is move through the 1<sup>st</sup> studs. The shunt field winding is connected to the supply. The entire starting resistance is in series with armature circuit the handle is gradually move final stud.</p>
+            <p>The starting resistance is cutoff the armature. The handle is magnetically end by NO volt coil. If the supply voltage got interrupt the NO volt coil get demagnetizing and the handle goes back to off position by the spring action.</p>
+            <p>If the motor is over loaded it will draw excessive current. This current will increase the ampere turns of over load relay coil and pulls the armature. This short circuits the NO volt coil. This makes demagnetization and the handle of is pull back to the off position. Thus the motor gets disconnected from the supply.</p>            
+        </div>
+       
+       <div id="main-right">
+        <div>
+            <!--SPACE FOR GOOGLE ADSENSE-->
+        </div>
+    </div>
+       </div>
+       
+       
+       <div>
+        <!--SPACE FOR GOOGLE ADSENSE-->
+        </div>
+       
+       <div id="footer">
+           <h3>Need to talk with us?</h3>
+           <p>info.geteeenotes@gmail.com</p>
+       </div>
+       
+       <button id="topbtn"><i class="fa fa-arrow-up" aria-hidden="true"></i></button>
+       
+       <script>
+        
+        $(document).ready(function(){
+            
+            $(window).scroll(function(){
+               if($(this).scrollTop() > 40){
+                   $('#topbtn').fadeIn();
+               } else{
+                   $('#topbtn').fadeOut();
+               }
+            });
+           
+            $("#topbtn").click(function(){
+                $('html, body').animate({scrollTop : 0}, 800);
+            });
+        });
+        
+        </script>
+        
+    </body>
+</html>
